@@ -43,6 +43,7 @@
 (def ^:private ^String metabase-session-cookie          "metabase.SESSION")
 (def ^:private ^String metabase-embedded-session-cookie "metabase.EMBEDDED_SESSION")
 (def ^:private ^String metabase-session-timeout-cookie  "metabase.TIMEOUT")
+(def ^:private ^String metabase-remember-me-cookie      "metabase.REMEMBER_ME")
 (def ^:private ^String anti-csrf-token-header           "x-metabase-anti-csrf-token")
 
 (defn- clear-cookie [response cookie-name]
@@ -61,16 +62,8 @@
   [response]
   (reduce clear-cookie (wrap-body-if-needed response) [metabase-session-cookie
                                                        metabase-embedded-session-cookie
-                                                       metabase-session-timeout-cookie]))
-
-(defn- use-permanent-cookies?
-  "Check if we should use permanent cookies for a given request, which are not cleared when a browser sesion ends."
-  [request]
-  (if (public-settings/session-cookies)
-    ;; Disallow permanent cookies if MB_SESSION_COOKIES is set
-    false
-    ;; Otherwise check whether the user selected "remember me" during login
-    (get-in request [:body :remember])))
+                                                       metabase-session-timeout-cookie
+                                                       metabase-remember-me-cookie]))
 
 (defmulti set-session-cookies
   "Add an appropriate cookie to persist a newly created Session to `response`."
@@ -84,33 +77,49 @@
 
 (declare session-timeout-seconds)
 
+(defn- new-remember-me
+  "Returns true if the request enables permanent cookies (remember-me is checked), false if the request disables permanent cookies (remember-me is unchecked), and nil if the request doesn't specify."
+  [request]
+  (get-in request [:body :remember]))
+
+(defn previously-set-remember-me
+  "Returns true if the remember-me cookie has a true value, false if the cookie has a false value, and nil if no remember-me cookie is present."
+  [request]
+  (some-> (get-in request [:cookies metabase-remember-me-cookie :value])
+          read-string))
+
 (s/defmethod set-session-cookies :normal
   [request
    response
    {session-uuid :id} :- {:id (s/cond-pre UUID u/uuid-regex), s/Keyword s/Any}
    request-time]
-  (let [response       (wrap-body-if-needed response)
-        timeout        (session-timeout-seconds)
-        is-https?      (request.u/https? request)
-        cookie-options (merge
-                        {:same-site config/mb-session-cookie-samesite
-                         ;; TODO - we should set `site-path` as well. Don't want to enable this yet so we don't end
-                         ;; up breaking things
-                         :path      "/" #_(site-path)}
-                        (cond
-                          (some? timeout)
-                          {:expires (t/format :rfc-1123-date-time (t/plus request-time (t/seconds timeout)))}
-                          ;; If permanent cookies should be used, set the `Max-Age` directive; cookies with no
-                          ;; `Max-Age` and no `Expires` directives are session cookies, and are deleted when the
-                          ;; browser is closed.
-                          ;; See https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie
-                          ;; max-session age-is in minutes; Max-Age= directive should be in seconds
-                          (use-permanent-cookies? request)
-                          {:max-age (* 60 (config/config-int :max-session-age))})
-                        ;; If the authentication request request was made over HTTPS (hopefully always except for
-                        ;; local dev instances) add `Secure` attribute so the cookie is only sent over HTTPS.
-                        (when is-https?
-                          {:secure true}))]
+  (let [response           (wrap-body-if-needed response)
+        timeout            (session-timeout-seconds)
+        is-https?          (request.u/https? request)
+        permanent-cookies? (and (or (previously-set-remember-me request)
+                                    (new-remember-me request))
+                                ;; Disable permanent cookies if this setting is true
+                                (not (public-settings/session-cookies)))
+        cookie-options     (merge
+                            {:http-only true
+                             :same-site config/mb-session-cookie-samesite
+                             ;; TODO - we should set `site-path` as well. Don't want to enable this yet so we don't end
+                             ;; up breaking things
+                             :path      "/" #_(site-path)}
+                            (cond
+                              (some? timeout)
+                              {:expires (t/format :rfc-1123-date-time (t/plus request-time (t/seconds timeout)))}
+                              ;; If permanent cookies should be used, set the `Max-Age` directive; cookies with no
+                              ;; `Max-Age` and no `Expires` directives are session cookies, and are deleted when the
+                              ;; browser is closed.
+                              ;; See https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie
+                              ;; max-session age-is in minutes; Max-Age= directive should be in seconds
+                              permanent-cookies?
+                              {:max-age (* 60 (config/config-int :max-session-age))})
+                            ;; If the authentication request request was made over HTTPS (hopefully always except for
+                            ;; local dev instances) add `Secure` attribute so the cookie is only sent over HTTPS.
+                            (when is-https?
+                              {:secure true}))]
     (when (and (= config/mb-session-cookie-samesite :none) (not is-https?))
       (log/warn
        (str (deferred-trs "Session cookie's SameSite is configured to \"None\", but site is served over an insecure connection. Some browsers will reject cookies under these conditions.")
@@ -118,8 +127,12 @@
             "https://www.chromestatus.com/feature/5633521622188032")))
     (-> response
         (wrap-body-if-needed)
-        (response/set-cookie metabase-session-timeout-cookie "alive" cookie-options)
-        (response/set-cookie metabase-session-cookie (str session-uuid) (assoc cookie-options :http-only true)))))
+        (cond-> (true? permanent-cookies?)
+          (response/set-cookie metabase-remember-me-cookie "true" cookie-options))
+        (cond-> (false? permanent-cookies?)
+          (response/set-cookie metabase-remember-me-cookie "false" (dissoc cookie-options :expires :max-age))) ; If permanent-cookies? is false the remember-me cookie should expire when the browser closes, even if there is a timeout.
+        (response/set-cookie metabase-session-timeout-cookie "alive" (dissoc cookie-options :http-only true))
+        (response/set-cookie metabase-session-cookie (str session-uuid) cookie-options))))
 
 (s/defmethod set-session-cookies :full-app-embed
   [request
@@ -129,7 +142,7 @@
                                           s/Keyword s/Any}
    request-time]
   (let [response       (wrap-body-if-needed response)
-        timeout (session-timeout-seconds)
+        timeout        (session-timeout-seconds)
         cookie-options (merge
                         {:path "/"}
                         (when (some? timeout)
@@ -185,13 +198,16 @@
    [:embedded-cookie :normal-cookie :header]))
 
 (defn wrap-session-id
-  "Middleware that sets the `:metabase-session-id` keyword on the request if a session id can be found.
+  "Middleware that sets the `:metabase-session-id` keyword on the request if a session id can be found and the persistent session cookie is present.
   We first check the request :cookies for `metabase.SESSION`, then if no cookie is found we look in the http headers
   for `X-METABASE-SESSION`. If neither is found then then no keyword is bound to the request."
   [handler]
   (fn [request respond raise]
-    (let [request (or (wrap-session-id-with-strategy :best request)
-                      request)]
+    ;; If the remember-me cookie isn't present the session can't be valid, because that means the user had "remember me" unchecked and closed the browser.
+    (let [request (if (some? (get-in request [:cookies metabase-remember-me-cookie]))
+                    (or (wrap-session-id-with-strategy :best request)
+                        request)
+                    request)]
       (handler request respond raise))))
 
 
