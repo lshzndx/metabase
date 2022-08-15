@@ -78,12 +78,14 @@
 (declare session-timeout-seconds)
 
 (defn- new-remember-me
-  "Returns true if the request enables permanent cookies (remember-me is checked), false if the request disables permanent cookies (remember-me is unchecked), and nil if the request doesn't specify."
+  "Returns true if the request enables permanent cookies, i.e. 'Remember me' is checked on login.
+   Returns false if the request disables permanent cookies, i.e. 'Remember me' is unchecked on login.
+   Returns nil if the request doesn't specify."
   [request]
   (get-in request [:body :remember]))
 
 (defn previously-set-remember-me
-  "Returns true if the remember-me cookie has a true value, false if the cookie has a false value, and nil if no remember-me cookie is present."
+  "Returns the 'Remember me' cookie value, or nil if the cookie isn't present."
   [request]
   (some-> (get-in request [:cookies metabase-remember-me-cookie :value])
           read-string))
@@ -127,10 +129,12 @@
             "https://www.chromestatus.com/feature/5633521622188032")))
     (-> response
         (wrap-body-if-needed)
+        ;; If permanent-cookies? is true the remember-me cookie should not expire when the browser closes.
         (cond-> (true? permanent-cookies?)
           (response/set-cookie metabase-remember-me-cookie "true" cookie-options))
+        ;; If permanent-cookies? is false the remember-me cookie should expire when the browser closes.
         (cond-> (false? permanent-cookies?)
-          (response/set-cookie metabase-remember-me-cookie "false" (dissoc cookie-options :expires :max-age))) ; If permanent-cookies? is false the remember-me cookie should expire when the browser closes, even if there is a timeout.
+          (response/set-cookie metabase-remember-me-cookie "false" (dissoc cookie-options :expires :max-age)))
         (response/set-cookie metabase-session-timeout-cookie "alive" (dissoc cookie-options :http-only true))
         (response/set-cookie metabase-session-cookie (str session-uuid) cookie-options))))
 
