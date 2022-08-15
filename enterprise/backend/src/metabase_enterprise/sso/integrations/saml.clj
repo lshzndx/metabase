@@ -196,4 +196,5 @@
                            :user-attributes attrs
                            :device-info     (request.u/device-info request)})
           response      (response/redirect (or continue-url (public-settings/site-url)))]
-      (mw.session/set-session-cookies request response session (t/zoned-date-time (t/zone-id "GMT"))))))
+      (mw.session/set-session-cookies-on-login request response {:session      session
+                                                                 :request-time (t/zoned-date-time (t/zone-id "GMT"))}))))

@@ -170,7 +170,8 @@
         do-login     (fn []
                        (let [{session-uuid :id, :as session} (login username password (request.u/device-info request))
                              response                        {:id (str session-uuid)}]
-                         (mw.session/set-session-cookies request response session request-time)))]
+                         (mw.session/set-session-cookies-on-login request response {:session      session
+                                                                                    :request-time request-time})))]
     (if throttling-disabled?
       (do-login)
       (http-401-on-error
@@ -252,7 +253,8 @@
         (let [{session-uuid :id, :as session} (create-session! :password user (request.u/device-info request))
               response                        {:success    true
                                                :session_id (str session-uuid)}]
-          (mw.session/set-session-cookies request response session (t/zoned-date-time (t/zone-id "GMT")))))
+          (mw.session/set-session-cookies-on-login request response {:session      session
+                                                                     :request-time (t/zoned-date-time (t/zone-id "GMT"))})))
       (api/throw-invalid-param-exception :password (tru "Invalid reset token"))))
 
 (api/defendpoint GET "/password_reset_token_valid"
@@ -287,10 +289,8 @@
              response {:id (str session-uuid)}
              user (db/select-one [User :id :is_active], :email (:email user))]
          (if (and user (:is_active user))
-           (mw.session/set-session-cookies request
-                                           response
-                                           session
-                                           (t/zoned-date-time (t/zone-id "GMT")))
+           (mw.session/set-session-cookies-on-login request response {:session      session
+                                                                      :request-time (t/zoned-date-time (t/zone-id "GMT"))})
            (throw (ex-info (str disabled-account-message)
                            {:status-code 401
                             :errors      {:account disabled-account-snippet}}))))))))

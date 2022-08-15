@@ -166,7 +166,8 @@
                                             user-id
                                             {:database engine, :database-id (u/the-id database), :source :setup}))
       ;; return response with session ID and set the cookie as well
-      (mw.session/set-session-cookies request {:id session-id} session (t/zoned-date-time (t/zone-id "GMT"))))))
+      (mw.session/set-session-cookies-on-login request {:id session-id} {:session      session
+                                                                         :request-time (t/zoned-date-time (t/zone-id "GMT"))}))))
 
 (api/defendpoint POST "/validate"
   "Validate that we can connect to a database given a set of details."

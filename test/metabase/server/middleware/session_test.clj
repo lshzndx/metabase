@@ -56,7 +56,9 @@
                 :same-site :lax
                 :http-only true
                 :path      "/"}
-               (-> (mw.session/set-session-cookies {} {} {:id uuid, :type :normal} request-time)
+               (-> (mw.session/set-session-cookies {} {} {:session      {:id   uuid
+                                                                         :type :normal}
+                                                          :request-time request-time})
                    (get-in [:cookies "metabase.SESSION"])))))
       (testing "should set `Max-Age` if `remember` is true in request"
         (is (= {:value     (str uuid)
@@ -64,7 +66,9 @@
                 :http-only true
                 :path      "/"
                 :max-age   1209600}
-               (-> (mw.session/set-session-cookies {:body {:remember true}} {} {:id uuid, :type :normal} request-time)
+               (-> (mw.session/set-session-cookies {:body {:remember true}} {} {:session      {:id   uuid
+                                                                                               :type :normal}
+                                                                                :request-time request-time})
                    (get-in [:cookies "metabase.SESSION"])))))
       (testing "if `MB_SESSION_COOKIES=true` we shouldn't set a `Max-Age`, even if `remember` is true"
         (is (= {:value     (str uuid)
@@ -73,7 +77,9 @@
                 :path      "/"}
                (let [env env/env]
                  (mt/with-temporary-setting-values [session-cookies true]
-                   (-> (mw.session/set-session-cookies {:body {:remember true}} {} {:id uuid, :type :normal} request-time)
+                   (-> (mw.session/set-session-cookies {:body {:remember true}} {} {:session      {:id   uuid
+                                                                                                   :type :normal}
+                                                                                    :request-time request-time})
                        (get-in [:cookies "metabase.SESSION"]))))))))))
 
 ;; if request is an HTTPS request then we should set `:secure true`. There are several different headers we check for
@@ -95,7 +101,8 @@
                      (pr-str headers) (if expected "SHOULD" "SHOULD NOT"))
       (let [session {:id   (UUID/randomUUID)
                      :type :normal}
-            actual  (-> (mw.session/set-session-cookies {:headers headers} {} session (t/zoned-date-time "2022-07-06T02:01Z[UTC]"))
+            actual  (-> (mw.session/set-session-cookies {:headers headers} {} {:session      session
+                                                                               :request-time (t/zoned-date-time "2022-07-06T02:01Z[UTC]")})
                         (get-in [:cookies "metabase.SESSION" :secure])
                         boolean)]
         (is (= expected actual))))))
@@ -144,8 +151,8 @@
               :headers {anti-csrf-token-header test-anti-csrf-token}}
              (mw.session/set-session-cookies {}
                                             {}
-                                            test-full-app-embed-session
-                                            (t/zoned-date-time "2022-07-06T02:00Z[UTC]")))))
+                                            {:session test-full-app-embed-session
+                                             :request-time (t/zoned-date-time "2022-07-06T02:00Z[UTC]")}))))
     (testing "test that we can set a full-app-embedding session cookie with SameSite=None over HTTPS"
       (is (= {:body    {}
               :status  200
@@ -160,9 +167,9 @@
                                                  :secure    true}}
               :headers {anti-csrf-token-header test-anti-csrf-token}}
              (mw.session/set-session-cookies {:headers {"x-forwarded-protocol" "https"}}
-                                            {}
-                                            test-full-app-embed-session
-                                            (t/zoned-date-time "2022-07-06T02:01Z[UTC]")))))))
+                                             {}
+                                             {:session test-full-app-embed-session
+                                              :request-time (t/zoned-date-time "2022-07-06T02:00Z[UTC]")}))))))
 
 
 ;;; ---------------------------------------- TEST wrap-session-id middleware -----------------------------------------
@@ -476,10 +483,11 @@
                                                   :same-site :lax
                                                   :path      "/"
                                                   :http-only true}}}
-                   (mw.session/set-session-cookies request response session request-time)))))))
+                   (mw.session/set-session-cookies request response {:session      session
+                                                                     :request-time request-time})))))))
 
-    (testing "If [[public-settings/session-cookies]] is false, the user has checked 'Remember me'
-              on login, and there is session-timeout is nil, the session and timeout cookies should
+    (testing "If permanent-cookies? is true, the user has checked 'Remember me'
+              on login. If the session-timeout setting is nil, the session and timeout cookies should
               have a max-age."
       (with-redefs [env/env (assoc env/env :max-session-age "1")]
         (mt/with-temporary-setting-values [session-timeout nil
@@ -501,4 +509,6 @@
                                                   :path      "/",
                                                   :max-age   60,
                                                   :http-only true}}}
-                   (mw.session/set-session-cookies request response session request-time)))))))))
+                   (mw.session/set-session-cookies request response {:session            session
+                                                                     :request-time       request-time
+                                                                     :permanent-cookies? true})))))))))

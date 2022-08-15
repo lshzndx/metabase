@@ -87,7 +87,9 @@
           user         (fetch-or-create-user! first-name last-name email login-attrs)
           session      (api.session/create-session! :sso user (request.u/device-info request))]
       (sync-groups! user jwt-data)
-      (mw.session/set-session-cookies request (response/redirect redirect-url) session (t/zoned-date-time (t/zone-id "GMT"))))))
+      (let [response (response/redirect redirect-url)]
+        (mw.session/set-session-cookies-on-login request response {:session      session
+                                                                   :request-time (t/zoned-date-time (t/zone-id "GMT"))})))))
 
 (defn- check-jwt-enabled []
   (api/check (sso-settings/jwt-configured?)
