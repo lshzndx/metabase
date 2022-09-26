@@ -38,8 +38,11 @@ import * as Urls from "metabase/lib/urls";
 
 import CollectionCreate from "metabase/collections/containers/CollectionCreate";
 
+import CreateDashboardModal from "metabase/components/CreateDashboardModal";
+
 import { SelectedItem } from "./types";
-import MainNavbarView from "./MainNavbarView";
+// import MainNavbarView from "./MainNavbarView";
+import MainNavbarViewDL from "./MainNavbarViewDL";
 import {
   LoadingContainer,
   LoadingTitle,
@@ -227,6 +230,10 @@ function MainNavbarContainer({
     setModal("MODAL_NEW_COLLECTION");
   }, []);
 
+  const onCreateNewDashboard = useCallback(() => {
+    setModal("MODAL_NEW_DASHBOARD");
+  }, []);
+
   const closeModal = useCallback(() => setModal(null), []);
 
   const renderModalContent = useCallback(() => {
@@ -241,37 +248,60 @@ function MainNavbarContainer({
         />
       );
     }
+    if (modal === "MODAL_NEW_DASHBOARD") {
+      return <CreateDashboardModal onClose={closeModal} />;
+    }
     return null;
   }, [modal, closeModal, onChangeLocation]);
 
+  const { pathname } = location;
+
   return (
     <>
-      <Sidebar className="Nav" isOpen={isOpen} aria-hidden={!isOpen}>
-        <NavRoot isOpen={isOpen}>
-          {allFetched ? (
-            <MainNavbarView
-              {...props}
-              bookmarks={bookmarks}
-              isAdmin={isAdmin}
-              isOpen={isOpen}
-              currentUser={currentUser}
-              collections={collectionTree}
-              hasOwnDatabase={hasOwnDatabase}
-              selectedItems={selectedItems}
-              hasDataAccess={hasDataAccess}
-              reorderBookmarks={reorderBookmarks}
-              handleCreateNewCollection={onCreateNewCollection}
-              handleCloseNavbar={closeNavbar}
-              handleLogout={logout}
-            />
-          ) : (
-            <LoadingContainer>
-              <LoadingSpinner />
-              <LoadingTitle>{t`Loading…`}</LoadingTitle>
-            </LoadingContainer>
-          )}
-        </NavRoot>
-      </Sidebar>
+      {pathname !== "/" && (
+        <Sidebar className="Nav" isOpen={isOpen} aria-hidden={!isOpen}>
+          <NavRoot isOpen={isOpen}>
+            {allFetched ? (
+              // <MainNavbarView
+              //   {...props}
+              //   bookmarks={bookmarks}
+              //   isAdmin={isAdmin}
+              //   isOpen={isOpen}
+              //   currentUser={currentUser}
+              //   collections={collectionTree}
+              //   hasOwnDatabase={hasOwnDatabase}
+              //   selectedItems={selectedItems}
+              //   hasDataAccess={hasDataAccess}
+              //   reorderBookmarks={reorderBookmarks}
+              //   handleCreateNewCollection={onCreateNewCollection}
+              //   handleCloseNavbar={closeNavbar}
+              //   handleLogout={logout}
+              // />
+              <MainNavbarViewDL
+                {...props}
+                bookmarks={bookmarks}
+                isAdmin={isAdmin}
+                isOpen={isOpen}
+                currentUser={currentUser}
+                collections={collectionTree}
+                hasOwnDatabase={hasOwnDatabase}
+                selectedItems={selectedItems}
+                hasDataAccess={hasDataAccess}
+                reorderBookmarks={reorderBookmarks}
+                handleCreateNewCollection={onCreateNewCollection}
+                handleCloseNavbar={closeNavbar}
+                handleLogout={logout}
+                handleCreateNewDashboard={onCreateNewDashboard}
+              />
+            ) : (
+              <LoadingContainer>
+                <LoadingSpinner />
+                <LoadingTitle>{t`Loading…`}</LoadingTitle>
+              </LoadingContainer>
+            )}
+          </NavRoot>
+        </Sidebar>
+      )}
       {modal && <Modal onClose={closeModal}>{renderModalContent()}</Modal>}
     </>
   );
