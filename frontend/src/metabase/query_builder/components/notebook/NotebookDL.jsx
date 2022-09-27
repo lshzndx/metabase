@@ -6,8 +6,8 @@ import { t } from "ttag";
 import Button from "metabase/core/components/Button";
 import { color as c } from "metabase/lib/colors";
 
-import NotebookSteps from "./NotebookSteps_dl";
-import { NotebookRoot, VizContainer } from "./Notebook_dl.styled";
+import NotebookSteps from "./NotebookStepsDL";
+import { NotebookRoot, VizContainer } from "./NotebookDL.styled";
 import NoteBookStepIndicator from "./NoteBookStepIndicator";
 
 export default function Notebook({ className, ...props }) {

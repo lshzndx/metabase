@@ -4,7 +4,7 @@ import { color } from "metabase/lib/colors";
 import { space, breakpointMaxMedium } from "metabase/styled-components/theme";
 import Icon from "metabase/components/Icon";
 import Button from "metabase/core/components/Button";
-import { NotebookCell } from "../NotebookCell_dl";
+import { NotebookCell } from "../NotebookCellDL";
 
 export const Row = styled.div`
   display: flex;

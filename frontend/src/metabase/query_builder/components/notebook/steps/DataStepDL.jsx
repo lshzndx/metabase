@@ -7,7 +7,7 @@ import { CollectionDatasetOrDataSourceSelector } from "metabase/query_builder/co
 import { getDatabasesList } from "metabase/query_builder/selectors";
 import { isLocalField } from "metabase/lib/query/field_ref";
 
-import { NotebookCell, NotebookCellItem } from "../NotebookCell_dl";
+import { NotebookCell, NotebookCellItem } from "../NotebookCellDL";
 import {
   FieldsPickerIcon,
   FieldPickerContentContainer,

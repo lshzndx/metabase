@@ -2,7 +2,7 @@
 import React from "react";
 import { t } from "ttag";
 
-import ClauseStep from "./ClauseStep_dl";
+import ClauseStep from "./ClauseStepDL";
 
 import AggregationPopover from "metabase/query_builder/components/AggregationPopover";
 

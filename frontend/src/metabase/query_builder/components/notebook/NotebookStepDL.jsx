@@ -15,15 +15,15 @@ import ExpandingContent from "metabase/components/ExpandingContent";
 
 import NotebookStepPreview from "./NotebookStepPreview";
 
-import DataStep from "./steps/DataStep_dl";
-import JoinStep from "./steps/JoinStep_dl";
-import ExpressionStep from "./steps/ExpressionStep_dl";
-import FilterStep from "./steps/FilterStep_dl";
-import AggregateStep from "./steps/AggregateStep_dl";
-import BreakoutStep from "./steps/BreakoutStep_dl";
-import SummarizeStep from "./steps/SummarizeStep_dl";
-import SortStep from "./steps/SortStep_dl";
-import LimitStep from "./steps/LimitStep_dl";
+import DataStep from "./steps/DataStepDL";
+import JoinStep from "./steps/JoinStepDL";
+import ExpressionStep from "./steps/ExpressionStepDL";
+import FilterStep from "./steps/FilterStepDL";
+import AggregateStep from "./steps/AggregateStepDL";
+import BreakoutStep from "./steps/BreakoutStepDL";
+import SummarizeStep from "./steps/SummarizeStepDL";
+import SortStep from "./steps/SortStepDL";
+import LimitStep from "./steps/LimitStepDL";
 import {
   StepActionsContainer,
   StepBody,
@@ -32,7 +32,7 @@ import {
   StepButtonContainer,
   StepRoot,
   StepArrow,
-} from "./NotebookStep_dl.styled";
+} from "./NotebookStepDL.styled";
 import NoteBookStepIndicator from "./NoteBookStepIndicator";
 
 // TODO

@@ -36,7 +36,7 @@ import NewQuestionHeader from "./NewQuestionHeader";
 import ViewFooter from "./ViewFooter";
 import ViewSidebar from "./ViewSidebar";
 import NewQuestionView from "./View/NewQuestionView";
-import QueryViewNotebook from "./View/QueryViewNotebook/QueryViewNotebook_dl";
+import QueryViewNotebook from "./View/QueryViewNotebook/QueryViewNotebookDL";
 
 import {
   BorderedViewTitleHeader,

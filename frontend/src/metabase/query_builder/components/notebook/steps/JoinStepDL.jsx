@@ -11,7 +11,7 @@ import Join from "metabase-lib/lib/queries/structured/Join";
 import { isDateTimeField } from "metabase/lib/query/field_ref";
 import Select from "metabase/core/components/Select";
 
-import { NotebookCellItem, NotebookCellAdd } from "../NotebookCell_dl";
+import { NotebookCellItem, NotebookCellAdd } from "../NotebookCellDL";
 import {
   FieldsPickerIcon,
   FieldPickerContentContainer,
@@ -39,7 +39,7 @@ import {
   PrimaryJoinCell,
   SecondaryJoinCell,
   JoinOperatorButton,
-} from "./JoinStep_dl.styled";
+} from "./JoinStepDL.styled";
 
 const stepShape = {
   id: PropTypes.string.isRequired,

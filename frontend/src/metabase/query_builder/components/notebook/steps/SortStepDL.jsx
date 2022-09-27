@@ -3,7 +3,7 @@ import React from "react";
 
 import Icon from "metabase/components/Icon";
 
-import ClauseStep from "./ClauseStep_dl";
+import ClauseStep from "./ClauseStepDL";
 
 export default function SortStep({
   color,

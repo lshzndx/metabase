@@ -31,7 +31,7 @@ import DatabaseBrowser from "metabase/browse/containers/DatabaseBrowser";
 import SchemaBrowser from "metabase/browse/containers/SchemaBrowser";
 import TableBrowser from "metabase/browse/containers/TableBrowser";
 
-import QueryBuilder from "metabase/query_builder/containers/QueryBuilder_dl";
+import QueryBuilder from "metabase/query_builder/containers/QueryBuilderDL";
 
 import CollectionCreate from "metabase/collections/containers/CollectionCreate";
 import MoveCollectionModal from "metabase/collections/containers/MoveCollectionModal";

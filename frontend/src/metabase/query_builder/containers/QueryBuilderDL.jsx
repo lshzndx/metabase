@@ -36,7 +36,7 @@ import title from "metabase/hoc/Title";
 import titleWithLoadingTime from "metabase/hoc/TitleWithLoadingTime";
 import favicon from "metabase/hoc/Favicon";
 
-import View from "../components/view/View_dl";
+import View from "../components/view/ViewDL";
 
 import {
   getCard,

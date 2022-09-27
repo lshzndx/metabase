@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-import NotebookStep from "./NotebookStep_dl";
+import NotebookStep from "./NotebookStepDL";
 
 import cx from "classnames";
 import { getQuestionSteps } from "./lib/steps";

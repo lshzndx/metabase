@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-import ClauseStep from "./ClauseStep_dl";
+import ClauseStep from "./ClauseStepDL";
 
 import ExpressionWidget from "metabase/query_builder/components/expressions/ExpressionWidget";
 

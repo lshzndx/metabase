@@ -3,7 +3,7 @@ import React from "react";
 
 import { t } from "ttag";
 
-import { NotebookCell } from "../NotebookCell_dl";
+import { NotebookCell } from "../NotebookCellDL";
 import LimitInput from "metabase/query_builder/components/LimitInput";
 
 export default function LimitStep({

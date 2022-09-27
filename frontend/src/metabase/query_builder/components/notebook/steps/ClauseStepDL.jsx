@@ -5,7 +5,7 @@ import {
   NotebookCell,
   NotebookCellItem,
   NotebookCellAdd,
-} from "../NotebookCell_dl";
+} from "../NotebookCellDL";
 
 import Icon from "metabase/components/Icon";
 import PopoverWithTrigger from "metabase/components/PopoverWithTrigger";

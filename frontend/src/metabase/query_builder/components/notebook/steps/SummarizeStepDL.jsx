@@ -3,8 +3,8 @@ import React from "react";
 
 import { t } from "ttag";
 
-import AggregateStep from "./AggregateStep_dl";
-import BreakoutStep from "./BreakoutStep_dl";
+import AggregateStep from "./AggregateStepDL";
+import BreakoutStep from "./BreakoutStepDL";
 import { StepContainer, StepLabel, StepRoot } from "./SummarizeStep.styled";
 
 export default function SummarizeStep({
