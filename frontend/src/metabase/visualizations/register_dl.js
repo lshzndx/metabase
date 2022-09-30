@@ -21,7 +21,7 @@ import Funnel from "./visualizations/Funnel";
 import Gauge from "./visualizations/Gauge";
 import ObjectDetail from "./components/ObjectDetail";
 import PivotTable from "./visualizations/PivotTable";
-import Radar from "./visualizations/Radar";
+import RadarDL from "./visualizations/RadarDL";
 
 export default function () {
   registerVisualization(Scalar);
@@ -42,6 +42,6 @@ export default function () {
   registerVisualization(Funnel);
   registerVisualization(ObjectDetail);
   registerVisualization(PivotTable);
-  registerVisualization(Radar);
+  registerVisualization(RadarDL);
   setDefaultVisualization(Table);
 }
