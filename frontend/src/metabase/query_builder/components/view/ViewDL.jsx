@@ -33,7 +33,7 @@ import TimelineSidebar from "./sidebars/TimelineSidebar";
 
 import { ViewSubHeader } from "./ViewHeader";
 import NewQuestionHeader from "./NewQuestionHeader";
-import ViewFooter from "./ViewFooter";
+import ViewFooter from "./ViewFooterDL";
 import ViewSidebar from "./ViewSidebar";
 import NewQuestionView from "./View/NewQuestionView";
 import QueryViewNotebook from "./View/QueryViewNotebook/QueryViewNotebookDL";
@@ -47,7 +47,7 @@ import {
   QueryBuilderViewRoot,
   StyledDebouncedFrame,
   StyledSyncedParametersList,
-} from "./View.styled";
+} from "./ViewDL.styled";
 
 const DEFAULT_POPOVER_STATE = {
   aggregationIndex: null,
