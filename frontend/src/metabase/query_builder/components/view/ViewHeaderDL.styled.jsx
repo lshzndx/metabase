@@ -70,7 +70,8 @@ export const HeaderButton = styled(Button)`
   font-size: 0.875rem;
   background-color: ${({ active, color = getDefaultColor() }) =>
     active ? color : "transparent"};
-  color: ${({ active }) => (active ? "white" : color("text-dark"))};
+  color: ${({ active, color = getDefaultColor() }) =>
+    active ? "white" : color};
   &:hover {
     background-color: ${({ color = getDefaultColor() }) => alpha(color, 0.15)};
     color: ${({ color }) => color};

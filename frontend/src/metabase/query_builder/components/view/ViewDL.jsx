@@ -121,10 +121,15 @@ class View extends React.Component {
 
   getLeftSidebar = () => {
     const {
+      question,
+      isResultDirty,
+      runQuestionQuery,
       isShowingChartSettingsSidebar,
       isShowingChartTypeSidebar,
+      isShowingSummarySidebar,
       onCloseChartSettings,
       onCloseChartType,
+      onCloseSummary,
     } = this.props;
 
     if (isShowingChartSettingsSidebar) {
@@ -137,33 +142,6 @@ class View extends React.Component {
       return <ChartTypeSidebar {...this.props} onClose={onCloseChartType} />;
     }
 
-    return null;
-  };
-
-  getRightSidebarForStructuredQuery = () => {
-    const {
-      question,
-      timelines,
-      isResultDirty,
-      isShowingSummarySidebar,
-      isShowingTimelineSidebar,
-      isShowingQuestionInfoSidebar,
-      runQuestionQuery,
-      visibleTimelineIds,
-      selectedTimelineEventIds,
-      xDomain,
-      showTimelines,
-      hideTimelines,
-      selectTimelineEvents,
-      deselectTimelineEvents,
-      onOpenModal,
-      onCloseSummary,
-      onCloseTimelines,
-      onSave,
-    } = this.props;
-
-    const isSaved = question.isSaved();
-
     if (isShowingSummarySidebar) {
       return (
         <SummarizeSidebar
@@ -174,6 +152,44 @@ class View extends React.Component {
         />
       );
     }
+
+    return null;
+  };
+
+  getRightSidebarForStructuredQuery = () => {
+    const {
+      question,
+      timelines,
+      // isResultDirty,
+      // isShowingSummarySidebar,
+      isShowingTimelineSidebar,
+      isShowingQuestionInfoSidebar,
+      // runQuestionQuery,
+      visibleTimelineIds,
+      selectedTimelineEventIds,
+      xDomain,
+      showTimelines,
+      hideTimelines,
+      selectTimelineEvents,
+      deselectTimelineEvents,
+      onOpenModal,
+      // onCloseSummary,
+      onCloseTimelines,
+      onSave,
+    } = this.props;
+
+    const isSaved = question.isSaved();
+
+    // if (isShowingSummarySidebar) {
+    //   return (
+    //     <SummarizeSidebar
+    //       question={question}
+    //       onClose={onCloseSummary}
+    //       isResultDirty={isResultDirty}
+    //       runQuestionQuery={runQuestionQuery}
+    //     />
+    //   );
+    // }
 
     if (isShowingTimelineSidebar) {
       return (

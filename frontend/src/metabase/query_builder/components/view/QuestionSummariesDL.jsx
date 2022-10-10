@@ -41,6 +41,7 @@ export function QuestionSummarizeWidget({
       large
       data-testid="toggle-summarize-sidebar-button"
       color={color("summarize")}
+      icon="sum"
       labelBreakpoint="sm"
       onClick={async () => {
         if (isShowingSummarySidebar) {
