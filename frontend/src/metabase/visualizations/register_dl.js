@@ -22,6 +22,7 @@ import Gauge from "./visualizations/Gauge";
 import ObjectDetail from "./components/ObjectDetail";
 import PivotTable from "./visualizations/PivotTable";
 import RadarDL from "./visualizations/RadarDL";
+import TreeDL from "./visualizations/TreeDL";
 
 export default function () {
   registerVisualization(Scalar);
@@ -44,4 +45,5 @@ export default function () {
   registerVisualization(PivotTable);
   registerVisualization(RadarDL);
   setDefaultVisualization(Table);
+  registerVisualization(TreeDL);
 }
