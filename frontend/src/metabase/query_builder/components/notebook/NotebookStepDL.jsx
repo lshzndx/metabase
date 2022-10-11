@@ -13,7 +13,7 @@ import Icon from "metabase/components/Icon";
 import Button from "metabase/core/components/Button";
 import ExpandingContent from "metabase/components/ExpandingContent";
 
-import NotebookStepPreview from "./NotebookStepPreview";
+// import NotebookStepPreview from "./NotebookStepPreview";
 
 import DataStep from "./steps/DataStepDL";
 import JoinStep from "./steps/JoinStepDL";
@@ -34,6 +34,10 @@ import {
   StepArrow,
 } from "./NotebookStepDL.styled";
 import NoteBookStepIndicator from "./NoteBookStepIndicator";
+
+import Modal from "metabase/components/Modal";
+
+import NotebookStepPreviewDL from "./NotebookStepPreviewDL";
 
 // TODO
 const STEP_UI = {
@@ -213,12 +217,22 @@ export default class NotebookStep extends React.Component {
             </StepBody>
           )}
 
-          {showPreview && canPreview && (
+          {/* {showPreview && canPreview && (
             <NotebookStepPreview
               step={step}
               onClose={() => this.setState({ showPreview: false })}
             />
-          )}
+          )} */}
+
+          <Modal
+            style={{ padding: "1em" }}
+            isOpen={showPreview && canPreview}
+            title={t`Preview`}
+            onClose={() => this.setState({ showPreview: false })}
+            className="Modal Modal--wide"
+          >
+            <NotebookStepPreviewDL step={step} />
+          </Modal>
 
           {actionButtons.length > 0 && (
             <StepActionsContainer data-testid="action-buttons">
