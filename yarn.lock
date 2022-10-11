@@ -9916,7 +9916,6 @@ ecdsa-sig-formatter@1.0.11:
   dependencies:
     safe-buffer "^5.0.1"
 
-<<<<<<< HEAD
 echarts-for-react@^3.0.2:
   version "3.0.2"
   resolved "http://registry.m.jd.com/echarts-for-react/download/echarts-for-react-3.0.2.tgz#ac5859157048a1066d4553e34b328abb24f2b7c1"
@@ -9927,14 +9926,8 @@ echarts-for-react@^3.0.2:
 
 echarts@^5.3.3:
   version "5.3.3"
-  resolved "http://registry.m.jd.com/echarts/download/echarts-5.3.3.tgz#df97b09c4c0e2ffcdfb44acf518d50c50e0b838e"
-  integrity sha1-35ewnEwOL/zftErPUY1QxQ4Lg44=
-=======
-echarts@^5.3.3:
-  version "5.3.3"
   resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.3.3.tgz#df97b09c4c0e2ffcdfb44acf518d50c50e0b838e"
   integrity sha512-BRw2serInRwO5SIwRviZ6Xgm5Lb7irgz+sLiFMmy/HOaf4SQ+7oYqxKzRHAKp4xHQ05AuHw1xvoQWJjDQq/FGw==
->>>>>>> 5fdfd86cfb94fb9af07419b05a2c5b264443e653
   dependencies:
     tslib "2.3.0"
     zrender "5.3.2"
