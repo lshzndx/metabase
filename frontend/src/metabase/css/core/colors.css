@@ -2,41 +2,41 @@
  * NOTE: KEEP SYNCRONIZED WITH COLORS.JS
  */
 :root {
-  --color-brand: #509ee3;
+  --color-brand: #3596ec;
   --color-brand-light: #ddecfa;
-  --color-accent1: #88bf4d;
-  --color-accent2: #a989c5;
-  --color-accent3: #ef8c8c;
+  --color-accent1: #69c9e2;
+  --color-accent2: #ae91ee;
+  --color-accent3: #fb90a2;
   --color-accent4: #f9d45c;
-  --color-accent5: #f2a86f;
-  --color-accent6: #98d9d9;
+  --color-accent5: #ffaf5d;
+  --color-accent6: #74dfce;
   --color-accent7: #7172ad;
   --color-admin-navbar: #7172ad;
   --color-white: #ffffff;
-  --color-black: #2e353b;
-  --color-success: #84bb4c;
-  --color-error: #ed6e6e;
+  --color-black: #262d34;
+  --color-success: #1fd286;
+  --color-error: #f45a6d;
   --color-error-background: #ed6e6e55;
   --color-warning: #f9cf48;
-  --color-text-dark: #4c5773;
-  --color-text-medium: #949aab;
-  --color-text-light: #b8bbc3;
+  --color-text-dark: #262d34;
+  --color-text-medium: #75838f;
+  --color-text-light: #c3ccd3;
   --color-text-white: #ffffff;
-  --color-bg-black: #2e353b;
-  --color-bg-dark: #93a1ab;
-  --color-bg-medium: #edf2f5;
-  --color-bg-light: #f9fbfc;
+  --color-bg-black: #262d34;
+  --color-bg-dark: #99a7b3;
+  --color-bg-medium: #edf3f7;
+  --color-bg-light: #f6fafc;
   --color-bg-white: #ffffff;
   --color-bg-yellow: #fffcf2;
   --color-focus: #cbe2f7;
-  --color-shadow: rgba(0, 0, 0, 0.13);
-  --color-border: #eeecec;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-border: #f0f3f6;
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
-  --color-saturated-blue: #2d86d4;
-  --color-saturated-green: #70a63a;
-  --color-saturated-purple: #885ab1;
-  --color-saturated-red: #ed6e6e;
+  --color-saturated-blue: #3891e0;
+  --color-saturated-green: #1fd286;
+  --color-saturated-purple: #9777de;
+  --color-saturated-red: #f45a6d;
   --color-saturated-yellow: #f9cf48;
 }
 

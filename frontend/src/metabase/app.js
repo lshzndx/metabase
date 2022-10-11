@@ -27,7 +27,7 @@ import "ee-plugins"; // eslint-disable-line import/no-unresolved
 
 import { PLUGIN_APP_INIT_FUCTIONS } from "metabase/plugins";
 
-import registerVisualizations from "metabase/visualizations/register";
+import registerVisualizations from "metabase/visualizations/register_dl";
 
 import React from "react";
 import ReactDOM from "react-dom";
