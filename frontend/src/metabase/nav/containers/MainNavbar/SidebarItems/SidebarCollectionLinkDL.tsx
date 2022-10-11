@@ -201,7 +201,6 @@ const DroppableSidebarCollectionLink = React.forwardRef<
   { item, ...props }: TreeNodeDLProps,
   ref,
 ) {
-  console.log(props);
   const collection = item as unknown as Collection;
   return (
     <div data-testid="sidebar-collection-link-root">

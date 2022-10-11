@@ -47,14 +47,14 @@ export const CollectionBreadcrumbs = ({
       </>
     ) : (
       parts.map(collection => (
-        <>
+        <div key={collection.id}>
           <CollectionBadge
             collectionId={collection.id}
             inactiveColor="text-medium"
             isSingleLine
           />
           <PathSeparator>/</PathSeparator>
-        </>
+        </div>
       ))
     );
 

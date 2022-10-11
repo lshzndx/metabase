@@ -21,6 +21,7 @@ import Funnel from "./visualizations/Funnel";
 import Gauge from "./visualizations/Gauge";
 import ObjectDetail from "./components/ObjectDetail";
 import PivotTable from "./visualizations/PivotTable";
+import Tree from "./visualizations/Tree";
 
 export default function () {
   registerVisualization(Scalar);
@@ -42,4 +43,5 @@ export default function () {
   registerVisualization(ObjectDetail);
   registerVisualization(PivotTable);
   setDefaultVisualization(Table);
+  registerVisualization(Tree);
 }
