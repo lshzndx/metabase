@@ -106,3 +106,7 @@
 .List-item--selected:not(.List-item--disabled) .Icon {
   color: white !important;
 }
+
+.List-item--nohover:not(.List-item--disabled):hover {
+  background-color: transparent;
+}

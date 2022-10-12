@@ -35,7 +35,7 @@ export const OptionIconContainer = styled.div<OptionIconContainerProps>`
   background-color: ${props =>
     props.isSelected ? color("brand") : lighten("brand")};
   padding: 0.75rem;
-  border-radius: 0.625rem;
+  border-radius: 4px;
 `;
 
 export const OptionText = styled.div`

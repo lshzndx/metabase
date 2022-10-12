@@ -11,7 +11,7 @@ const propTypes = {
   bodyClass: PropTypes.string,
   initialState: PropTypes.oneOf(["expanded", "collapsed"]),
   iconVariant: PropTypes.oneOf(["right-down", "up-down"]),
-  iconPosition: PropTypes.oneOf(["left", "right"]),
+  iconPosition: PropTypes.oneOf(["left", "right", "tail"]),
   iconSize: PropTypes.number,
   onToggle: PropTypes.func,
 };
@@ -63,7 +63,7 @@ function CollapseSection({
       >
         {iconPosition === "left" && HeaderIcon}
         <Header>{header}</Header>
-        {iconPosition === "right" && HeaderIcon}
+        {(iconPosition === "right" || iconPosition === "tail") && HeaderIcon}
       </HeaderContainer>
       <div role="tabpanel">
         {isExpanded && <div className={bodyClass}>{children}</div>}
