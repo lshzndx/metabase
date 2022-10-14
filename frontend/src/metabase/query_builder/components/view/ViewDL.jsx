@@ -26,7 +26,7 @@ import SavedQuestionIntroModal from "../SavedQuestionIntroModal";
 import QueryModals from "../QueryModals";
 
 import ChartSettingsSidebar from "./sidebars/ChartSettingsSidebar";
-import ChartTypeSidebar from "./sidebars/ChartTypeSidebar";
+import ChartTypeSidebar from "./sidebars/ChartTypeSidebarDL";
 import SummarizeSidebar from "./sidebars/SummarizeSidebar/SummarizeSidebar";
 import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";

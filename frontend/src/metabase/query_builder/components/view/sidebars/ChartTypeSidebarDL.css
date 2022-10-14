@@ -1,0 +1,19 @@
+.ChartTypeSidebarContent {
+  background: var(--color-bg-medium);
+  padding: 0 1.5rem;
+}
+
+.ChartTypeSidebarContentHeader {
+  margin-left: 0;
+}
+
+.ChartTypeSidebarSection {
+  background: var(--color-bg-white);
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.ChartTypeSidebarSectionHeader {
+  padding: 0.5rem 1rem;
+  color: var(--color-text-medium);
+}

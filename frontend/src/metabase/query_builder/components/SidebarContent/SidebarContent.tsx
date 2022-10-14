@@ -6,9 +6,11 @@ import {
   SidebarContentMain,
   FooterButton,
 } from "./SidebarContent.styled";
+import cx from "classnames";
 
 type Props = {
   className?: string;
+  headerClass: string;
   title?: string;
   icon?: string;
   color?: string;
@@ -22,6 +24,7 @@ type Props = {
 
 function SidebarContent({
   className,
+  headerClass,
   title,
   icon,
   color,
@@ -41,7 +44,7 @@ function SidebarContent({
       <SidebarContentMain data-testid="sidebar-content">
         {(title || icon || onBack) && (
           <SidebarHeader
-            className="mx3 my2 pt1"
+            className={cx("mx3 my2 pt1", headerClass)}
             title={title}
             icon={icon}
             onBack={onBack}

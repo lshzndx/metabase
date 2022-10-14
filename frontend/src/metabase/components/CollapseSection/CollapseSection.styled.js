@@ -39,6 +39,7 @@ export const ToggleIcon = styled(
   },
 )`
   ${props => css`
-    margin-${props.position === "left" ? "right" : "left"}: 0.5rem;
+    margin-${props.position === "left" ? "right" : "left"}:
+      ${props.position === "tail" ? "auto" : "0.5rem"};
   `};
 `;

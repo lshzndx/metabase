@@ -20,7 +20,7 @@ export const FooterButton = styled(ViewButton)`
   padding-left: 4rem;
   padding-right: 4rem;
 
-  border-radius: 99px;
+  border-radius: 4px;
   box-shadow: 0 2px 2px rgb(0 0 0 / 13%);
 `;
 
