@@ -1038,6 +1038,7 @@ class TableInteractive extends Component {
                   position: "absolute",
                   overflow: "hidden",
                   paddingRight: getScrollBarSize(),
+                  backgroundColor: "#EDF3F7",
                 }}
                 className="TableInteractive-header scroll-hide-all"
                 width={width || 0}
