@@ -59,7 +59,7 @@ export const DimensionListItemAddButton = styled.button`
   width: 34px;
   margin-left: 0.5rem;
   border-radius: 6px;
-  color: ${color("white")};
+  color: ${color("text-medium")};
   cursor: pointer;
 `;
 

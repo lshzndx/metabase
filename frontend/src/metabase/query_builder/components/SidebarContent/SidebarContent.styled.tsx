@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
 import ViewButton from "../view/ViewButton";
+import { color } from "metabase/lib/colors";
 
 export const SidebarContentRoot = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-color: ${color("bg-medium")};
 `;
 
 export const SidebarContentMain = styled.div`

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { color } from "metabase/lib/colors";
+import { color, alpha } from "metabase/lib/colors";
 
 export const AddAggregationButtonRoot = styled.button`
   display: inline-flex;
@@ -8,7 +8,7 @@ export const AddAggregationButtonRoot = styled.button`
   padding: 0.625rem;
   transition: all 0.2s linear;
   color: ${color("summarize")};
-  background-color: ${color("bg-light")};
+  background-color: ${alpha("summarize", 0.1)};
   border-radius: 8px;
   font-weight: 700;
   min-height: 34px;
@@ -16,6 +16,6 @@ export const AddAggregationButtonRoot = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: ${color("bg-medium")};
+    background-color: ${alpha("summarize", 0.1)};
   }
 `;

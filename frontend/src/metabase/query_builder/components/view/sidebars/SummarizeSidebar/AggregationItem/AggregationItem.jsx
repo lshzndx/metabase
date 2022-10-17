@@ -29,7 +29,7 @@ export const AggregationItem = ({ aggregation, index, query, onRemove }) => {
           <span className="mx1">{aggregation.displayName()}</span>
           {aggregation.canRemove() && (
             <Icon
-              className="flex ml-auto faded fade-in-hover"
+              className="flex ml-auto"
               name="close"
               onClick={() => {
                 updateAndRunQuery(query.removeAggregation(index));

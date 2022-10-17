@@ -10,13 +10,17 @@ export const AggregationItemRoot = styled.div`
   font-weight: bold;
   border-radius: 6px;
   color: ${color("white")};
-  background-color: ${color("summarize")};
+  background-color: ${alpha("summarize", 0.2)};
   transition: background 300ms linear, border 300ms linear;
   min-height: 34px;
   min-width: 34px;
 
   &:hover {
-    background-color: ${alpha("summarize", 0.8)};
-    border-color: ${alpha("summarize", 0.8)};
+    background-color: ${alpha("summarize", 0.4)};
+    border-color: ${alpha("summarize", 0.4)};
+  }
+
+  .mx1 {
+    color: ${color("summarize")};
   }
 `;

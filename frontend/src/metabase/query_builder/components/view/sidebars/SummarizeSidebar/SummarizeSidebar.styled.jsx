@@ -15,5 +15,5 @@ export const AggregationsContainer = styled(Section)`
 `;
 
 export const DimensionListContainer = styled(Section)`
-  border-top: 1px solid ${color("border")};
+  border-top: 1px solid ${color("white")};
 `;
