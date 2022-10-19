@@ -15,9 +15,9 @@ export const LogoLink = styled(Link)`
   padding: 0.5rem 1rem;
   transition: opacity 0.3s;
 
-  &:hover {
-    background-color: ${color("bg-light")};
-  }
+  // &:hover {
+  //   background-color: ${color("bg-light")};
+  // }
 `;
 
 export const ToggleContainer = styled.div`

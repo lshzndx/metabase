@@ -10,7 +10,7 @@ import {
   breakpointMinSmall,
   space,
 } from "metabase/styled-components/theme";
-import { SidebarLink } from "./SidebarItems";
+import { SidebarLink, SidebarLinkDL } from "./SidebarItems";
 
 const openSidebarCSS = css`
   width: ${NAV_SIDEBAR_WIDTH};
@@ -20,6 +20,11 @@ const openSidebarCSS = css`
   ${breakpointMaxSmall} {
     width: 90vw;
   }
+`;
+
+const activeColorCSS = css`
+  color: ${color("text-white")};
+  background: ${color("brand")};
 `;
 
 export const Sidebar = styled.aside<{ isOpen: boolean }>`
@@ -133,8 +138,17 @@ export const LoadingTitle = styled.h2`
   margin-top: ${space(1)};
 `;
 
-export const HomePageLink = styled(SidebarLink)`
+export const HomePageLink = styled(SidebarLinkDL)`
   padding-left: 12px;
+  color: ${color("text-light")};
+  &:hover {
+    ${activeColorCSS}
+    svg {
+      color: ${color("white")};
+    }
+  }
+  ${props => props.isSelected && activeColorCSS}
+  transition: color 0.3s, background 0.3s;
 `;
 
 export const BrowseLink = styled(SidebarLink)`
