@@ -43,7 +43,7 @@ import { ExpandButton } from "./TableInteractive.styled";
 // approximately 120 chars
 const TRUNCATE_WIDTH = 780;
 
-const HEADER_HEIGHT = 36;
+const HEADER_HEIGHT = 56;
 const ROW_HEIGHT = 36;
 const SIDEBAR_WIDTH = 38;
 
