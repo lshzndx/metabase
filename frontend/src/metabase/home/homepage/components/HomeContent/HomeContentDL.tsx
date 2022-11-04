@@ -39,15 +39,15 @@ const HomeContent = (props: HomeContentProps): JSX.Element | null => {
     <div>
       <Header>VLink</Header>
       <Detail>用更智能的方式创建你需要的可视化图表</Detail>
-      <NewButton
-        primary
-        data-metabase-event="NavBar;Create Menu Click"
-        onClick={props.onCloseNavbar}
-      >
-        <Link to={url} data-metabase-event="NavBar;New Question Click">
+      <Link to={url} data-metabase-event="NavBar;New Question Click">
+        <NewButton
+          primary
+          data-metabase-event="NavBar;Create Menu Click"
+          onClick={props.onCloseNavbar}
+        >
           创建
-        </Link>
-      </NewButton>
+        </NewButton>
+      </Link>
     </div>
   );
 };
