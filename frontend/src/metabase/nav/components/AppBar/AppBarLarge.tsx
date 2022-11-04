@@ -3,7 +3,8 @@ import { CollectionId, User } from "metabase-types/api";
 import AppBarLogo from "./AppBarLogo";
 import NewItemButton from "../NewItemButton";
 import ProfileLink from "../ProfileLink";
-import SearchBar from "../SearchBar";
+// import SearchBar from "../SearchBar";
+import SearchBarDL from "../SearchBarDL";
 import CollectionBreadcrumbs from "../../containers/CollectionBreadcrumbs";
 import QuestionLineage from "../../containers/QuestionLineage";
 import {
@@ -90,7 +91,8 @@ const AppBarLarge = ({
       </AppBarLeftContainer>
       {(isSearchVisible || isNewButtonVisible || isProfileLinkVisible) && (
         <AppBarRightContainer>
-          {isSearchVisible && <SearchBar />}
+          {/* {isSearchVisible && <SearchBar />} */}
+          {isSearchVisible && <SearchBarDL />}
           {isNewButtonVisible && <NewItemButton />}
           {isProfileLinkVisible && (
             <AppBarProfileLinkContainer>

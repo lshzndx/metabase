@@ -26,3 +26,11 @@ export const ToggleContainer = styled.div`
   left: 0.9375rem;
   transition: opacity 0.3s;
 `;
+
+export const LogoText = styled.span`
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 8px;
+  font-family: PingFangSC-Medium, PingFang SC;
+`;
