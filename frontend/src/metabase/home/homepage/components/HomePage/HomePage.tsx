@@ -5,9 +5,13 @@ import HomeContent from "../../containers/HomeContent";
 
 export interface HomePageProps {
   onOpenNavbar: () => void;
+  onCloseNavbar: () => void;
 }
 
-const HomePage = ({ onOpenNavbar }: HomePageProps): JSX.Element => {
+const HomePage = ({
+  onOpenNavbar,
+  onCloseNavbar,
+}: HomePageProps): JSX.Element => {
   useEffect(() => {
     if (!isSmallScreen()) {
       onOpenNavbar();
@@ -16,7 +20,7 @@ const HomePage = ({ onOpenNavbar }: HomePageProps): JSX.Element => {
 
   return (
     <HomeLayout>
-      <HomeContent />
+      <HomeContent onCloseNavbar={onCloseNavbar} />
     </HomeLayout>
   );
 };

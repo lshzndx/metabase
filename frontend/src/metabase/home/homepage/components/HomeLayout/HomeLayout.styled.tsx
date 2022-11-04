@@ -45,7 +45,7 @@ export const LayoutIllustration = styled.div`
   width: 100%;
   height: 100%;
   filter: hue-rotate(${hueRotate("brand")}deg);
-  background-image: url("app/img/bridge.svg");
+  background-image: url("app/img/bg-home.svg");
   background-size: max(min(1728px, 260vh), 100%) auto;
   background-repeat: no-repeat;
   background-position: bottom;

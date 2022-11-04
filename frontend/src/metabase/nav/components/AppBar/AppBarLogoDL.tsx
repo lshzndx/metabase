@@ -10,7 +10,7 @@ const AppBarLogoDL = ({ onLogoClick }: AppBarLogoProps): JSX.Element => {
   return (
     <LogoRoot>
       <LogoLink to="/" onClick={onLogoClick} data-metabase-event="Navbar;Logo">
-        <LogoIcon height={32} />
+        <LogoIcon height={64} />
       </LogoLink>
     </LogoRoot>
   );
