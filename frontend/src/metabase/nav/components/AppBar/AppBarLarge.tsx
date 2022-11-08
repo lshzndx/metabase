@@ -1,8 +1,10 @@
 import React from "react";
 import { CollectionId, User } from "metabase-types/api";
-import AppBarLogo from "./AppBarLogo";
-import NewItemButton from "../NewItemButton";
-import ProfileLink from "../ProfileLink";
+// import AppBarLogo from "./AppBarLogo";
+// import NewItemButton from "../NewItemButton";
+import NewItemButtonDL from "../NewItemButton/NewItemButtonDL";
+// import ProfileLink from "../ProfileLink";
+import ProfileLinkDL from "../ProfileLinkDL";
 // import SearchBar from "../SearchBar";
 import SearchBarDL from "../SearchBarDL";
 import CollectionBreadcrumbs from "../../containers/CollectionBreadcrumbs";
@@ -93,10 +95,11 @@ const AppBarLarge = ({
         <AppBarRightContainer>
           {/* {isSearchVisible && <SearchBar />} */}
           {isSearchVisible && <SearchBarDL />}
-          {isNewButtonVisible && <NewItemButton />}
+          {/* {isNewButtonVisible && <NewItemButton />} */}
+          {isNewButtonVisible && <NewItemButtonDL />}
           {isProfileLinkVisible && (
             <AppBarProfileLinkContainer>
-              <ProfileLink user={currentUser} onLogout={onLogout} />
+              <ProfileLinkDL user={currentUser} onLogout={onLogout} />
             </AppBarProfileLinkContainer>
           )}
         </AppBarRightContainer>

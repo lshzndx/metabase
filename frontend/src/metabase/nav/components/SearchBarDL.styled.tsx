@@ -5,7 +5,7 @@ import Icon from "metabase/components/Icon";
 
 import { APP_BAR_HEIGHT } from "metabase/nav/constants";
 
-import { color } from "metabase/lib/colors";
+import { color, alpha } from "metabase/lib/colors";
 
 import {
   breakpointMaxSmall,
@@ -70,8 +70,8 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
 `;
 
 export const SearchInput = styled.input<{ isActive: boolean }>`
-  background-color: rgba(153, 167, 179);
-  border: 1px solid ${color("bg-black")};
+  background-color: ${color("searchbar")};
+  border: 1px solid ${color("searchbar")};
   color: ${color("white")};
   font-weight: 700;
 
@@ -160,7 +160,7 @@ export const SearchResultsContainer = styled.div`
   padding-bottom: 0.5rem;
   overflow-y: auto;
 
-  background-color: rgba(153, 167, 179, 0.3);
+  background-color: ${color("searchbar")};
   line-height: 24px;
 
   box-shadow: 0 20px 20px ${color("shadow")};
