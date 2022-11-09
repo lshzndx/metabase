@@ -27,6 +27,9 @@ export const Table = styled.table`
       display: none;
     }
   }
+  thead {
+    background-color: ${color("bg-medium")};
+  }
 `;
 
 Table.defaultProps = { className: "ContentTable" };
@@ -120,7 +123,7 @@ export const TBody = styled.tbody`
     background-color: transparent;
   }
 
-  tr:first-of-type {
+  /* tr:first-of-type {
     td:first-of-type {
       border-top-left-radius: 8px;
     }
@@ -128,19 +131,19 @@ export const TBody = styled.tbody`
     td:last-child {
       border-top-right-radius: 8px;
     }
-  }
+  } */
 
   tr:last-child {
     td {
       border-bottom: 1px solid ${color("border")};
 
-      &:last-child {
+      /* &:last-child {
         border-bottom-right-radius: 8px;
       }
 
       &:first-of-type {
         border-bottom-left-radius: 8px;
-      }
+      } */
     }
   }
 `;
