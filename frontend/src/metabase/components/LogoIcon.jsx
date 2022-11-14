@@ -34,13 +34,14 @@ class DefaultLogoIcon extends Component {
       <svg
         className={cx("Icon", { "text-brand": !dark }, { "text-white": dark })}
         // viewBox="0 0 66 85"
-        viewBox="0 0 64 64"
+        // viewBox="0 0 64 64"
+        viewBox="0 -3 52 64"
         width={width}
         height={height}
         fill="currentcolor"
         data-testid="main-logo"
       >
-        <defs>
+        {/* <defs>
           <linearGradient
             x1="41.2213025%"
             y1="31.1311453%"
@@ -92,6 +93,68 @@ class DefaultLogoIcon extends Component {
                 cy="40.704"
                 r="6.4"
               ></circle>
+            </g>
+          </g>
+        </g> */}
+        <defs>
+          <linearGradient
+            x1="50%"
+            y1="0%"
+            x2="50%"
+            y2="100%"
+            id="linearGradient-1"
+          >
+            <stop stopColor="#4646EB" offset="0%"></stop>
+            <stop stopColor="#478AF6" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient
+            x1="50%"
+            y1="0%"
+            x2="50%"
+            y2="100%"
+            id="linearGradient-2"
+          >
+            <stop stopColor="#29DCE7" offset="0%"></stop>
+            <stop stopColor="#4570F2" stopOpacity="0" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient
+            x1="83.7476193%"
+            y1="13.7636917%"
+            x2="19.1839896%"
+            y2="81.8392305%"
+            id="linearGradient-3"
+          >
+            <stop stopColor="#67FFD2" offset="0%"></stop>
+            <stop stopColor="#55EAFF" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+          <g transform="translate(-24.000000, -4.000000)">
+            <g id="logo-" transform="translate(24.000000, 4.000000)">
+              <rect id="矩形" x="0" y="0" width="56" height="56"></rect>
+              <g id="v">
+                <rect id="矩形" x="0" y="0" width="56" height="56"></rect>
+                <g id="编组" transform="translate(7.700000, 10.080000)">
+                  <path
+                    d="M9.072,0 C12.1647946,0 14.672,2.5072054 14.672,5.6 C14.672,6.7196416 14.3434165,7.7625384 13.7774191,8.6375207 L10.8311928,13.7395948 C9.32444671,16.3493556 10.1570548,19.6677943 12.678386,21.2667225 L12.8809351,21.3893371 C15.4019467,22.8448439 18.5842565,22.117398 20.2390704,19.7934852 L23.1502577,14.7502577 C24.696655,12.071819 28.1215613,11.1541182 30.8,12.7005155 C33.4784387,14.2469128 34.3961396,17.671819 32.8497423,20.3502577 L25.1497423,33.687049 C23.663577,36.2611626 20.4423886,37.2090285 17.8162174,35.9063142 C16.8669227,35.4690192 16.0305933,34.7632087 15.4338073,33.8221439 L15.3111928,33.6195948 L0.7511928,8.40093506 C-0.795204499,5.72249637 0.12249637,2.2975901 2.80093506,0.7511928 C3.68230164,0.242335569 4.644496,0.000291802293 5.59398835,2.63688988e-07 L5.6121659,0 L5.6121659,0 Z"
+                    id="形状结合"
+                    fill="url(#linearGradient-1)"
+                  ></path>
+                  <path
+                    d="M24.15,10.9186533 C27.2427946,10.9186533 29.75,13.4258587 29.75,16.5186533 L29.75,31.9186533 C29.75,35.0114479 27.2427946,37.5186533 24.15,37.5186533 C21.0572054,37.5186533 18.55,35.0114479 18.55,31.9186533 L18.55,16.5186533 C18.55,13.4258587 21.0572054,10.9186533 24.15,10.9186533 Z"
+                    id="矩形备份-3"
+                    fill="url(#linearGradient-2)"
+                    transform="translate(24.150000, 24.218653) rotate(30.000000) translate(-24.150000, -24.218653) "
+                  ></path>
+                  <circle
+                    id="椭圆形备份"
+                    fill="url(#linearGradient-3)"
+                    cx="34.86"
+                    cy="5.6"
+                    r="5.6"
+                  ></circle>
+                </g>
+              </g>
             </g>
           </g>
         </g>
