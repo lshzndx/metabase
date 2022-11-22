@@ -106,7 +106,7 @@ function ProfileLinkDL({ user, adminItems, onLogout }) {
         items={generateOptionsForUser()}
         triggerIcon="gear"
         triggerProps={{
-          color: color("text-white"),
+          color: color("text-black"),
           hover: {
             backgroundColor: color("brand"),
             color: color("text-white"),

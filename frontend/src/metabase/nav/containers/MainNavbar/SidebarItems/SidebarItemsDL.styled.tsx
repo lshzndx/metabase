@@ -33,12 +33,7 @@ export const SidebarIconDL = styled(Icon)<{
   ${props =>
     !props.color &&
     css`
-      color: ${color("text-light")};
-    `}
-  ${props =>
-    props.isSelected &&
-    css`
-      color: ${color("white")};
+      color: ${props.isSelected ? color("brand") : color("text-black")};
     `}
   vertical-align: -0.125em;
   display: inline-block;

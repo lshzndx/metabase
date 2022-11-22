@@ -7,10 +7,10 @@ export const ACCENT_COUNT = 8;
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 export const colors: ColorPalette = {
-  brand: "#3596EC",
-  summarize: "#69C9E2",
-  filter: "#8E8FE5",
-  accent0: "#3596EC",
+  brand: "#0061A7",
+  summarize: "#3EB5D4",
+  filter: "#7375E2",
+  accent0: "#0061A7",
   accent1: "#69C9E2",
   accent2: "#AE91EE",
   accent3: "#FB90A2",
@@ -40,6 +40,7 @@ export const colors: ColorPalette = {
   shadow: "rgba(0,0,0,0.08)",
   border: "#F0F3F6",
   searchbar: "#485159",
+  "brand-light-new": "#DFEEFC",
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   "saturated-blue": "#3891E0",

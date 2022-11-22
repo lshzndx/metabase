@@ -23,8 +23,8 @@ const openSidebarCSS = css`
 `;
 
 const activeColorCSS = css`
-  color: ${color("text-white")};
-  background: ${color("brand")};
+  color: ${color("brand")};
+  background: none;
 `;
 
 export const Sidebar = styled.aside<{ isOpen: boolean }>`
@@ -140,11 +140,11 @@ export const LoadingTitle = styled.h2`
 
 export const HomePageLink = styled(SidebarLinkDL)`
   padding-left: 12px;
-  color: ${color("text-light")};
+  color: ${color("text-black")};
   &:hover {
     ${activeColorCSS}
     svg {
-      color: ${color("white")};
+      color: ${color("brand")};
     }
   }
   ${props => props.isSelected && activeColorCSS}

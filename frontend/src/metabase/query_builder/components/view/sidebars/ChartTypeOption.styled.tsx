@@ -9,7 +9,8 @@ const getOptionIconColor = ({ isSelected }: OptionIconContainerProps) => {
   if (isSelected) {
     return color("white");
   } else if (isDark("brand")) {
-    return tint("brand", 0.5);
+    // return tint("brand", 0.5);
+    return color("brand");
   } else {
     return color("brand");
   }
@@ -33,7 +34,7 @@ export const OptionIconContainer = styled.div<OptionIconContainerProps>`
   align-items: center;
   color: ${getOptionIconColor};
   background-color: ${props =>
-    props.isSelected ? color("brand") : lighten("brand")};
+    props.isSelected ? color("brand") : color("brand-light-new")};
   padding: 0.75rem;
   border-radius: 4px;
 `;

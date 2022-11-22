@@ -33,7 +33,7 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
 
   background-color: ${props =>
     props.isActive ? color("bg-medium") : color("bg-light")};
-  border: none;
+  border: 1px solid ${color("bg-dark")};
 
   overflow: hidden;
 
@@ -70,9 +70,9 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
 `;
 
 export const SearchInput = styled.input<{ isActive: boolean }>`
-  background-color: ${color("searchbar")};
-  border: 1px solid ${color("searchbar")};
-  color: ${color("white")};
+  // background-color: ${color("searchbar")};
+  border: 1px solid transparent;
+  color: ${color("bg-dark")};
   font-weight: 700;
 
   width: 100%;
@@ -82,7 +82,7 @@ export const SearchInput = styled.input<{ isActive: boolean }>`
   }
 
   &::placeholder {
-    color: ${color("white")};
+    color: ${color("bg-dark")};
   }
 
   ${breakpointMinSmall} {
