@@ -63,23 +63,23 @@ function ProfileLinkDL({ user, adminItems, onLogout }) {
         link: "/activity",
         event: `Navbar;Profile Dropdown;Activity ${tag}`,
       },
-      {
-        title: t`Help`,
-        icon: null,
-        link:
-          isAdmin && MetabaseSettings.isPaidPlan()
-            ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
-            : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
+      // {
+      //   title: t`Help`,
+      //   icon: null,
+      //   link:
+      //     isAdmin && MetabaseSettings.isPaidPlan()
+      //       ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
+      //       : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
 
-        externalLink: true,
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`About Metabase`,
-        icon: null,
-        action: () => openModal("about"),
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
+      //   externalLink: true,
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`About Metabase`,
+      //   icon: null,
+      //   action: () => openModal("about"),
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
       {
         title: t`Sign out`,
         icon: null,
