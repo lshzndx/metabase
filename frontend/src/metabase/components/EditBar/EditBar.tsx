@@ -5,7 +5,7 @@ import {
   Title,
   Subtitle,
   ButtonsContainer,
-} from "./EditBar.styled";
+} from "./EditBarDL.styled";
 
 type Props = {
   title: string;
