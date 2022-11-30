@@ -19,7 +19,8 @@ export const Root = styled(FullWidthContainer)<{ admin: boolean }>`
 
   .Button {
     color: ${color("text-white")};
-    background-color: ${alpha(color("bg-white"), props.admin ? 0.1 : 0)};
+    background-color: ${props =>
+      alpha(color("bg-white"), props.admin ? 0.1 : 0)};
 
     border: ${props =>
       props.admin ? "none" : `1px solid ${color("text-white")}`};
