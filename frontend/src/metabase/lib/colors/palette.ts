@@ -2,6 +2,7 @@ import Color from "color";
 import { ColorPalette } from "./types";
 
 export const ACCENT_COUNT = 8;
+export const CHART_COLOR_COUNT = 8;
 
 // NOTE: DO NOT ADD COLORS WITHOUT EXTREMELY GOOD REASON AND DESIGN REVIEW
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
@@ -18,6 +19,14 @@ export const colors: ColorPalette = {
   accent5: "#FFAF5D",
   accent6: "#93EADC",
   accent7: "#7172AD",
+  chart0: "#3596EC",
+  chart1: "#69C9E2",
+  chart2: "#AE91EE",
+  chart3: "#FB90A2",
+  chart4: "#F9D45C",
+  chart5: "#FFAF5D",
+  chart6: "#93EADC",
+  chart7: "#7172AD",
   "admin-navbar": "#7172AD",
   white: "#FFFFFF",
   black: "#262D34",
@@ -79,6 +88,24 @@ const aliases: Record<string, (palette: ColorPalette) => string> = {
   "accent5-dark": palette => shade(color(`accent5`, palette)),
   "accent6-dark": palette => shade(color(`accent6`, palette)),
   "accent7-dark": palette => shade(color(`accent7`, palette)),
+
+  "chart0-light": palette => tint(color(`chart0`, palette)),
+  "chart1-light": palette => tint(color(`chart1`, palette)),
+  "chart2-light": palette => tint(color(`chart2`, palette)),
+  "chart3-light": palette => tint(color(`chart3`, palette)),
+  "chart4-light": palette => tint(color(`chart4`, palette)),
+  "chart5-light": palette => tint(color(`chart5`, palette)),
+  "chart6-light": palette => tint(color(`chart6`, palette)),
+  "chart7-light": palette => tint(color(`chart7`, palette)),
+
+  "chart0-dark": palette => shade(color(`chart0`, palette)),
+  "chart1-dark": palette => shade(color(`chart1`, palette)),
+  "chart2-dark": palette => shade(color(`chart2`, palette)),
+  "chart3-dark": palette => shade(color(`chart3`, palette)),
+  "chart4-dark": palette => shade(color(`chart4`, palette)),
+  "chart5-dark": palette => shade(color(`chart5`, palette)),
+  "chart6-dark": palette => shade(color(`chart6`, palette)),
+  "chart7-dark": palette => shade(color(`chart7`, palette)),
 };
 
 export const color = (color: string, palette = colors) => {

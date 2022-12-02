@@ -1,5 +1,5 @@
 import _ from "underscore";
-import { ACCENT_COUNT, color } from "./palette";
+import { ACCENT_COUNT, CHART_COLOR_COUNT, color } from "./palette";
 import { AccentColorOptions } from "./types";
 
 export const getAccentColors = ({
@@ -26,6 +26,32 @@ export const getLightAccentColors = () => {
 
 export const getDarkAccentColors = () => {
   return _.times(ACCENT_COUNT, i => color(`accent${i}-dark`));
+};
+
+export const getChartColors = ({
+  main = true,
+  light = true,
+  dark = true,
+  harmony = false,
+}: AccentColorOptions = {}) => {
+  const ranges = [];
+  main && ranges.push(getMainChartColors());
+  light && ranges.push(getLightChartColors());
+  dark && ranges.push(getDarkChartColors());
+
+  return harmony ? _.unzip(ranges).flat() : ranges.flat();
+};
+
+export const getMainChartColors = () => {
+  return _.times(CHART_COLOR_COUNT, i => color(`chart${i}`));
+};
+
+export const getLightChartColors = () => {
+  return _.times(CHART_COLOR_COUNT, i => color(`chart${i}-light`));
+};
+
+export const getDarkChartColors = () => {
+  return _.times(CHART_COLOR_COUNT, i => color(`chart${i}-dark`));
 };
 
 export const getStatusColorRanges = () => {

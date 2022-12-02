@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-import { getAccentColors } from "metabase/lib/colors/groups";
+import { getChartColors } from "metabase/lib/colors/groups";
 import ColorSelector from "metabase/core/components/ColorSelector";
 import { SegmentedControl } from "metabase/components/SegmentedControl";
 import Icon from "metabase/components/Icon";
@@ -42,7 +42,7 @@ export default class ChartNestedSettingSeries extends React.Component {
                 <div className="flex align-center">
                   <ColorSelector
                     value={settings.color}
-                    colors={getAccentColors()}
+                    colors={getChartColors()}
                     onChange={value =>
                       onChangeObjectSettings(single, { color: value })
                     }
