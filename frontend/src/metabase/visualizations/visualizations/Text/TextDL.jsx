@@ -24,8 +24,7 @@ const Editor = {
         { indent: "+1" },
       ],
       [{ color: [] }, { background: [] }],
-      ["link", "image"],
-      ["clean"],
+      ["link"],
     ],
   },
 
@@ -42,7 +41,6 @@ const Editor = {
     "color",
     "background",
     "link",
-    "image",
   ],
 };
 
