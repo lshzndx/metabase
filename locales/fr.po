@@ -4300,8 +4300,8 @@ msgstr "et est fabriqué avec soin à San Francisco, CA"
 
 #. C'est le texte dans le coin haut gauche du panneau d'administration
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "Admin Metabase"
+msgid "VLink Admin"
+msgstr "Admin VLink"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36

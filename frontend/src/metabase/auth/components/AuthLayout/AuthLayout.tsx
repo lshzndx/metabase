@@ -5,7 +5,11 @@ import {
   LayoutCard,
   LayoutIllustration,
   LayoutRoot,
+  LogoText,
+  LayoutLogoWrap,
+  LogoIconWrap,
 } from "./AuthLayout.styled";
+import { t } from "ttag";
 
 export interface AuthLayoutProps {
   showIllustration: boolean;
@@ -20,7 +24,12 @@ const AuthLayout = ({
     <LayoutRoot>
       {showIllustration && <LayoutIllustration />}
       <LayoutBody>
-        <LogoIcon height={65} />
+        <LayoutLogoWrap>
+          <LogoIconWrap>
+            <LogoIcon height={65} />
+          </LogoIconWrap>
+          <LogoText>{t`VLink`}</LogoText>
+        </LayoutLogoWrap>
         <LayoutCard>{children}</LayoutCard>
       </LayoutBody>
     </LayoutRoot>

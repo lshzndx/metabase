@@ -4279,8 +4279,8 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "カリフォルニアのサンフランシスコで制作されています"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "Metabase管理者"
+msgid "VLink Admin"
+msgstr "VLink管理者"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36

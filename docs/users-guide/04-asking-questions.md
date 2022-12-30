@@ -4,12 +4,12 @@ title: Asking questions
 
 # Asking questions
 
-Metabase's two core concepts are questions and their corresponding answers. Everything else is based around questions and answers. To ask a question in Metabase, click the **+ New** button in the upper right of the main navigation bar, and select either:
+VLink's two core concepts are questions and their corresponding answers. Everything else is based around questions and answers. To ask a question in VLink, click the **+ New** button in the upper right of the main navigation bar, and select either:
 
 - Question
 - [SQL query](./writing-sql.md)
 
-This page covers how to ask a question using Metabase's graphical query builder, the "Question" option.
+This page covers how to ask a question using VLink's graphical query builder, the "Question" option.
 
 ## Creating a new question with the query builder
 
@@ -31,9 +31,9 @@ Note that there are some kinds of saved questions that can't be used as source d
 
 ## The query builder
 
-Once you select your data, Metabase will take you the query builder. Say you selected **Raw data** > **Sample databse** > **Orders**, then you'll see something like this:
+Once you select your data, VLink will take you the query builder. Say you selected **Raw data** > **Sample databse** > **Orders**, then you'll see something like this:
 
-![Metabase query builder](./images/asking-questions/notebook-editor.png)
+![VLink query builder](./images/asking-questions/notebook-editor.png)
 
 This is the query builder's notebook editor. It has three default steps.
 
@@ -92,7 +92,7 @@ One important thing to understand when filtering on a date column is the differe
 
 ### Filtering by a segment
 
-If your Metabase administrators have created special named filters for the table you're viewing, they’ll appear at the top of the filter dropdown in purple text with a star next to them. These are called [**Segments**](../administration-guide/07-segments-and-metrics.md), and they're shortcuts to a combination of filters that are commonly used in your organization. They might be called things like “Active Users,” or “Most Popular Products.”
+If your VLink administrators have created special named filters for the table you're viewing, they’ll appear at the top of the filter dropdown in purple text with a star next to them. These are called [**Segments**](../administration-guide/07-segments-and-metrics.md), and they're shortcuts to a combination of filters that are commonly used in your organization. They might be called things like “Active Users,” or “Most Popular Products.”
 
 ### Filters with `OR`
 
@@ -125,7 +125,7 @@ Adding a summarize step lets you choose how to aggregate the data from the previ
 
 Common metrics include:
 
-- **Count of rows:** the total of number of rows in the table, after any filters have been applied. If you're looking at your `Orders` table and want to know how many orders were placed with a price greater than \$40, you’d filter by “Price greater than 40,” and then select `Count of rows`, because you want Metabase to count how many orders matched your filter.
+- **Count of rows:** the total of number of rows in the table, after any filters have been applied. If you're looking at your `Orders` table and want to know how many orders were placed with a price greater than \$40, you’d filter by “Price greater than 40,” and then select `Count of rows`, because you want VLink to count how many orders matched your filter.
 - **Sum of …:** the sum of all the values in a specific column.
 - **Average of …:** the average of all the values in a single column.
 - **Number of distinct values of…:** the number of unique values in all the cells of a single column. This is useful when trying to find out things like how many different _types_ of products were sold last month (not how many were sold in total).
@@ -145,7 +145,7 @@ If your admins have created any named metrics that are specific to your company 
 
 ## Grouping your metrics
 
-Depending on the grouping column you select, Metabase will show you what it thinks is the best default visualization or chart for this summary. So if you select a date column, you'll see a line chart like this (you can click the green **Summarize** button to view the summarize sidebar).
+Depending on the grouping column you select, VLink will show you what it thinks is the best default visualization or chart for this summary. So if you select a date column, you'll see a line chart like this (you can click the green **Summarize** button to view the summarize sidebar).
 
 ![Grouping by a date column](./images/notebook/summarize-timeseries.png)
 
@@ -153,7 +153,7 @@ When you click on a different grouping column than the one you currently have se
 
 ![Multiple groupings](./images/notebook/summarize-timeseries-breakout.png)
 
-Some grouping columns will give you the option of choosing how big or small to make the groupings. So for example, if you've picked a Date column to group by, you can click on the words `by month` to change the grouping to day, week, hour, quarter, year, etc. If you're grouping by a numeric column, like age, Metabase will automatically "bin" the results, so you'll see your metric grouped in age brackets, like 0–10, 11–20, 21–30, etc. Just like with dates, you can click on the current binning option to change it to a specific number of bins. It's not currently possible to choose your own ranges for bins, though.
+Some grouping columns will give you the option of choosing how big or small to make the groupings. So for example, if you've picked a Date column to group by, you can click on the words `by month` to change the grouping to day, week, hour, quarter, year, etc. If you're grouping by a numeric column, like age, VLink will automatically "bin" the results, so you'll see your metric grouped in age brackets, like 0–10, 11–20, 21–30, etc. Just like with dates, you can click on the current binning option to change it to a specific number of bins. It's not currently possible to choose your own ranges for bins, though.
 
 ![Multiple groupings](./images/notebook/histogram-bins.png)
 
@@ -203,11 +203,11 @@ The row limit step lets you limit how many rows you want from the previous resul
 
 ## Viewing the SQL that powers your question
 
-Under the hood, all Metabase questions are SQL (gasp!). If you're curious to see the SQL that will get run when you ask your question, you can click the little console icon in the top-right of the notebook editor. In the modal that opens up, you'll also be given the option to start a new query in the SQL editor using this generated SQL as a starting point (assuming you have [SQL permissions](../administration-guide/data-permissions.md#native-querying) to that database). It's a nice little shortcut to have Metabase write some boilerplate SQL for you, but then allows you to tweak and customize the query.
+Under the hood, all VLink questions are SQL (gasp!). If you're curious to see the SQL that will get run when you ask your question, you can click the little console icon in the top-right of the notebook editor. In the modal that opens up, you'll also be given the option to start a new query in the SQL editor using this generated SQL as a starting point (assuming you have [SQL permissions](../administration-guide/data-permissions.md#native-querying) to that database). It's a nice little shortcut to have VLink write some boilerplate SQL for you, but then allows you to tweak and customize the query.
 
 ## Play around with saved questions
 
-Each time you start modifying a saved question, Metabase will create a new question for you. The query builder will display the name of your starting question under **Data**.
+Each time you start modifying a saved question, VLink will create a new question for you. The query builder will display the name of your starting question under **Data**.
 
 ![Starting from a saved question](./images/notebook/started-from-saved-question.png)
 
