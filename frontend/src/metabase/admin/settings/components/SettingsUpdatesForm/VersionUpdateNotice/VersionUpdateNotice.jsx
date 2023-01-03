@@ -123,7 +123,7 @@ function HostingCTA() {
         </HostingCTAIconContainer>
         <div>
           <Text className="text-brand mb0">{t`Want to have upgrades taken care of for you?`}</Text>
-          <Text className="text-brand text-bold">{t`Migrate to Metabase Cloud.`}</Text>
+          <Text className="text-brand text-bold">{t`Migrate to VLink Cloud.`}</Text>
         </div>
       </HostingCTAContent>
       <div className="pr1">

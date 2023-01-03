@@ -1507,8 +1507,8 @@ msgid "Getting set up"
 msgstr "開始設定精靈"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "您可以採取一些措施來充分利用Metabase。"
+msgid "A few things you can do to get the most out of VLink."
+msgstr "您可以採取一些措施來充分利用VLink。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -18096,7 +18096,7 @@ msgstr "想要為您照顧升級嗎？"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
+msgid "Migrate to VLink Cloud."
 msgstr "遷移到元數據庫雲。"
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50

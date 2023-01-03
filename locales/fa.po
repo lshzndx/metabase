@@ -1529,8 +1529,8 @@ msgid "Getting set up"
 msgstr "راه اندازی"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "چند چیز که می توانید انجام دهید برای به دست آوردن بیشتر از Metabase."
+msgid "A few things you can do to get the most out of VLink."
+msgstr "چند چیز که می توانید انجام دهید برای به دست آوردن بیشتر از VLink."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -18134,7 +18134,7 @@ msgstr "آیا می خواهید از نسخه های به روز شده مرا�
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
+msgid "Migrate to VLink Cloud."
 msgstr "به ابر پایگاه داده مهاجرت کنید."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50

@@ -1525,8 +1525,8 @@ msgid "Getting set up"
 msgstr "Preparando as coisas"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "Algumas coisas que você pode fazer para tirar o máximo proveito do Metabase."
+msgid "A few things you can do to get the most out of VLink."
+msgstr "Algumas coisas que você pode fazer para tirar o máximo proveito do VLink."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -18170,8 +18170,8 @@ msgstr "Quer que tomemos conta dos upgrades para você?"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
-msgstr "Migrar para o Metabase Cloud."
+msgid "Migrate to VLink Cloud."
+msgstr "Migrar para o VLink Cloud."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
 msgid "Manage Metabase Cloud"
