@@ -1427,8 +1427,8 @@ msgstr "Accesso con Google"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "Consente agli utenti con account Metabase esistenti di accedere con un account Google che corrisponda al loro indirizzo email oltre al nome utente e alla password di Metabase."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
+msgstr "Consente agli utenti con account VLink esistenti di accedere con un account Google che corrisponda al loro indirizzo email oltre al nome utente e alla password di VLink."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32

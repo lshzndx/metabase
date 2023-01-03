@@ -1425,7 +1425,7 @@ msgstr "Влезте с Google"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
 msgstr "Позволява на потребителите със съществуващи акаунти в Метабейс да влизат с акаунт в Google, който съответства на техния имейл адрес в допълнение към тяхното потребителско име и парола за Метабейс."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
@@ -13980,8 +13980,8 @@ msgid "OK"
 msgstr "Добре"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:54
-msgid "To allow users to sign in with Google you'll need to give Metabase a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}."
-msgstr "За да позволите на потребителите да влизат с Google, ще трябва да дадете на Metabase клиентски идентификационен номер на приложение за конзола на Google Developers. Необходими са само няколко стъпки и инструкции как да създадете ключ можете да намерите {0}."
+msgid "To allow users to sign in with Google you'll need to give VLink a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}."
+msgstr "За да позволите на потребителите да влизат с Google, ще трябва да дадете на VLink клиентски идентификационен номер на приложение за конзола на Google Developers. Необходими са само няколко стъпки и инструкции как да създадете ключ можете да намерите {0}."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:134
 msgid "Be sure to include the full client ID, including the apps.googleusercontent.com suffix."

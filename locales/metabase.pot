@@ -3000,8 +3000,8 @@ msgstr ""
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:52
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
 msgid ""
-"Allows users with existing Metabase accounts to login with a Google account "
-"that matches their email address in addition to their Metabase username and "
+"Allows users with existing VLink accounts to login with a Google account "
+"that matches their email address in addition to their VLink username and "
 "password."
 msgstr ""
 
