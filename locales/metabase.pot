@@ -17214,7 +17214,7 @@ msgid "Indicates when Metabase last checked for new versions."
 msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The name used for this instance of Metabase."
+msgid "The name used for this instance of VLink."
 msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj

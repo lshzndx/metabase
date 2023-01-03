@@ -8812,8 +8812,8 @@ msgid "Information about available versions of Metabase."
 msgstr "Metabaseの利用可能なバージョンに関する情報"
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "このMetabaseのインスタンスの名前"
+msgid "The name used for this instance of VLink."
+msgstr "このVLinkのインスタンスの名前"
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."

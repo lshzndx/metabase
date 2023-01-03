@@ -8809,8 +8809,8 @@ msgid "Information about available versions of Metabase."
 msgstr "關於Metabase可用版本的訊息"
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "用於此Metabase實例的名稱。"
+msgid "The name used for this instance of VLink."
+msgstr "用於此VLink實例的名稱。"
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."

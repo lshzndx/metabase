@@ -8813,8 +8813,8 @@ msgid "Information about available versions of Metabase."
 msgstr "Thông tin về các phiên bản có sẵn của Metabase."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "Tên được sử dụng cho trường hợp này của Metabase."
+msgid "The name used for this instance of VLink."
+msgstr "Tên được sử dụng cho trường hợp này của VLink."
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."

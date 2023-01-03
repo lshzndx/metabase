@@ -8855,7 +8855,7 @@ msgid "Information about available versions of Metabase."
 msgstr "Informacije o dostupnim verzijama Metabejsa."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
+msgid "The name used for this instance of VLink."
 msgstr "Ime koje se koristi za ovu instancu Metabejsa."
 
 #: src/metabase/public_settings.clj
