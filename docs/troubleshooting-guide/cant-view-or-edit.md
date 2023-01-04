@@ -10,7 +10,7 @@ title: I can't view or edit a question or dashboard.
 2. If a saved question is in a collection that you don't have access to, you'll need to ask someone with edit access to the collection to:
     - Grant you permission to the collection.
     - Or, to move the saved question to a collection that you have permissions to.
-3. If the steps above don't solve your problem, ask your Metabase admin if you have [permission to the database that's used by the question][block-access].
+3. If the steps above don't solve your problem, ask your VLink admin if you have [permission to the database that's used by the question][block-access].
 
 **Explanation**
 
@@ -18,7 +18,7 @@ Moving a dashboard to a different collection doesn't move the dashboard's questi
 
 If the saved questions are stored in a restricted collection (such as someone's personal folder), then other groups won't be able to view those cards.
 
-Someone with edit permissions (your Metabase admin is probably a safe bet) will need to move those questions into a collection that you have permissions to.
+Someone with edit permissions (your VLink admin is probably a safe bet) will need to move those questions into a collection that you have permissions to.
 
 ## Do you have a different problem?
 
@@ -31,7 +31,7 @@ Someone with edit permissions (your Metabase admin is probably a safe bet) will 
 
 If you can’t solve your problem using the troubleshooting guides:
 
-- Search or ask the [Metabase community][discourse].
+- Search or ask the [VLink community][discourse].
 - Search for [known bugs or limitations][known-issues].
 
 [admin-permissions]: ../administration-guide/05-setting-permissions.html

@@ -1439,7 +1439,7 @@ msgstr "Prijavi se koristeći Gugl"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
 msgstr "Korisnici sa postojećim Metabejs nalozima mogu da se prijave Gugl nalogom koji odgovara imejl adresi pored njihovog Metabejs korisničkog imena i lozinke."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
@@ -1528,7 +1528,7 @@ msgid "Getting set up"
 msgstr "Podešavanje u toku"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
+msgid "A few things you can do to get the most out of VLink."
 msgstr "Uradite sledeće da bi izvukli najviše iz Metabejsa."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
@@ -4311,8 +4311,8 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "i pažljivo je napravljen u San Francisku, Kalifornija"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "Metabejs Admin"
+msgid "VLink Admin"
+msgstr "VLink Admin"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36
@@ -8855,7 +8855,7 @@ msgid "Information about available versions of Metabase."
 msgstr "Informacije o dostupnim verzijama Metabejsa."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
+msgid "The name used for this instance of VLink."
 msgstr "Ime koje se koristi za ovu instancu Metabejsa."
 
 #: src/metabase/public_settings.clj
@@ -18182,7 +18182,7 @@ msgstr "Želite da se nadogradnje pobrinu za Vas?"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
+msgid "Migrate to VLink Cloud."
 msgstr "Pređite na Metabejs Oblak."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50

@@ -1,27 +1,27 @@
 ---
-title: Configuring the Metabase application database
+title: Configuring the VLink application database
 ---
 
-# Configuring the Metabase application database
+# Configuring the VLink application database
 
-The application database is where Metabase stores information about users, saved questions, dashboards, and any other
+The application database is where VLink stores information about users, saved questions, dashboards, and any other
 data needed to run the application. The default settings use an embedded H2 database, but this is configurable.
 
 ## Notes
 
-- Using Metabase with an H2 application database is not recommended for production deployments. For production
+- Using VLink with an H2 application database is not recommended for production deployments. For production
   deployments, we highly recommend using Postgres, MySQL, or MariaDB instead. If you decide to continue to use H2,
   please be sure to back up the database file regularly.
 - You cannot change the application database while the application is running. Connection configuration information is
   read only once when the application starts up and will remain constant throughout the running of the application.
-- Metabase provides limited support for migrating from H2 to Postgres or MySQL if you decide to upgrade to a more
+- VLink provides limited support for migrating from H2 to Postgres or MySQL if you decide to upgrade to a more
   production-ready database. See [Migrating from H2 to MySQL or Postgres](migrating-from-h2.md) for more details.
 
 ## [H2](https://www.h2database.com/) (default)
 
-**For production installations of Metabase we recommend that users [replace the H2 database with a more robust option](./migrating-from-h2.md) such as Postgres.** This offers a greater degree of performance and reliability when Metabase is running with many users.
+**For production installations of VLink we recommend that users [replace the H2 database with a more robust option](./migrating-from-h2.md) such as Postgres.** This offers a greater degree of performance and reliability when VLink is running with many users.
 
-To use the H2 database for your Metabase instance you don't need to do anything at all. When the application is first launched it will attempt to create a new H2 database in the same filesystem location the application is launched from.
+To use the H2 database for your VLink instance you don't need to do anything at all. When the application is first launched it will attempt to create a new H2 database in the same filesystem location the application is launched from.
 
 You can see these database files from the terminal:
 
@@ -29,10 +29,10 @@ You can see these database files from the terminal:
 
 You should see the following files:
 
-    metabase.db.h2.db  # Or metabase.db.mv.db depending on when you first started using Metabase.
+    metabase.db.h2.db  # Or metabase.db.mv.db depending on when you first started using VLink.
     metabase.db.trace.db
 
-If for any reason you want to use an H2 database file in a separate location from where you launch Metabase you can do so using an environment variable. For example:
+If for any reason you want to use an H2 database file in a separate location from where you launch VLink you can do so using an environment variable. For example:
 
     export MB_DB_TYPE=h2
     export MB_DB_FILE=/the/path/to/my/h2.db
@@ -52,12 +52,12 @@ You can change the application database to use Postgres using a few simple envir
     export MB_DB_HOST=localhost
     java -jar metabase.jar
 
-Metabase will not create this database for you. Example command to create the database:
+VLink will not create this database for you. Example command to create the database:
 
     createdb --encoding=UTF8 -e metabase
 
-This will tell Metabase to look for its application database using the supplied Postgres connection information.
-Metabase also supports providing a full JDBC connection string if you have additional parameters:
+This will tell VLink to look for its application database using the supplied Postgres connection information.
+VLink also supports providing a full JDBC connection string if you have additional parameters:
 
     export MB_DB_CONNECTION_URI="jdbc:postgresql://localhost:5432/metabase?user=<username>&password=<password>"
     java -jar metabase.jar
@@ -71,16 +71,16 @@ or both separately from the rest of the JDBC connection string (useful if the pa
     java -jar metabase.jar
 
 
-## Upgrading from a Metabase version pre-0.38
+## Upgrading from a VLink version pre-0.38
 
-If you’re upgrading from a previous version of Metabase, note that for Metabase 0.38 we've removed the use of the PostgreSQL `NonValidatingFactory` for SSL validation. It’s possible that you could experience a failure either at startup (if you're using a PostgreSQL application database) or when querying a PostgreSQL data warehouse.
+If you’re upgrading from a previous version of VLink, note that for VLink 0.38 we've removed the use of the PostgreSQL `NonValidatingFactory` for SSL validation. It’s possible that you could experience a failure either at startup (if you're using a PostgreSQL application database) or when querying a PostgreSQL data warehouse.
 
 You can resolve this failure in one of two ways:
 
 1. Configuring the PostgreSQL connection to use SSL certificate validation,
 2. Or manually enabling the `NonValidatingFactory`. WARNING: this method is insecure. We're including it here only to assist in troubleshooting, or for situations in which security is not a priority.
 
-How you configure your connection depends on whether you're using Postgres as Metabase's application database or as a data warehouse connected to Metabase:
+How you configure your connection depends on whether you're using Postgres as VLink's application database or as a data warehouse connected to VLink:
 
 **For Postgres application databases**:
 
@@ -98,7 +98,7 @@ export MB_DB_CONNECTION_URI="postgres://localhost:5432/metabase?user=<username>&
 
 **For Postgres data warehouse databases**
 
-You can do the same inside the Metabase Admin page for the connection to your Postgres database. Add the following to the end of your JDBC connection string for your database:
+You can do the same inside the VLink Admin page for the connection to your Postgres database. Add the following to the end of your JDBC connection string for your database:
 
 ```
 &sslmode=verify-ca&sslrootcert=<path to CA root or intermediate root certificate>
@@ -128,11 +128,11 @@ environment variables like this:
     export MB_DB_HOST=localhost
     java -jar metabase.jar
 
-Metabase will not create this database for you. Example SQL statement to create the database:
+VLink will not create this database for you. Example SQL statement to create the database:
 
     CREATE DATABASE metabase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-This will tell Metabase to look for its application database using the supplied MySQL connection information. Metabase
+This will tell VLink to look for its application database using the supplied MySQL connection information. VLink
 also supports providing a full JDBC connection string if you have additional parameters:
 
     export MB_DB_CONNECTION_URI="jdbc:mysql://localhost:3306/metabase?user=<username>&password=<password>"

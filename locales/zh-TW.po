@@ -1418,8 +1418,8 @@ msgstr "Google帳號登入"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "允許擁有Metabase帳戶的使用者使用與其電子郵件地址匹配的Google帳戶以及其Metabase使用者名稱和密碼進行登入。"
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
+msgstr "允許擁有VLink帳戶的使用者使用與其電子郵件地址匹配的Google帳戶以及其VLink使用者名稱和密碼進行登入。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32
@@ -1507,8 +1507,8 @@ msgid "Getting set up"
 msgstr "開始設定精靈"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "您可以採取一些措施來充分利用Metabase。"
+msgid "A few things you can do to get the most out of VLink."
+msgstr "您可以採取一些措施來充分利用VLink。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -4279,8 +4279,8 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "在加州舊金山精心設計"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "Metabase 系統管理員"
+msgid "VLink Admin"
+msgstr "VLink 系統管理員"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36
@@ -8810,8 +8810,8 @@ msgid "Information about available versions of Metabase."
 msgstr "關於Metabase可用版本的訊息"
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "用於此Metabase實例的名稱。"
+msgid "The name used for this instance of VLink."
+msgstr "用於此VLink實例的名稱。"
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."
@@ -18098,8 +18098,8 @@ msgstr "想要為您照顧升級嗎？"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
-msgstr "遷移到Metabase雲端。"
+msgid "Migrate to VLink Cloud."
+msgstr "遷移到VLink雲端。"
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
 msgid "Manage Metabase Cloud"

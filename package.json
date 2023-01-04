@@ -1,8 +1,8 @@
 {
-  "name": "metabase",
+  "name": "vlink",
   "private": true,
   "version": "0.0.0",
-  "description": "Metabase Analytics Report Server",
+  "description": "VLink",
   "repository": "https://github.com/metabase/metabase",
   "license": "private",
   "engines": {

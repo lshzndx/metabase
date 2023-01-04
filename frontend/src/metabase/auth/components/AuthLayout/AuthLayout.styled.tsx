@@ -40,7 +40,26 @@ export const LayoutIllustration = styled.div`
   height: 100%;
   filter: hue-rotate(${hueRotate("brand")}deg);
   background-image: url("app/img/bridge.svg");
-  background-size: max(2592px, 100%) auto;
+  background-size: max(100%, 100%) auto;
   background-repeat: no-repeat;
   background-position: right bottom;
+`;
+
+export const LayoutLogoWrap = styled.div`
+  display: flex;
+`;
+
+export const LogoIconWrap = styled.div`
+  display: block;
+`;
+
+export const LogoText = styled.span`
+  font-size: 32px;
+  font-weight: 500;
+  color: ${color("text-dark")};
+  padding: 0 8px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

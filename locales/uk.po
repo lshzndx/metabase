@@ -1433,8 +1433,8 @@ msgstr "Увійти за допомогою Google"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "Дозволити користувачам з існуючими Metabase акаунтами входити за допомогою Google акаунтів при збігу email адрес, в додаток до їх Metabase логіну та паролю."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
+msgstr "Дозволити користувачам з існуючими VLink акаунтами входити за допомогою Google акаунтів при збігу email адрес, в додаток до їх VLink логіну та паролю."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32
@@ -1522,8 +1522,8 @@ msgid "Getting set up"
 msgstr "Налаштовуємо"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "Ось що ви можете зробити, щоб отримати з Metabase максимум."
+msgid "A few things you can do to get the most out of VLink."
+msgstr "Ось що ви можете зробити, щоб отримати з VLink максимум."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -4304,8 +4304,8 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "створено з турботою в Сан Франциско, Каліфорнія"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "управління Metabase"
+msgid "VLink Admin"
+msgstr "управління VLink"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36
@@ -8854,7 +8854,7 @@ msgid "Information about available versions of Metabase."
 msgstr "Інформація про доступні версіях метабази."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
+msgid "The name used for this instance of VLink."
 msgstr "Ім'я, яке використовується для цієї версії метабази."
 
 #: src/metabase/public_settings.clj
@@ -18189,8 +18189,8 @@ msgstr "Бажаєте автоматично оновлювати версію?
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
-msgstr "Перенесіть дані у Metabase Cloud."
+msgid "Migrate to VLink Cloud."
+msgstr "Перенесіть дані у VLink Cloud."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
 msgid "Manage Metabase Cloud"

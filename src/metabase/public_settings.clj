@@ -62,8 +62,8 @@
   :default    0.0)
 
 (defsetting site-name
-  (deferred-tru "The name used for this instance of Metabase.")
-  :default "Metabase")
+  (deferred-tru "The name used for this instance of VLink.")
+  :default "VLink")
 
 ;; `::uuid-nonce` is a Setting that sets a site-wide random UUID value the first time it is fetched.
 (defmethod setting/get-value-of-type ::uuid-nonce

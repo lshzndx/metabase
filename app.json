@@ -1,12 +1,12 @@
 {
-  "name": "Metabase",
-  "description": "Metabase report server",
+  "name": "VLink",
+  "description": "VLink report server",
   "keywords": [
     "business intelligence",
     "analytics",
     "dashboard",
     "charting",
-    "metabase"
+    "vlink"
   ],
   "website": "https://metabase.com/",
   "repository": "https://github.com/metabase/metabase",

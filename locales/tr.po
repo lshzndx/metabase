@@ -1427,8 +1427,8 @@ msgstr "Google ile giriş yap"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "Mevcut Metabase hesaplarına sahip kullanıcıların, Metabase kullanıcı adlarına ve şifrelerine ek olarak e-posta adresleriyle eşleşen bir Google hesabıyla oturum açmalarına izin verir."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
+msgstr "Mevcut VLink hesaplarına sahip kullanıcıların, VLink kullanıcı adlarına ve şifrelerine ek olarak e-posta adresleriyle eşleşen bir Google hesabıyla oturum açmalarına izin verir."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32
@@ -1516,8 +1516,8 @@ msgid "Getting set up"
 msgstr "Kuruluma Başla"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "Metabase'den en iyi şekilde yararlanmak için yapabileceğiniz birkaç şey."
+msgid "A few things you can do to get the most out of VLink."
+msgstr "VLink'den en iyi şekilde yararlanmak için yapabileceğiniz birkaç şey."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -4292,8 +4292,8 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "ve San Francisco, CA'da özenle inşa edilmiştir"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
-msgstr "Metabase Yöneticisi"
+msgid "VLink Admin"
+msgstr "VLink Yöneticisi"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
 #: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36
@@ -8829,8 +8829,8 @@ msgid "Information about available versions of Metabase."
 msgstr "Metabase kullanılabilir sürümleri hakkında bilgi."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "Metabase bu örneği için kullanılan ad."
+msgid "The name used for this instance of VLink."
+msgstr "VLink bu örneği için kullanılan ad."
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."
@@ -18142,8 +18142,8 @@ msgstr "Yükseltmelerin sizin için halledilmesini mi istiyorsunuz?"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
-msgstr "Metabase Cloud'a geçiş yapın."
+msgid "Migrate to VLink Cloud."
+msgstr "VLink Cloud'a geçiş yapın."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
 msgid "Manage Metabase Cloud"

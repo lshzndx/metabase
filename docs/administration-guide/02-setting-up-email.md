@@ -38,7 +38,7 @@ You should see this form:
 3. Select **Create My SMTP Credentials** in the content pane.
 4. Create a user in the **Create User for SMTP** dialog box and then click **Create**.
 5. Next, select **Show User SMTP Credentials** to view the user's SMTP credentials.
-6. Go back to the Metabase Admin Panel form and enter the info there.
+6. Go back to the VLink Admin Panel form and enter the info there.
 
 **Note**
 
@@ -49,12 +49,12 @@ Check if [email quotas](https://docs.aws.amazon.com/ses/latest/dg/quotas.html) a
 1. Log in to your Mandrill account and locate your credentials from the **SMTP & API Info** page there.
 2. Your SMTP password is any active API key for your account — *not* your Mandrill password.
 3. Although Mandrill lists **port 587**, [any port supported by Mandrill](https://mandrill.zendesk.com/hc/en-us/articles/205582167-What-SMTP-ports-can-I-use-) will work for SMTP email.
-4. Now you can go back to the Metabase Admin Panel form and enter the info there.
+4. Now you can go back to the VLink Admin Panel form and enter the info there.
 
 ## Recommended settings
 
 * SSL is strongly recommended because it’s more secure and gives your account extra protection from threats.
-* If your email service has a whitelist of email addresses that are allowed to send email, be sure to whitelist the email address that you put in the **From Address** field to ensure you and your teammates receive all emails from Metabase.
+* If your email service has a whitelist of email addresses that are allowed to send email, be sure to whitelist the email address that you put in the **From Address** field to ensure you and your teammates receive all emails from VLink.
 
 ---
 

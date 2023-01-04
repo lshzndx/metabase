@@ -1440,8 +1440,8 @@ msgstr "با Google وارد شوید"
 
 #: frontend/src/metabase/admin/settings/components/SettingsGoogleForm.jsx:51
 #: frontend/src/metabase/plugins/builtin/auth/google.js:32
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "به کاربران امکان می دهد با حساب های Metabase موجود برای ورود به حساب Google که با آدرس ایمیل خود علاوه بر نام کاربری و رمز عبور متاباز خود نیز منطبق باشد."
+msgid "Allows users with existing VLink accounts to login with a Google account that matches their email address in addition to their VLink username and password."
+msgstr "به کاربران امکان می دهد با حساب های VLink موجود برای ورود به حساب Google که با آدرس ایمیل خود علاوه بر نام کاربری و رمز عبور متاباز خود نیز منطبق باشد."
 
 #: frontend/src/metabase/admin/settings/components/widgets/AuthenticationOption.jsx:25
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32
@@ -1529,8 +1529,8 @@ msgid "Getting set up"
 msgstr "راه اندازی"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:112
-msgid "A few things you can do to get the most out of Metabase."
-msgstr "چند چیز که می توانید انجام دهید برای به دست آوردن بیشتر از Metabase."
+msgid "A few things you can do to get the most out of VLink."
+msgstr "چند چیز که می توانید انجام دهید برای به دست آوردن بیشتر از VLink."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:121
 msgid "Recommended next step"
@@ -4304,7 +4304,7 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "و با مراقبت در سان فرانسیسکو، کالیفرنیا ساخته شده است"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:37
-msgid "Metabase Admin"
+msgid "VLink Admin"
 msgstr "مدیر متاباکس"
 
 #: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
@@ -8837,8 +8837,8 @@ msgid "Information about available versions of Metabase."
 msgstr "اطلاعات در مورد نسخه های موجود Metabase."
 
 #: metabase/public_settings.clj:65
-msgid "The name used for this instance of Metabase."
-msgstr "نام مورد استفاده برای این مثال Metabase."
+msgid "The name used for this instance of VLink."
+msgstr "نام مورد استفاده برای این مثال VLink."
 
 #: src/metabase/public_settings.clj
 msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."
@@ -18134,7 +18134,7 @@ msgstr "آیا می خواهید از نسخه های به روز شده مرا�
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:126
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:17
-msgid "Migrate to Metabase Cloud."
+msgid "Migrate to VLink Cloud."
 msgstr "به ابر پایگاه داده مهاجرت کنید."
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
