@@ -17202,7 +17202,7 @@ msgid "Registering lazy loading driver {0}..."
 msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "Identify when new versions of Metabase are available."
+msgid "Identify when new versions of VLink are available."
 msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj

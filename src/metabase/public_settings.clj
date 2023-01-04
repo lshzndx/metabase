@@ -40,7 +40,7 @@
       (ee-sso-configured?)))
 
 (defsetting check-for-updates
-  (deferred-tru "Identify when new versions of Metabase are available.")
+  (deferred-tru "Identify when new versions of VLink are available.")
   :type    :boolean
   :default true)
 

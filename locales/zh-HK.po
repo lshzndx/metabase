@@ -8801,8 +8801,8 @@ msgid "(If you're already running Metabase this way, you can ignore this message
 msgstr "（如果您已經用這個方法執行了Metabse，您可以忽略這條訊息）"
 
 #: metabase/public_settings.clj:43
-msgid "Identify when new versions of Metabase are available."
-msgstr "確定新版本的Metabase何時可用。"
+msgid "Identify when new versions of VLink are available."
+msgstr "確定新版本的VLink何時可用。"
 
 #: metabase/public_settings.clj:48
 msgid "Information about available versions of Metabase."

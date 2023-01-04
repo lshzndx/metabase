@@ -8829,8 +8829,8 @@ msgid "(If you're already running Metabase this way, you can ignore this message
 msgstr "(اگر شما در حال حاضر Metabase را در این راه اجرا می کنید، می توانید این پیام را نادیده بگیرید.)"
 
 #: metabase/public_settings.clj:43
-msgid "Identify when new versions of Metabase are available."
-msgstr "شناسایی زمانی که نسخه های جدید Metabase در دسترس هستند."
+msgid "Identify when new versions of VLink are available."
+msgstr "شناسایی زمانی که نسخه های جدید VLink در دسترس هستند."
 
 #: metabase/public_settings.clj:48
 msgid "Information about available versions of Metabase."
