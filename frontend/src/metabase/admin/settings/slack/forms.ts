@@ -14,7 +14,7 @@ export const getSlackForm = (readOnly?: boolean) => ({
       name: "slack-files-channel",
       type: "input",
       title: t`Slack channel name`,
-      placeholder: "metabase_files",
+      placeholder: "vlink_files",
       readOnly,
       validate: (value: string) => !value && t`required`,
       normalize: (value: string) => value.toLowerCase(),
