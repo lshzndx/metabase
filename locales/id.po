@@ -18876,8 +18876,8 @@ msgstr "Bidang tidak valid {0} {1}: jatuh kembali ke {2}"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "Untuk membuat nama tabel dan lapangan lebih ramah manusia, Metabase akan menggantikan tanda hubung dan menggarisbawahi di dalamnya dengan spasi."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "Untuk membuat nama tabel dan lapangan lebih ramah manusia, VLink akan menggantikan tanda hubung dan menggarisbawahi di dalamnya dengan spasi."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24011,8 +24011,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "Tidak dapat memperbarui jenis atau hash_key untuk FieldValues."
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "Untuk membuat nama tabel dan bidang lebih ramah manusia, Metabase akan mengganti tanda hubung dan garis bawah di dalamnya dengan spasi. Kami akan menggunakan huruf besar untuk setiap kata saat menggunakannya, jadi 'last_visited_at' akan menjadi 'Terakhir Dikunjungi Di'."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "Untuk membuat nama tabel dan bidang lebih ramah manusia, VLink akan mengganti tanda hubung dan garis bawah di dalamnya dengan spasi. Kami akan menggunakan huruf besar untuk setiap kata saat menggunakannya, jadi 'last_visited_at' akan menjadi 'Terakhir Dikunjungi Di'."
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

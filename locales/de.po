@@ -18959,8 +18959,8 @@ msgstr "Ungültiges Feld {0} {1}: Rückfall auf {2}"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "Um Tabellen- und Feldnamen menschenfreundlicher zu gestalten, ersetzt die Metabase darin enthaltene Bindestriche und Unterstriche durch Leerzeichen."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "Um Tabellen- und Feldnamen menschenfreundlicher zu gestalten, ersetzt die VLink darin enthaltene Bindestriche und Unterstriche durch Leerzeichen."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24123,8 +24123,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "Typ oder hash_key für FieldValues kann nicht aktualisiert werden."
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "Um Tabellen- und Feldnamen benutzerfreundlicher zu gestalten, ersetzt Metabase Bindestriche und Unterstriche in ihnen durch Leerzeichen. Wir werden dabei jedes Wort groß schreiben, sodass „last_visited_at“ zu „Last Visited At“ wird."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "Um Tabellen- und Feldnamen benutzerfreundlicher zu gestalten, ersetzt VLink Bindestriche und Unterstriche in ihnen durch Leerzeichen. Wir werden dabei jedes Wort groß schreiben, sodass „last_visited_at“ zu „Last Visited At“ wird."
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

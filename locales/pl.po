@@ -18989,8 +18989,8 @@ msgstr "Nieprawidłowe pole {0} {1}: powrót do {2}."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "Aby nazwy tabel i pól były bardziej przyjazne dla człowieka, Metabase zastąpi myślniki i podkreślenia spacjami."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "Aby nazwy tabel i pól były bardziej przyjazne dla człowieka, VLink zastąpi myślniki i podkreślenia spacjami."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24221,8 +24221,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "Nie można zaktualizować typu lub hash_key dla FieldValues."
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "Aby nazwy tabel i pól były bardziej przyjazne dla człowieka, Metabase zastąpi w nich myślniki i podkreślenia spacjami. Zamienimy każde słowo na wielką literę, więc „last_visited_at” zmieni się w „Last Visited at”."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "Aby nazwy tabel i pól były bardziej przyjazne dla człowieka, VLink zastąpi w nich myślniki i podkreślenia spacjami. Zamienimy każde słowo na wielką literę, więc „last_visited_at” zmieni się w „Last Visited at”."
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

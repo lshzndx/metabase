@@ -18863,8 +18863,8 @@ msgstr "無効なフィールド {0} {1}: {2}にフォールバックする。"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "テーブルやフィールドの名前を人間に読みやすい形にするため、Metabaseは名前の中のダッシュやアンダーバーを空白に置換します"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "テーブルやフィールドの名前を人間に読みやすい形にするため、VLinkは名前の中のダッシュやアンダーバーを空白に置換します"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -23999,8 +23999,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "FieldValuesのtypeまたはhash_keyを更新できません。"
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "テーブル名とフィールド名をより人間にわかりやすくするために、Metabaseはそれらのダッシュとアンダースコアをスペースに置き換えます。各単語を大文字にするので、「last_visited_at」は「LastVisitedAt」になります。"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "テーブル名とフィールド名をより人間にわかりやすくするために、VLinkはそれらのダッシュとアンダースコアをスペースに置き換えます。各単語を大文字にするので、「last_visited_at」は「LastVisitedAt」になります。"
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

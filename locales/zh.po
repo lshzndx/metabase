@@ -18883,8 +18883,8 @@ msgstr "无效字段{0}{1}：回落到{2}。"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "为了使表和字段的名称更加人性化，Metabase将用空格替换其中的破折号和下划线。"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "为了使表和字段的名称更加人性化，VLink将用空格替换其中的破折号和下划线。"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24048,8 +24048,8 @@ msgstr "不能更新FieldValues的类型或hash_key。"
 
 #: metabase/models/humanization.clj:107
 #, fuzzy
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "为了使表和字段的名称更加人性化，Metabase将用空格代替其中的破折号和下划线。我们将大写每个单词，所以'last_visited_at'将变成'Last Visited At'。"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "为了使表和字段的名称更加人性化，VLink将用空格代替其中的破折号和下划线。我们将大写每个单词，所以'last_visited_at'将变成'Last Visited At'。"
 
 #: metabase/models/params.clj:24
 #, fuzzy

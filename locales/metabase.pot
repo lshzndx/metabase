@@ -16697,7 +16697,7 @@ msgstr ""
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
 msgid ""
-"To make table and field names more human-friendly, Metabase will replace "
+"To make table and field names more human-friendly, VLink will replace "
 "dashes and underscores in them with spaces."
 msgstr ""
 

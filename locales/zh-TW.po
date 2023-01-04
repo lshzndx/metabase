@@ -18861,8 +18861,8 @@ msgstr "無效字段 {0} {1}：回退到 {2}"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "為了使表和字段名稱更人性化，Metabase 將用空格替換其中的破折號和下劃線。"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "為了使表和字段名稱更人性化，VLink 將用空格替換其中的破折號和下劃線。"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -23997,8 +23997,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "無法更新 FieldValues 的類型或 hash_key。"
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "為了使表和字段名稱更人性化，Metabase 將用空格替換其中的破折號和下劃線。我們會將每個單詞大寫，因此“last_visited_at”將變為“Last Visited At”。"
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "為了使表和字段名稱更人性化，VLink 將用空格替換其中的破折號和下劃線。我們會將每個單詞大寫，因此“last_visited_at”將變為“Last Visited At”。"
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

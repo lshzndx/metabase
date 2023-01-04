@@ -18884,8 +18884,8 @@ msgstr "Ogiltigt fält {0} {1}: faller tillbaka till {2}."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "För att göra namn på tabeller och fält mer användarvänliga ersätter Metabase streck och understrykningar med blanksteg."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "För att göra namn på tabeller och fält mer användarvänliga ersätter VLink streck och understrykningar med blanksteg."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24045,8 +24045,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "Kan inte uppdatera typ eller hash_key för Fältvärden."
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "För att göra tabeller och fältnamn mera läsvänliga kommer Metabase att ersätta sträck och understreck med blanktecken. Vi inleder med stor bokstav när detta görs, så att \"last_visited_at\" kommer att bli \"Last Visited At\"."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "För att göra tabeller och fältnamn mera läsvänliga kommer VLink att ersätta sträck och understreck med blanktecken. Vi inleder med stor bokstav när detta görs, så att \"last_visited_at\" kommer att bli \"Last Visited At\"."
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"

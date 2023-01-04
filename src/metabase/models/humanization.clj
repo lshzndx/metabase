@@ -105,7 +105,7 @@
 
 (defsetting ^{:added "0.28.0"} humanization-strategy
   (deferred-tru
-    (str "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them "
+    (str "To make table and field names more human-friendly, VLink will replace dashes and underscores in them "
          "with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."))
   :type    :keyword
   :default :simple

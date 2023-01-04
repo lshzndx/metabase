@@ -18902,8 +18902,8 @@ msgstr "Невалидно поле {0} {1}: връщане към {2}"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
-msgstr "За да направи имената на таблиците и полетата по-удобни за хората, Metabase ще замени тиретата и подчертаванията в тях с интервали."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces."
+msgstr "За да направи имената на таблиците и полетата по-удобни за хората, VLink ще замени тиретата и подчертаванията в тях с интервали."
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
@@ -24068,8 +24068,8 @@ msgid "Can't update type or hash_key for a FieldValues."
 msgstr "Не може да се актуализира тип или hash_key за FieldValues."
 
 #: metabase/models/humanization.clj:107
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
-msgstr "За да направи имената на таблици и полета по-удобни за хората, Metabase ще замени тирета и долни черти в тях с интервали. Ще изписваме всяка дума с главни букви, така че „last_visited_at“ ще стане „Last Visited at“."
+msgid "To make table and field names more human-friendly, VLink will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgstr "За да направи имената на таблици и полета по-удобни за хората, VLink ще замени тирета и долни черти в тях с интервали. Ще изписваме всяка дума с главни букви, така че „last_visited_at“ ще стане „Last Visited at“."
 
 #: metabase/models/params.clj:24
 msgid ":parameters must be a sequence of maps with :id and :type keys"
