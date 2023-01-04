@@ -49,4 +49,5 @@ export const LayoutIllustration = styled.div`
   background-size: max(min(1728px, 260vh), 100%) auto;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-color: #fff;
 `;
