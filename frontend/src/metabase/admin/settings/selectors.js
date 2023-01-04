@@ -195,14 +195,14 @@ const SECTIONS = updateSectionsWithPlugins({
       {
         key: "email-from-name",
         display_name: t`From Name`,
-        placeholder: "Metabase",
+        placeholder: "VLink",
         type: "string",
         required: false,
       },
       {
         key: "email-from-address",
         display_name: t`From Address`,
-        placeholder: "metabase@yourcompany.com",
+        placeholder: "vlink@yourcompany.com",
         type: "string",
         required: true,
         validations: [["email", t`That's not a valid email address`]],
@@ -210,7 +210,7 @@ const SECTIONS = updateSectionsWithPlugins({
       {
         key: "email-reply-to",
         display_name: t`Reply-To Address`,
-        placeholder: "metabase-replies@yourcompany.com",
+        placeholder: "vlink-replies@yourcompany.com",
         type: "string",
         required: false,
         widget: SettingCommaDelimitedInput,
