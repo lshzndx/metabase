@@ -8878,7 +8878,7 @@ msgid "The email address users should be referred to if they encounter a problem
 msgstr "Používatelia emailovej adresy by mali byť uvedení, ak narazia na problém."
 
 #: metabase/public_settings.clj:155
-msgid "Enable the collection of anonymous usage data in order to help Metabase improve."
+msgid "Enable the collection of anonymous usage data in order to help VLink improve."
 msgstr "Povoľte zhromažďovanie anonymných údajov o používaní s cieľom pomôcť metabáze vylepšiť."
 
 #: metabase/public_settings.clj:173

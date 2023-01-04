@@ -152,7 +152,7 @@
   :visibility :authenticated)
 
 (defsetting anon-tracking-enabled
-  (deferred-tru "Enable the collection of anonymous usage data in order to help Metabase improve.")
+  (deferred-tru "Enable the collection of anonymous usage data in order to help VLink improve.")
   :type       :boolean
   :default    true
   :visibility :public)

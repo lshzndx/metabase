@@ -8881,8 +8881,8 @@ msgid "The email address users should be referred to if they encounter a problem
 msgstr "Adres e-mail użytkowników powinny być określony w przypadku napotkania problemu."
 
 #: metabase/public_settings.clj:155
-msgid "Enable the collection of anonymous usage data in order to help Metabase improve."
-msgstr "Włącz zbieranie anonimowych danych użycia w celu usprawnienia Metabase."
+msgid "Enable the collection of anonymous usage data in order to help VLink improve."
+msgstr "Włącz zbieranie anonimowych danych użycia w celu usprawnienia VLink."
 
 #: metabase/public_settings.clj:173
 msgid "The map tile server URL template used in map visualizations, for example from OpenStreetMaps or MapBox."
