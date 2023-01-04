@@ -21691,8 +21691,8 @@ msgstr "Aplikácia Slack nefunguje."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:48
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:50
-msgid "Metabase on Slack"
-msgstr "Metabáza na Slacku"
+msgid "VLink on Slack"
+msgstr "VLink na Slacku"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:55
 msgid "Need help? {0}."
@@ -21719,8 +21719,8 @@ msgid "We recommend you {0}, see the instructions below:"
 msgstr "Odporúčame vám {0}, pozrite si pokyny nižšie:"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:58
-msgid "Bring the power of Metabase to your Slack #channels."
-msgstr "Preneste silu Metabase do svojich kanálov v službe Slack #channels."
+msgid "Bring the power of VLink to your Slack #channels."
+msgstr "Preneste silu VLink do svojich kanálov v službe Slack #channels."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:59
 msgid "Follow these steps to connect to Slack:"

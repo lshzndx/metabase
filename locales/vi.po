@@ -21550,7 +21550,7 @@ msgstr "Ứng dụng Slack không hoạt động."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:48
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:50
-msgid "Metabase on Slack"
+msgid "VLink on Slack"
 msgstr "Siêu dữ liệu trên Slack"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:55
@@ -21578,8 +21578,8 @@ msgid "We recommend you {0}, see the instructions below:"
 msgstr "Chúng tôi khuyên bạn nên {0}, hãy xem hướng dẫn bên dưới:"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:58
-msgid "Bring the power of Metabase to your Slack #channels."
-msgstr "Mang sức mạnh của Metabase đến #channels trên Slack của bạn."
+msgid "Bring the power of VLink to your Slack #channels."
+msgstr "Mang sức mạnh của VLink đến #channels trên Slack của bạn."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:59
 msgid "Follow these steps to connect to Slack:"

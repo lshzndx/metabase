@@ -21572,8 +21572,8 @@ msgstr "Slack应用程序无法工作。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:48
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:50
-msgid "Metabase on Slack"
-msgstr "Slack上的Metabase"
+msgid "VLink on Slack"
+msgstr "Slack上的VLink"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:55
 msgid "Need help? {0}."
@@ -21600,8 +21600,8 @@ msgid "We recommend you {0}, see the instructions below:"
 msgstr "我们建议你{0}，见以下说明。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:58
-msgid "Bring the power of Metabase to your Slack #channels."
-msgstr "将Metabase的力量带到你的Slack #频道。"
+msgid "Bring the power of VLink to your Slack #channels."
+msgstr "将VLink的力量带到你的Slack #频道。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:59
 msgid "Follow these steps to connect to Slack:"

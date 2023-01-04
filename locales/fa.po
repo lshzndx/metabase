@@ -21585,7 +21585,7 @@ msgstr "برنامه Slack کار نمی کند."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:48
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:50
-msgid "Metabase on Slack"
+msgid "VLink on Slack"
 msgstr "متابیس در اسلک"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:55
@@ -21613,8 +21613,8 @@ msgid "We recommend you {0}, see the instructions below:"
 msgstr "ما به شما {0} را توصیه می کنیم، دستورالعمل های زیر را ببینید:"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:58
-msgid "Bring the power of Metabase to your Slack #channels."
-msgstr "قدرت Metabase را به #کانال های Slack خود بیاورید."
+msgid "Bring the power of VLink to your Slack #channels."
+msgstr "قدرت VLink را به #کانال های Slack خود بیاورید."
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:59
 msgid "Follow these steps to connect to Slack:"
