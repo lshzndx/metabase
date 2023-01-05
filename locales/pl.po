@@ -17083,8 +17083,8 @@ msgstr "klucze atrybutów logowania muszą być słowem kluczowym lub ciągiem z
 
 #. In the application, the translation does not change. It is always in English.
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Domyślny język dla wszystkich użytkowników w obrębie Metabase UI, systemowych wiadomości e-mail, pulsów i powiadomień."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Domyślny język dla wszystkich użytkowników w obrębie VLink UI, systemowych wiadomości e-mail, pulsów i powiadomień."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24261,7 +24261,7 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Powiedz nam, gdzie znaleźć plik dla każdej grubości czcionki. Nie musisz uwzględniać ich wszystkich, ale będzie wyglądać lepiej, jeśli to zrobisz."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
 msgstr "Domyślny język dla wszystkich użytkowników w interfejsie użytkownika Metabazy, systemowych wiadomościach e-mail, impulsach i alertach. Użytkownicy mogą indywidualnie zmienić ten domyślny język w ustawieniach swojego konta."
 
 #: metabase/public_settings.clj:560

@@ -17065,8 +17065,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "Атрибут входу в систему може бути стрічкою або keyword"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Мова Metabase, повідомлень email та пульсів."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Мова VLink, повідомлень email та пульсів."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24233,8 +24233,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Скажіть нам, де знайти файл для кожного шрифту. Вам не потрібно включати усі, але якщо ви це зробите, виглядатиме краще."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Мова за умовчанням для всіх користувачів Metabase, системних емейлів, пульсів і сповіщень. Користувачі можуть самостійно змінювати мову у налаштуваннях власного облікового запису."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Мова за умовчанням для всіх користувачів VLink, системних емейлів, пульсів і сповіщень. Користувачі можуть самостійно змінювати мову у налаштуваннях власного облікового запису."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

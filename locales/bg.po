@@ -17011,8 +17011,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "атрибутите за вход трябва да са ключова дума или низ"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Езикът по подразбиране за всички потребители в потребителския интерфейс на Metabase, системни имейли, импулси и сигнали."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Езикът по подразбиране за всички потребители в потребителския интерфейс на VLink, системни имейли, импулси и сигнали."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24108,8 +24108,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Кажете ни къде да намерим файла за всяко тегло на шрифта. Не е необходимо да включвате всички, но ще изглежда по-добре, ако го направите."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Езикът по подразбиране за всички потребители в потребителския интерфейс на Metabase, системни имейли, импулси и предупреждения. Потребителите могат индивидуално да заменят този език по подразбиране от собствените си настройки на акаунта."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Езикът по подразбиране за всички потребители в потребителския интерфейс на VLink, системни имейли, импулси и предупреждения. Потребителите могат индивидуално да заменят този език по подразбиране от собствените си настройки на акаунта."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

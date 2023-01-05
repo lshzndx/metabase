@@ -17055,8 +17055,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "Ključevi atributa za prijavu moraju biti ključna reč ili niz"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Zadani jezik za sve korisnike u korisničkom interfejsu Metabejsa, sistemskoj e-pošti, pulsevima i upozorenjima."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Zadani jezik za sve korisnike u korisničkom interfejsu VLink, sistemskoj e-pošti, pulsevima i upozorenjima."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24196,8 +24196,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Recite nam gde da pronađemo datoteku za svaku težinu fonta. Ne morate ih sve uključiti, ali će izgledati bolje ako to učinite."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Podrazumevani jezik za sve korisnike u korisničkom interfejsu Metabase, sistemskim imejlovima, impulsima i upozorenjima. Korisnici mogu pojedinačno da zamene ovaj podrazumevani jezik u podešavanjima sopstvenog naloga."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Podrazumevani jezik za sve korisnike u korisničkom interfejsu VLink, sistemskim imejlovima, impulsima i upozorenjima. Korisnici mogu pojedinačno da zamene ovaj podrazumevani jezik u podešavanjima sopstvenog naloga."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

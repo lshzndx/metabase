@@ -17073,7 +17073,7 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "kľúče prihlasovacích atribútov musia byť kľúčové slovo alebo reťazec"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
 msgstr "Predvolený jazyk pre všetkých používateľov v používateľskom rozhraní Metabázy, systémových e-mailov, impulzov a výstrah."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
@@ -24251,7 +24251,7 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Povedzte nám, kde nájdeme súbor pre jednotlivé hrúbky písma. Nemusíte zahrnúť všetky, ale bude to vyzerať lepšie, ak to urobíte."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
 msgstr "Predvolený jazyk pre všetkých používateľov v používateľskom rozhraní Metabázy, systémových e-mailoch, impulzoch a upozorneniach. Používatelia môžu tento predvolený jazyk individuálne prepísať z vlastných nastavení účtu."
 
 #: metabase/public_settings.clj:560

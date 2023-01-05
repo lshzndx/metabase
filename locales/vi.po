@@ -16975,8 +16975,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "khóa thuộc tính đăng nhập phải là một từ khóa hoặc chuỗi"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Ngôn ngữ mặc định cho tất cả người dùng trên Metabase UI, email hệ thống, xung và cảnh báo."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Ngôn ngữ mặc định cho tất cả người dùng trên VLink UI, email hệ thống, xung và cảnh báo."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24038,8 +24038,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Hãy cho chúng tôi biết nơi để tìm tệp cho từng trọng lượng phông chữ. Bạn không cần phải bao gồm tất cả chúng, nhưng sẽ đẹp hơn nếu bạn làm như vậy."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Ngôn ngữ mặc định cho tất cả người dùng trên Metabase UI, email hệ thống, xung và cảnh báo. Người dùng có thể ghi đè riêng ngôn ngữ mặc định này từ cài đặt tài khoản của riêng họ."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Ngôn ngữ mặc định cho tất cả người dùng trên VLink UI, email hệ thống, xung và cảnh báo. Người dùng có thể ghi đè riêng ngôn ngữ mặc định này từ cài đặt tài khoản của riêng họ."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

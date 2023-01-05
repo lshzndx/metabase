@@ -16995,8 +16995,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "登录属性键必须是一个关键词或字符串"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Metabase用户界面、系统邮件、定时和警报中所有用户的默认语言。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "VLink用户界面、系统邮件、定时和警报中所有用户的默认语言。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24096,8 +24096,8 @@ msgstr "告诉我们在哪里可以找到每种字体重量的文件。你不需
 
 #: metabase/public_settings.clj:139
 #, fuzzy
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "所有用户在Metabase用户界面、系统邮件、pulses和警报中的默认语言。用户可以从自己的账户设置中单独设置自己默认语言。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "所有用户在VLink用户界面、系统邮件、pulses和警报中的默认语言。用户可以从自己的账户设置中单独设置自己默认语言。"
 
 #: metabase/public_settings.clj:560
 #, fuzzy

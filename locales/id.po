@@ -16988,8 +16988,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "Kunci atribut login harus menjadi kata kunci atau string"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Bahasa default untuk semua pengguna di MetaBase UI, email sistem, pulsa, dan peringatan."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Bahasa default untuk semua pengguna di VLink UI, email sistem, pulsa, dan peringatan."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24051,8 +24051,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Beri tahu kami di mana menemukan file untuk setiap berat font. Anda tidak perlu memasukkan semuanya, tetapi akan terlihat lebih baik jika Anda melakukannya."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Bahasa default untuk semua pengguna di seluruh UI Metabase, email sistem, pulsa, dan peringatan. Pengguna dapat mengganti bahasa default ini satu per satu dari pengaturan akun mereka sendiri."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Bahasa default untuk semua pengguna di seluruh UI VLink, email sistem, pulsa, dan peringatan. Pengguna dapat mengganti bahasa default ini satu per satu dari pengaturan akun mereka sendiri."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

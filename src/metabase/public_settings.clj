@@ -137,7 +137,7 @@
 
 (defsetting site-locale
   (deferred-tru
-    (str "The default language for all users across the Metabase UI, system emails, pulses, and alerts. "
+    (str "The default language for all users across the VLink UI, system emails, pulses, and alerts. "
          "Users can individually override this default language from their own account settings."))
   :default    "en"
   :visibility :public

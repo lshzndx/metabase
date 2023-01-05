@@ -16971,8 +16971,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "登錄屬性鍵必須是關鍵字或字符串"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Metabase UI，系統電子郵件，脈沖和警報中所有用戶的默認語言。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "VLink UI，系統電子郵件，脈沖和警報中所有用戶的默認語言。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24035,8 +24035,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "告訴我們在哪裡可以找到每種字體粗細的文件。你不需要包括所有這些，但如果你這樣做會更好看。"
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Metabase UI、系統電子郵件、脈沖和警報中所有用戶的默認語言。用戶可以從他們自己的帳戶設置中單獨覆蓋此默認語言。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "VLink UI、系統電子郵件、脈沖和警報中所有用戶的默認語言。用戶可以從他們自己的帳戶設置中單獨覆蓋此默認語言。"
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

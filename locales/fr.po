@@ -17054,8 +17054,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "les clés d'attribut de connexion doivent être un mot-clé ou une chaîne"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Langue par défaut pour tous les utilisateurs de l'interface utilisateur de la métabase, des e-mails système, des \"pulses\" et des alertes."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Langue par défaut pour tous les utilisateurs de l'interface utilisateur de la vlink, des e-mails système, des \"pulses\" et des alertes."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24164,8 +24164,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Dites-nous où trouver le fichier pour chaque poids de police. Vous n'avez pas besoin de tous les inclure, mais cela ira mieux si vous le faites."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "La langue par défaut pour tous les utilisateurs de l'interface utilisateur de la métabase, des e-mails système, des impulsions et des alertes. Les utilisateurs peuvent remplacer individuellement cette langue par défaut à partir des paramètres de leur propre compte."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "La langue par défaut pour tous les utilisateurs de l'interface utilisateur de la VLink, des e-mails système, des impulsions et des alertes. Les utilisateurs peuvent remplacer individuellement cette langue par défaut à partir des paramètres de leur propre compte."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

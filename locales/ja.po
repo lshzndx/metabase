@@ -16976,8 +16976,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "ログイン属性のキーはキーワードか文字列でなければなりません。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Metabase UI、システムメール、パルス、アラート全てにわたって全ユーザに適用されるデフォルト言語。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "VLink UI、システムメール、パルス、アラート全てにわたって全ユーザに適用されるデフォルト言語。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24039,8 +24039,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "各フォントの太さのファイルの場所を教えてください。すべてを含める必要はありませんが、含めると見栄えが良くなります。"
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Metabase UI、システムの電子メール、パルス、およびアラート全体のすべてのユーザーのデフォルト言語。ユーザーは、自分のアカウント設定からこのデフォルト言語を個別に上書きできます。"
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "VLink UI、システムの電子メール、パルス、およびアラート全体のすべてのユーザーのデフォルト言語。ユーザーは、自分のアカウント設定からこのデフォルト言語を個別に上書きできます。"
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

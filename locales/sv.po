@@ -16994,8 +16994,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "attribut-nycklar för login måste vara nyckelord eller sträng"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Förvalt språk för alla användare av Metabase, epostadresser för system, ögonblicksbilder och notifieringar."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Förvalt språk för alla användare av VLink, epostadresser för system, ögonblicksbilder och notifieringar."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24085,8 +24085,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Berätta för oss var vi kan hitta filen för varje font-vikt. Du behöver inte ange alla, men det kommer att se bättre ut om du gör det."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Förvalt språk för alla användare i Metabase-gränssnittet, systemmeddelanden, utskick och varningar. Användare kan enskilt byta ut detta förvalda språk i deras egna inställningar."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Förvalt språk för alla användare i VLink-gränssnittet, systemmeddelanden, utskick och varningar. Användare kan enskilt byta ut detta förvalda språk i deras egna inställningar."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

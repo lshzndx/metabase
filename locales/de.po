@@ -17063,8 +17063,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "Anmeldeattributschlüssel müssen ein Schlüsselwort oder eine Zeichenfolge sein"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Die Default-Sprache für alle Benutzer in der Metabase GUI, System-Emails, Pulsen und Alarmen."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Die Default-Sprache für alle Benutzer in der VLink GUI, System-Emails, Pulsen und Alarmen."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24163,8 +24163,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Sag uns uns, wo die Datei für jede Schriftstärke zu finden ist. Du musst nicht alle angeben, aber es sieht besser aus, wenn Du dies tust.."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Die Standardsprache für alle Benutzer in der Metabase-Benutzeroberfläche, System-E-Mails, Impulsen und Warnungen. Benutzer können diese Standardsprache in ihren eigenen Kontoeinstellungen individuell überschreiben."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "Die Standardsprache für alle Benutzer in der VLink-Benutzeroberfläche, System-E-Mails, Impulsen und Warnungen. Benutzer können diese Standardsprache in ihren eigenen Kontoeinstellungen individuell überschreiben."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

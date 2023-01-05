@@ -17014,8 +17014,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "les claus dels atributs de login han de ser una keyword o una cadena"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "L'idioma per defecte per a tots els usuaris a la UI de Metabase, els correus de sistema, polsos i alertes."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "L'idioma per defecte per a tots els usuaris a la UI de VLink, els correus de sistema, polsos i alertes."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24114,8 +24114,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Digues-nos on trobar l'arxiu per a cada mida de la font. No els has d'incloure tots, però es veurà millor si ho fas."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "La llengua per defecte per a la interfície de Metabase, els correus de sistema, polsos i alertes. Els usuaris poden canviar aquesta configuració amb la seva preferència."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "La llengua per defecte per a la interfície de VLink, els correus de sistema, polsos i alertes. Els usuaris poden canviar aquesta configuració amb la seva preferència."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

@@ -17010,8 +17010,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "giriş özellik anahtarları bir anahtar kelime veya dize olmalıdır"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Metabase UI, sistem e-postaları, darbeler ve uyarılardaki tüm kullanıcılar için varsayılan dil."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "VLink UI, sistem e-postaları, darbeler ve uyarılardaki tüm kullanıcılar için varsayılan dil."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24121,8 +24121,8 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Her yazı tipi ağırlığı için dosyayı nerede bulacağımızı bize bildirin. Hepsini eklemeniz gerekmez, ancak yaparsanız daha iyi görünür."
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
-msgstr "Metatabanı kullanıcı arayüzü, sistem e-postaları, darbeler ve uyarılardaki tüm kullanıcılar için varsayılan dil. Kullanıcılar, bu varsayılan dili kendi hesap ayarlarından bireysel olarak geçersiz kılabilir."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgstr "VLink kullanıcı arayüzü, sistem e-postaları, darbeler ve uyarılardaki tüm kullanıcılar için varsayılan dil. Kullanıcılar, bu varsayılan dili kendi hesap ayarlarından bireysel olarak geçersiz kılabilir."
 
 #: metabase/public_settings.clj:560
 msgid "Whether an introductory modal should be shown after the next database connection is added. Defaults to false if any non-default database has already finished syncing for this instance."

@@ -17239,7 +17239,7 @@ msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid ""
-"The default language for all users across the Metabase UI, system emails, "
+"The default language for all users across the VLink UI, system emails, "
 "pulses, and alerts."
 msgstr ""
 

@@ -17083,8 +17083,8 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "Ключи атрибутов входа в систему должны быть ключевым словом или строкой"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
-msgstr "Язык по умолчанию для Metabase, системных сообщений электронной почты, импульсов и сообщений."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts."
+msgstr "Язык по умолчанию для VLink, системных сообщений электронной почты, импульсов и сообщений."
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "Users can individually override this default language from their own account settings."
@@ -24604,7 +24604,7 @@ msgid "Tell us where to find the file for each font weight. You don’t need to 
 msgstr "Подскажите, где найти файл для каждого веса шрифта. "
 
 #: metabase/public_settings.clj:139
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgid "The default language for all users across the VLink UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
 msgstr "Язык по умолчанию для всех пользователей пользовательского интерфейса метабазы, системных сообщений электронной почты, импульсов и предупреждений. "
 
 #: metabase/public_settings.clj:560
