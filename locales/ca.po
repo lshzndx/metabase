@@ -22931,8 +22931,8 @@ msgid "Saved questions"
 msgstr "Preguntes desades"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
-msgstr "Activant la memòria cau crearà taules pels teus models en un esquema dedicat i Metabase els refrescarà periòdicament. Les preguntes basades en els teus models preguntaran aquestes taules. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgstr "Activant la memòria cau crearà taules pels teus models en un esquema dedicat i VLink els refrescarà periòdicament. Les preguntes basades en els teus models preguntaran aquestes taules. {0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
 msgid "Refresh every"

@@ -22941,8 +22941,8 @@ msgid "Saved questions"
 msgstr "Opgeslagen vragen"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
-msgstr "Het inschakelen van cache zal tabellen aanmaken voor uw modellen in een speciaal schema en Metabase zal ze verversen op een schema. Vragen gebaseerd op uw modellen zullen deze tabellen bevragen. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgstr "Het inschakelen van cache zal tabellen aanmaken voor uw modellen in een speciaal schema en VLink zal ze verversen op een schema. Vragen gebaseerd op uw modellen zullen deze tabellen bevragen. {0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
 msgid "Refresh every"

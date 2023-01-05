@@ -22856,8 +22856,8 @@ msgid "Saved questions"
 msgstr "Câu hỏi đã lưu"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
-msgstr "Bật bộ đệm sẽ tạo các bảng cho các mô hình của bạn trong một lược đồ chuyên dụng và Metabase sẽ làm mới chúng theo lịch trình. Các câu hỏi dựa trên mô hình của bạn sẽ truy vấn các bảng này. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgstr "Bật bộ đệm sẽ tạo các bảng cho các mô hình của bạn trong một lược đồ chuyên dụng và VLink sẽ làm mới chúng theo lịch trình. Các câu hỏi dựa trên mô hình của bạn sẽ truy vấn các bảng này. {0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
 msgid "Refresh every"

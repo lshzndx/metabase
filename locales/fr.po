@@ -22986,8 +22986,8 @@ msgid "Saved questions"
 msgstr "Questions sauvegardées"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
-msgstr "Autoriser la mise en cache créera des tables pour vos modèles dans un schéma dédié et Metabase les actualisera dans une périodicité prévue. Les questions basées sur vos modèles vont requêter ces tables. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgstr "Autoriser la mise en cache créera des tables pour vos modèles dans un schéma dédié et VLink les actualisera dans une périodicité prévue. Les questions basées sur vos modèles vont requêter ces tables. {0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
 msgid "Refresh every"

@@ -22853,7 +22853,7 @@ msgid "Saved questions"
 msgstr "已保存的問題"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
 msgstr "啟用緩存將為您的模型在專用模式中創建表，並且元數據庫將按計劃刷新它們。基於您的模型的問題將查詢這些表。 {0}。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:439

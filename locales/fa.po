@@ -22891,8 +22891,8 @@ msgid "Saved questions"
 msgstr "سوالات ذخیره شده"
 
 #: frontend/src/metabase/admin/settings/selectors.js:521
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
-msgstr "فعال کردن حافظه نهان جداول را برای مدل‌های شما در طرحی اختصاصی ایجاد می‌کند و Metabase آن‌ها را در یک زمان‌بندی به‌روزرسانی می‌کند. سوالات بر اساس مدل های شما این جداول را پرس و جو می کنند. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgstr "فعال کردن حافظه نهان جداول را برای مدل‌های شما در طرحی اختصاصی ایجاد می‌کند و VLink آن‌ها را در یک زمان‌بندی به‌روزرسانی می‌کند. سوالات بر اساس مدل های شما این جداول را پرس و جو می کنند. {0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
 msgid "Refresh every"

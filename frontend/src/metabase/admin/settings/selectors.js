@@ -3,7 +3,7 @@ import React from "react";
 import _ from "underscore";
 import { createSelector } from "reselect";
 import { t, jt } from "ttag";
-import ExternalLink from "metabase/core/components/ExternalLink";
+// import ExternalLink from "metabase/core/components/ExternalLink";
 import SettingCommaDelimitedInput from "./components/widgets/SettingCommaDelimitedInput";
 import MetabaseSettings from "metabase/lib/settings";
 import CustomGeoJSONWidget from "./components/widgets/CustomGeoJSONWidget";
@@ -519,12 +519,13 @@ const SECTIONS = updateSectionsWithPlugins({
       {
         key: "persisted-models-enabled",
         display_name: t`Models`,
-        description: jt`Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. ${(
-          <ExternalLink
-            key="model-caching-link"
-            href={MetabaseSettings.docsUrl("users-guide/models")}
-          >{t`Learn more`}</ExternalLink>
-        )}.`,
+        description: jt`Enabling cache will create tables for your models in a dedicated schema and VLink will refresh them on a schedule. Questions based on your models will query these tables. ${
+          ""
+          // <ExternalLink
+          //   key="model-caching-link"
+          //   href={MetabaseSettings.docsUrl("users-guide/models")}
+          // >{t`Learn more`}</ExternalLink>
+        }.`,
         type: "boolean",
         disableDefaultUpdate: true,
         onChanged: async (wasEnabled, isEnabled) => {
