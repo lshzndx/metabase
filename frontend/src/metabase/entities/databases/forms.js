@@ -140,17 +140,17 @@ function shouldShowEngineProvidedField(field, details) {
 }
 
 function getSshDescription() {
-  const link = (
-    <ExternalLink
-      href={MetabaseSettings.docsUrl(
-        "administration-guide/ssh-tunnel-for-database-connections",
-      )}
-    >
-      {t`Learn more`}
-    </ExternalLink>
-  );
+  // const link = (
+  //   <ExternalLink
+  //     href={MetabaseSettings.docsUrl(
+  //       "administration-guide/ssh-tunnel-for-database-connections",
+  //     )}
+  //   >
+  //     {t`Learn more`}
+  //   </ExternalLink>
+  // );
 
-  return jt`If a direct connection to your database isn't possible, you may want to use an SSH tunnel. ${link}.`;
+  return jt`If a direct connection to your database isn't possible, you may want to use an SSH tunnel. `;
 }
 
 const AUTH_URL_PREFIXES = {

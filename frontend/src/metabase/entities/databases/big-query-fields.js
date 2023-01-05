@@ -171,7 +171,7 @@ export default function getFieldsForBigQuery(details) {
         name: "refingerprint",
         type: "boolean",
         "display-name": t`Periodically refingerprint tables`,
-        description: t`This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts.`,
+        description: t`This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts.`,
         "visible-if": { "advanced-options": true },
       },
     ],

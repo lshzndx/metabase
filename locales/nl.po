@@ -20068,8 +20068,8 @@ msgstr "Standaard voert Metabase een lichtgewichte synchronisatie van veldwaarde
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Hierdoor kan Metabase tijdens synchronisaties naar aanvullende veldwaarden scannen, wat slimmer gedrag mogelijk maakt, zoals verbeterde auto-binning op uw staafdiagrammen."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Hierdoor kan VLink tijdens synchronisaties naar aanvullende veldwaarden scannen, wat slimmer gedrag mogelijk maakt, zoals verbeterde auto-binning op uw staafdiagrammen."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

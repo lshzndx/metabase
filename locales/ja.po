@@ -20009,8 +20009,8 @@ msgstr "デフォルトでは、Metabaseはフィールド値について毎時�
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "これにより、Metabaseは同期中に追加のフィールド値をスキャンすることができ、棒グラフの自動ビンディングの改善など、よりスマートな動作が可能になります。"
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "これにより、VLinkは同期中に追加のフィールド値をスキャンすることができ、棒グラフの自動ビンディングの改善など、よりスマートな動作が可能になります。"
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

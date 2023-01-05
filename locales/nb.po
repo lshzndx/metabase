@@ -20093,8 +20093,8 @@ msgstr "Som standard utfører Metabase en lett synkronisering per time og en int
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Dette gjør det mulig for Metabase å skanne etter flere feltverdier under synkroniseringer, noe som gir smartere oppførsel, som forbedret automatisk lagring på søylediagrammene dine."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Dette gjør det mulig for VLink å skanne etter flere feltverdier under synkroniseringer, noe som gir smartere oppførsel, som forbedret automatisk lagring på søylediagrammene dine."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

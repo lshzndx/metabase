@@ -20147,8 +20147,8 @@ msgstr "Domyślnie Metabase wykonuje lekką godzinną synchronizację i intensyw
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Umożliwia to Metabazie skanowanie dodatkowych wartości pól podczas synchronizacji, co pozwala na bardziej inteligentne zachowanie, jak np. ulepszone automatyczne sortowanie na wykresach słupkowych."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Umożliwia to VLink skanowanie dodatkowych wartości pól podczas synchronizacji, co pozwala na bardziej inteligentne zachowanie, jak np. ulepszone automatyczne sortowanie na wykresach słupkowych."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

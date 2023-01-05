@@ -20060,8 +20060,8 @@ msgstr "Per impostazione predefinita, Metabase fa una leggera sincronizzazione o
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Questo permette a Metabase di scansionare i valori dei campi aggiuntivi durante le sincronizzazioni, permettendo un comportamento più intelligente, come un migliore auto-binning sui vostri grafici a barre."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Questo permette a VLink di scansionare i valori dei campi aggiuntivi durante le sincronizzazioni, permettendo un comportamento più intelligente, come un migliore auto-binning sui vostri grafici a barre."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

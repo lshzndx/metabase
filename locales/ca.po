@@ -20058,8 +20058,8 @@ msgstr "Per defecte, Metabase fa una sincronia lleugera cada hora i un escaneig 
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Això permet a Metabase cercar valors en camps addicionals durant la sincronia permetent un comportament més intel·ligent, p.e. per fer auto-binning a les gràfiques de barres."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Això permet a VLink cercar valors en camps addicionals durant la sincronia permetent un comportament més intel·ligent, p.e. per fer auto-binning a les gràfiques de barres."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

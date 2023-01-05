@@ -20062,8 +20062,8 @@ msgstr "Varsayılan olarak, Metabase hafif bir saatlik eşitleme ve yoğun bir g
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Bu, Metabase'in eşitlemeler sırasında ek alan değerlerini taramasını sağlar ve çubuk grafiklerinizde geliştirilmiş otomatik gruplama gibi daha akıllı davranışlara olanak tanır."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Bu, VLink'in eşitlemeler sırasında ek alan değerlerini taramasını sağlar ve çubuk grafiklerinizde geliştirilmiş otomatik gruplama gibi daha akıllı davranışlara olanak tanır."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

@@ -20100,8 +20100,8 @@ msgstr "Ve výchozím nastavení provádí databáze Metabase lehkou hodinovou s
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Díky tomu může Metabase při synchronizaci vyhledávat další hodnoty polí, což umožňuje inteligentnější chování, například vylepšené hranice tříd sloupcových grafů."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Díky tomu může VLink při synchronizaci vyhledávat další hodnoty polí, což umožňuje inteligentnější chování, například vylepšené hranice tříd sloupcových grafů."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

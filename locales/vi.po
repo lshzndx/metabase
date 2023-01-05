@@ -20008,8 +20008,8 @@ msgstr "Theo mặc định, Metabase thực hiện đồng bộ hóa nhẹ hàng
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Điều này cho phép Metabase quét các giá trị trường bổ sung trong quá trình đồng bộ hóa cho phép hành vi thông minh hơn, chẳng hạn như tính năng tự động bin được cải thiện trên biểu đồ thanh của bạn."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Điều này cho phép VLink quét các giá trị trường bổ sung trong quá trình đồng bộ hóa cho phép hành vi thông minh hơn, chẳng hạn như tính năng tự động bin được cải thiện trên biểu đồ thanh của bạn."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

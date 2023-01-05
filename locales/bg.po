@@ -20052,8 +20052,8 @@ msgstr "По подразбиране Metabase извършва лека поч�
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Това позволява на Metabase да сканира за допълнителни стойности на полета по време на синхронизиране, което позволява по-интелигентно поведение, като подобрено автоматично комбиниране на вашите лентови диаграми."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Това позволява на VLink да сканира за допълнителни стойности на полета по време на синхронизиране, което позволява по-интелигентно поведение, като подобрено автоматично комбиниране на вашите лентови диаграми."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

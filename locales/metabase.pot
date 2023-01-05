@@ -4193,7 +4193,7 @@ msgstr ""
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: src/metabase/driver/common.clj
 msgid ""
-"This enables Metabase to scan for additional field values during syncs "
+"This enables VLink to scan for additional field values during syncs "
 "allowing smarter behavior, like improved auto-binning on your bar charts."
 msgstr ""
 

@@ -20007,8 +20007,8 @@ msgstr "默認情況下，Metabase 會進行輕量級的每小時同步和每天
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "這使 Metabase 能夠在同步期間掃描其他字段值，從而實現更智能的行為，例如改進條形圖上的自動分箱。"
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "這使 VLink 能夠在同步期間掃描其他字段值，從而實現更智能的行為，例如改進條形圖上的自動分箱。"
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

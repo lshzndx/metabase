@@ -20034,8 +20034,8 @@ msgstr "Som förval gör Metabase en mindre synkning varje timme och en större 
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "Detta tillåter Metabase att söka upp tillkommande fält under synkning och tillåter smartare metoder som att t.ex automatiskt rensa ut diagram."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "Detta tillåter VLink att söka upp tillkommande fält under synkning och tillåter smartare metoder som att t.ex automatiskt rensa ut diagram."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"

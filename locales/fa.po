@@ -20043,8 +20043,8 @@ msgstr "به‌طور پیش‌فرض، Metabase یک همگام‌سازی سا
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
-msgstr "این امکان را به Metabase می‌دهد تا مقادیر فیلد اضافی را در طول همگام‌سازی‌ها اسکن کند و رفتار هوشمندانه‌تری را امکان‌پذیر می‌کند، مانند بهبود یافته‌سازی خودکار در نمودارهای میله‌ای شما."
+msgid "This enables VLink to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgstr "این امکان را به VLink می‌دهد تا مقادیر فیلد اضافی را در طول همگام‌سازی‌ها اسکن کند و رفتار هوشمندانه‌تری را امکان‌پذیر می‌کند، مانند بهبود یافته‌سازی خودکار در نمودارهای میله‌ای شما."
 
 #: frontend/src/metabase/entities/users/forms.js:108
 msgid "Company or team name"
