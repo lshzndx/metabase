@@ -17077,8 +17077,8 @@ msgid "Default page to show the user"
 msgstr "Домашня сторінка користувача"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "Дозволити вказаному сайту встроювати додаток Metabase"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "Дозволити вказаному сайту встроювати додаток VLink"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

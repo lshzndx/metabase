@@ -17021,8 +17021,8 @@ msgid "Default page to show the user"
 msgstr "صفحه پیش فرض برای نمایش کاربر"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "اجازه دهید این مبدا برنامه کامل Metabase را در خود جای دهد"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "اجازه دهید این مبدا برنامه کامل VLink را در خود جای دهد"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

@@ -16987,8 +16987,8 @@ msgid "Default page to show the user"
 msgstr "Trang mặc định để hiển thị cho người dùng"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "Cho phép nguồn gốc này nhúng ứng dụng Metabase đầy đủ"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "Cho phép nguồn gốc này nhúng ứng dụng VLink đầy đủ"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

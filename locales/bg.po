@@ -17023,8 +17023,8 @@ msgid "Default page to show the user"
 msgstr "Страница по подразбиране за показване на потребителя"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "Позволете на този произход да вгражда пълното приложение Metabase"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "Позволете на този произход да вгражда пълното приложение VLink"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

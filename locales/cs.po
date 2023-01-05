@@ -17061,8 +17061,8 @@ msgid "Default page to show the user"
 msgstr "Výchozí stránka, která se má uživateli zobrazit"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "Povolí tomuto zdroji integrovat kód celé Metabase"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "Povolí tomuto zdroji integrovat kód celé VLink"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

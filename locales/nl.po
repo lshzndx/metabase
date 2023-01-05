@@ -17034,8 +17034,8 @@ msgid "Default page to show the user"
 msgstr "Standaardpagina om de gebruiker te tonen"
 
 #: metabase/public_settings.clj:196
-msgid "Allow this origin to embed the full Metabase application"
-msgstr "Sta deze origin toe om de volledige Metabase-applicatie in te sluiten"
+msgid "Allow this origin to embed the full VLink application"
+msgstr "Sta deze origin toe om de volledige VLink-applicatie in te sluiten"
 
 #: metabase/public_settings.clj:245
 msgid "Values greater than {0} ({1}) are not allowed."

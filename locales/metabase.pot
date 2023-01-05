@@ -17297,7 +17297,7 @@ msgid ""
 msgstr ""
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "Allow this origin to embed the full Metabase application"
+msgid "Allow this origin to embed the full VLink application"
 msgstr ""
 
 #: src/metabase/public_settings.clj

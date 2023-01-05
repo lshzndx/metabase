@@ -193,7 +193,7 @@
   :visibility :authenticated)
 
 (defsetting embedding-app-origin
-  (deferred-tru "Allow this origin to embed the full Metabase application")
+  (deferred-tru "Allow this origin to embed the full VLink application")
   :visibility :public)
 
 (defsetting enable-nested-queries
