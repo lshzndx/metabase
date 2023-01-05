@@ -20263,7 +20263,7 @@ msgid "Our {0}"
 msgstr "Наши {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
+msgid "Choose what this data will be called in VLink."
 msgstr "Выберите как будут называться эти данные."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520

@@ -20147,8 +20147,8 @@ msgid "Our {0}"
 msgstr "我们的{0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "选择这个数据在Metabase中的名称。"
+msgid "Choose what this data will be called in VLink."
+msgstr "选择这个数据在VLink中的名称。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

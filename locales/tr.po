@@ -20180,8 +20180,8 @@ msgid "Our {0}"
 msgstr "Bizim {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Bu verilerin Metabase'de ne olarak adlandırılacağını seçin."
+msgid "Choose what this data will be called in VLink."
+msgstr "Bu verilerin VLink'de ne olarak adlandırılacağını seçin."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

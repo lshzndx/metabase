@@ -20243,8 +20243,8 @@ msgid "Our {0}"
 msgstr "Наші {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Виберіть, як ці дані будуть називатися в Metabase."
+msgid "Choose what this data will be called in VLink."
+msgstr "Виберіть, як ці дані будуть називатися в VLink."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

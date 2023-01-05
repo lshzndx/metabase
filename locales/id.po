@@ -20139,8 +20139,8 @@ msgid "Our {0}"
 msgstr "{0} kami"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Pilih apa yang akan dipanggil data ini dalam metabase."
+msgid "Choose what this data will be called in VLink."
+msgstr "Pilih apa yang akan dipanggil data ini dalam vlink."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

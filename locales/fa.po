@@ -20160,8 +20160,8 @@ msgid "Our {0}"
 msgstr "{0} ما"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "انتخاب کنید که این داده ها در Metabase چه نامیده می شوند."
+msgid "Choose what this data will be called in VLink."
+msgstr "انتخاب کنید که این داده ها در VLink چه نامیده می شوند."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

@@ -20170,8 +20170,8 @@ msgid "Our {0}"
 msgstr "Нашите {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Изберете как ще се наричат ​​тези данни в Metabase."
+msgid "Choose what this data will be called in VLink."
+msgstr "Изберете как ще се наричат ​​тези данни в VLink."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

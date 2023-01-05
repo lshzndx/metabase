@@ -20125,8 +20125,8 @@ msgid "Our {0}"
 msgstr "{0} của chúng tôi"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Chọn dữ liệu này sẽ được gọi là gì trong Metabase."
+msgid "Choose what this data will be called in VLink."
+msgstr "Chọn dữ liệu này sẽ được gọi là gì trong VLink."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

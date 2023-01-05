@@ -20229,8 +20229,8 @@ msgid "Our {0}"
 msgstr "Naš {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "Choose what this data will be called in Metabase."
+msgid "Choose what this data will be called in VLink."
+msgstr "Choose what this data will be called in VLink."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

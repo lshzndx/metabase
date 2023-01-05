@@ -341,7 +341,7 @@ const forms = {
           placeholder: t`Our ${getEngineName(engine)}`,
           validate: value => !value && t`required`,
           hidden: !engine,
-          helperText: t`Choose what this data will be called in Metabase.`,
+          helperText: t`Choose what this data will be called in VLink.`,
         },
         ...(getEngineFormFields(engine, details, id) || []),
         { name: "is_full_sync", type: "hidden" },

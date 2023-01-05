@@ -20122,8 +20122,8 @@ msgid "Our {0}"
 msgstr "我們的{0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "選擇將在 Metabase 中調用此數據的內容。"
+msgid "Choose what this data will be called in VLink."
+msgstr "選擇將在 VLink 中調用此數據的內容。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

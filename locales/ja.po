@@ -20126,8 +20126,8 @@ msgid "Our {0}"
 msgstr "私たちの{0}。"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
-msgstr "このデータのMetabaseでの名称を選択します。"
+msgid "Choose what this data will be called in VLink."
+msgstr "このデータのVLinkでの名称を選択します。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
 #: frontend/src/metabase/home/containers/SearchApp.jsx:47

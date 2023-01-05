@@ -7423,7 +7423,7 @@ msgid "Our {0}"
 msgstr ""
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
+msgid "Choose what this data will be called in VLink."
 msgstr ""
 
 #: frontend/src/metabase/entities/databases/mongo-fields.js:12

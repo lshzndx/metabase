@@ -20186,7 +20186,7 @@ msgid "Our {0}"
 msgstr "Onze {0}"
 
 #: frontend/src/metabase/entities/databases/forms.js:344
-msgid "Choose what this data will be called in Metabase."
+msgid "Choose what this data will be called in VLink."
 msgstr "Kies hoe deze gegevens moeten heten."
 
 #: frontend/src/metabase/admin/settings/selectors.js:520
