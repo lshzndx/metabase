@@ -8910,8 +8910,8 @@ msgid "The absolute maximum time to keep any cached query results, in seconds."
 msgstr "Absolútny maximálny čas na uchovanie výsledkov dotazov v pamäti v sekundách."
 
 #: metabase/public_settings.clj:256
-msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
-msgstr "Metabase uloží všetky uložené otázky do vyrovnávacej pamäte s priemerným časom vykonania dotazu dlhším ako je tento počet sekúnd:"
+msgid "VLink will cache all saved questions with an average query execution time longer than this many seconds:"
+msgstr "VLink uloží všetky uložené otázky do vyrovnávacej pamäte s priemerným časom vykonania dotazu dlhším ako je tento počet sekúnd:"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "To determine how long each saved question''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."

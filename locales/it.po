@@ -8886,8 +8886,8 @@ msgid "The absolute maximum time to keep any cached query results, in seconds."
 msgstr "Il tempo massimo assoluto (secondi) per gestire i risultati delle query in cache"
 
 #: metabase/public_settings.clj:256
-msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
-msgstr "Metabase registrerà tutte le domande salvate con un tempo medio di esecuzione delle query superiore in secondi di:"
+msgid "VLink will cache all saved questions with an average query execution time longer than this many seconds:"
+msgstr "VLink registrerà tutte le domande salvate con un tempo medio di esecuzione delle query superiore in secondi di:"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "To determine how long each saved question''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."

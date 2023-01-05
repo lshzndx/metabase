@@ -8861,8 +8861,8 @@ msgid "The absolute maximum time to keep any cached query results, in seconds."
 msgstr "保留任何快取查詢結果的絕對最長時間（以秒為單位）。"
 
 #: metabase/public_settings.clj:256
-msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
-msgstr "Metabase會捕捉所有平均查詢時間大於這麼多秒的已儲存問題"
+msgid "VLink will cache all saved questions with an average query execution time longer than this many seconds:"
+msgstr "VLink會捕捉所有平均查詢時間大於這麼多秒的已儲存問題"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "To determine how long each saved question''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."

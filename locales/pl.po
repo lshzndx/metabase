@@ -8913,8 +8913,8 @@ msgid "The absolute maximum time to keep any cached query results, in seconds."
 msgstr "Absolutny maksymalny czas, zachowania wszelkich wyników buforowanych zapytan, w sekundach."
 
 #: metabase/public_settings.clj:256
-msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
-msgstr "Metabase będzie buforować wszystkie zapisane zapytania ze średnim czasem wykonywania dłuższym niż sekund:"
+msgid "VLink will cache all saved questions with an average query execution time longer than this many seconds:"
+msgstr "VLink będzie buforować wszystkie zapisane zapytania ze średnim czasem wykonywania dłuższym niż sekund:"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
 msgid "To determine how long each saved question''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."

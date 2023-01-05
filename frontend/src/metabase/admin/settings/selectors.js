@@ -7,7 +7,7 @@ import ExternalLink from "metabase/core/components/ExternalLink";
 import SettingCommaDelimitedInput from "./components/widgets/SettingCommaDelimitedInput";
 import MetabaseSettings from "metabase/lib/settings";
 import CustomGeoJSONWidget from "./components/widgets/CustomGeoJSONWidget";
-import SettingsLicense from "./components/SettingsLicense";
+// import SettingsLicense from "./components/SettingsLicense";
 import SiteUrlWidget from "./components/widgets/SiteUrlWidget";
 import HttpsOnlyWidget from "./components/widgets/HttpsOnlyWidget";
 import { EmbeddingCustomizationInfo } from "./components/widgets/EmbeddingCustomizationInfo";
@@ -477,12 +477,12 @@ const SECTIONS = updateSectionsWithPlugins({
       },
     ],
   },
-  license: {
-    name: t`License`,
-    order: 11,
-    component: SettingsLicense,
-    settings: [],
-  },
+  // license: {
+  //   name: t`License`,
+  //   order: 11,
+  //   component: SettingsLicense,
+  //   settings: [],
+  // },
   caching: {
     name: t`Caching`,
     order: 12,

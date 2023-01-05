@@ -253,7 +253,7 @@
 
 ;; TODO -- this isn't really a TTL at all. Consider renaming to something like `-min-duration`
 (defsetting query-caching-min-ttl
-  (deferred-tru "Metabase will cache all saved questions with an average query execution time longer than this many seconds:")
+  (deferred-tru "VLink will cache all saved questions with an average query execution time longer than this many seconds:")
   :type    :double
   :default 60.0)
 
