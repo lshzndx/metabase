@@ -1979,8 +1979,8 @@ msgid "Map tile server URL"
 msgstr "地圖貼片伺服器URL"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase預設使用OpenStreet地圖"
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink預設使用OpenStreet地圖"
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

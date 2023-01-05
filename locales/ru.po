@@ -2000,8 +2000,8 @@ msgid "Map tile server URL"
 msgstr "URL сервера загрузки плиток карты"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "По умолчанию, Metabase использует OpenStreetMaps."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "По умолчанию, VLink использует OpenStreetMaps."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

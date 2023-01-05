@@ -1984,8 +1984,8 @@ msgid "Map tile server URL"
 msgstr "URL för \"map tile server\""
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase använder OpenStreetMaps som förval."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink använder OpenStreetMaps som förval."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

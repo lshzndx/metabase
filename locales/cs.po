@@ -1991,8 +1991,8 @@ msgid "Map tile server URL"
 msgstr "Namapujte pole z URL serveru"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase používá ve výchozím nastavení OpenStreetMaps."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink používá ve výchozím nastavení OpenStreetMaps."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

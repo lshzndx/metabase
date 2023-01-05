@@ -2001,8 +2001,8 @@ msgid "Map tile server URL"
 msgstr "Namapujte polia z URL servra"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase používa OpenStreetMaps ako predvolené."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink používa OpenStreetMaps ako predvolené."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

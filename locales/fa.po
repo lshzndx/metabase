@@ -2003,8 +2003,8 @@ msgid "Map tile server URL"
 msgstr "URL کاشی نقشه کاشی"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase از طریق OpenStreetMaps به طور پیش فرض استفاده می کند."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink از طریق OpenStreetMaps به طور پیش فرض استفاده می کند."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

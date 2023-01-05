@@ -1988,8 +1988,8 @@ msgid "Map tile server URL"
 msgstr "URL адрес на сървъра за плочки на картата"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase използва OpenStreetMaps по подразбиране."
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink използва OpenStreetMaps по подразбиране."
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"

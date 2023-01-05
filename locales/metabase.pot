@@ -6563,7 +6563,7 @@ msgid "Map tile server URL"
 msgstr ""
 
 #: frontend/src/metabase/admin/settings/selectors.js:214
-msgid "Metabase uses OpenStreetMaps by default."
+msgid "VLink uses OpenStreetMaps by default."
 msgstr ""
 
 #: frontend/src/metabase/admin/settings/selectors.js:219

@@ -1981,8 +1981,8 @@ msgid "Map tile server URL"
 msgstr "Đường dẫn đến máy chủ mảnh bản đồ"
 
 #: frontend/src/metabase/admin/settings/selectors.js:239
-msgid "Metabase uses OpenStreetMaps by default."
-msgstr "Metabase mặc định sử dụngOpenStreetMaps"
+msgid "VLink uses OpenStreetMaps by default."
+msgstr "VLink mặc định sử dụngOpenStreetMaps"
 
 #: frontend/src/metabase/admin/settings/selectors.js:244
 msgid "Custom Maps"
