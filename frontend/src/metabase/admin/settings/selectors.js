@@ -356,14 +356,15 @@ const SECTIONS = updateSectionsWithPlugins({
       {
         key: "enable-embedding",
         display_name: t`Embedding`,
-        description: jt`Allow questions, dashboards, and more to be embedded. ${(
-          <ExternalLink
-            key="learn-embedding-link"
-            href="https://www.metabase.com/learn/embedding/embedding-charts-and-dashboards.html"
-          >
-            {t`Learn more.`}
-          </ExternalLink>
-        )}`,
+        description: jt`Allow questions, dashboards, and more to be embedded. ${
+          ""
+          // <ExternalLink
+          //   key="learn-embedding-link"
+          //   href="https://www.metabase.com/learn/embedding/embedding-charts-and-dashboards.html"
+          // >
+          //   {t`Learn more.`}
+          // </ExternalLink>
+        }`,
         type: "boolean",
         showActualValue: true,
         getProps: setting => {
@@ -384,13 +385,13 @@ const SECTIONS = updateSectionsWithPlugins({
         embedDescription: t`Securely embed individual questions and dashboards within other applications.`,
         embedType: "standalone",
       },
-      {
-        widget: EmbeddingOption,
-        getHidden: (_, derivedSettings) => !derivedSettings["enable-embedding"],
-        embedName: t`Full-app embedding`,
-        embedDescription: t`With this Pro/Enterprise feature you can embed the full Metabase app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder.`,
-        embedType: "full-app",
-      },
+      // {
+      //   widget: EmbeddingOption,
+      //   getHidden: (_, derivedSettings) => !derivedSettings["enable-embedding"],
+      //   embedName: t`Full-app embedding`,
+      //   embedDescription: t`With this Pro/Enterprise feature you can embed the full Metabase app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder.`,
+      //   embedType: "full-app",
+      // },
     ],
   },
   "embedding-in-other-applications/standalone": {
