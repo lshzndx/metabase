@@ -2428,9 +2428,9 @@ msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "Dit is een grote database, laat mij kiezen wat Metabase moet synchroniseren en scannen."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "Metabase voert standaard een lichte synchronisatie uit en dagelijks een volledige scan van de velden. Wanneer je een grote database hebt adviseren we deze optie aan te zetten zodat je zelf kan bepalen wat en hoe de velden gescand moeten worden."
+msgstr "VLink voert standaard een lichte synchronisatie uit en dagelijks een volledige scan van de velden. Wanneer je een grote database hebt adviseren we deze optie aan te zetten zodat je zelf kan bepalen wat en hoe de velden gescand moeten worden."
 
 #: frontend/src/metabase/entities/databases/forms.js:180
 msgid "{0} to generate a Client ID and Client Secret for your project."
@@ -13575,8 +13575,8 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "Deze optie stelt verplicht dat de ingestelde host een FQDN is. Wanneer je verbinding probeert te maken met een Atlas kluster wil je deze optie misschien inschakelen. Wanneer je niet precies weet wat dit betekend kun je deze optie beter uitgeschakeld laten."
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "Standaard voert Metabase een lichte uurlijke synchronisatie uit en een dagelijkse uitgebreide scan voor veldwaardes. Wanneer je een grote database heeft bevelen we aan om deze optie aan te zetten en te bekijken wanneer en hoe vaak de veldwaarde scans uitgevoerd worden."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgstr "Standaard voert VLink een lichte uurlijke synchronisatie uit en een dagelijkse uitgebreide scan voor veldwaardes. Wanneer je een grote database heeft bevelen we aan om deze optie aan te zetten en te bekijken wanneer en hoe vaak de veldwaarde scans uitgevoerd worden."
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
 msgid "Remove these suggestions"
@@ -20063,8 +20063,8 @@ msgstr "Kies wanneer te synchroniseren en te scannen"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: metabase/driver/common.clj:145
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
-msgstr "Standaard voert Metabase een lichtgewichte synchronisatie van veldwaardes elk uur en een uitgebreide scan dagelijks. Zet dit aan voor grotere databases om zelf te kiezen."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgstr "Standaard voert VLink een lichtgewichte synchronisatie van veldwaardes elk uur en een uitgebreide scan dagelijks. Zet dit aan voor grotere databases om zelf te kiezen."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186

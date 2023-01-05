@@ -4151,7 +4151,7 @@ msgstr ""
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: src/metabase/driver/common.clj
 msgid ""
-"By default, Metabase does a lightweight hourly sync and an intensive daily "
+"By default, VLink does a lightweight hourly sync and an intensive daily "
 "scan of field values. If you have a large database, turn this on to make "
 "changes."
 msgstr ""

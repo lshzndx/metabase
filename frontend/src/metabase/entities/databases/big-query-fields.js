@@ -147,7 +147,7 @@ export default function getFieldsForBigQuery(details) {
         name: "let-user-control-scheduling",
         type: "boolean",
         "display-name": t`Choose when syncs and scans happen`,
-        description: t`By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes.`,
+        description: t`By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes.`,
         "visible-if": { "advanced-options": true },
       },
       {

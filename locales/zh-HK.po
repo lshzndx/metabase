@@ -2413,9 +2413,9 @@ msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "這是一個大型資料庫，讓我選擇Metabase同步和掃描的時間"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "預設情況下，Metabase每小時執行一次輕量級同步，每天執行一次密集掃描。\n"
+msgstr "預設情況下，VLink每小時執行一次輕量級同步，每天執行一次密集掃描。\n"
 "如果您有一個大型資料庫，我們建議啟用此功能並檢視欄位值掃描的發生時間和頻率。"
 
 #: frontend/src/metabase/entities/databases/forms.js:180
@@ -13529,8 +13529,8 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "使用此選項要求提供的主機是FQDN。 如果連接到Atlas群集，則可能需要啟用此選項。 如果您不知道這意味著什麼，請取消此功能。"
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "預設情況下，Metabase每小時執行一次輕量級同步，每天執行一次密集掃描。 如果您有一個大型資料庫，我們建議啟用此功能並檢視欄位值掃描的發生時間和頻率。"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgstr "預設情況下，VLink每小時執行一次輕量級同步，每天執行一次密集掃描。 如果您有一個大型資料庫，我們建議啟用此功能並檢視欄位值掃描的發生時間和頻率。"
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
 msgid "Remove these suggestions"
@@ -20000,8 +20000,8 @@ msgstr "選擇何時進行同步和掃描"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: metabase/driver/common.clj:145
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
-msgstr "默認情況下，Metabase 會進行輕量級的每小時同步和每天對字段值的密集掃描。如果您有一個大型數據庫，請將其打開以進行更改。"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgstr "默認情況下，VLink 會進行輕量級的每小時同步和每天對字段值的密集掃描。如果您有一個大型數據庫，請將其打開以進行更改。"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186

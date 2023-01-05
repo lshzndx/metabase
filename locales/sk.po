@@ -2437,9 +2437,9 @@ msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "Táto databáza je  veľká, takže nastavte kedy má Metabase spustiť synchronizáciu a skenovanie"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "Metabase predvolene vykonáva hodinovú synchronizáciu a denné skenovanie hodnôt polí. Ak máte rozsiahlu databázu, odporúčame vám skontrolovať, kedy a ako často sa uskutoční kontrola hodnôt poľa."
+msgstr "VLink predvolene vykonáva hodinovú synchronizáciu a denné skenovanie hodnôt polí. Ak máte rozsiahlu databázu, odporúčame vám skontrolovať, kedy a ako často sa uskutoční kontrola hodnôt poľa."
 
 #: frontend/src/metabase/entities/databases/forms.js:180
 msgid "{0} to generate a Client ID and Client Secret for your project."
@@ -13611,8 +13611,8 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "Použitie tejto voľby vyžaduje, aby poskytnutý hostiteľ bol úplný názov domény. Ak sa pripájate ku Atlas klastru, možno bude potrebné túto možnosť povoliť. Ak neviete, čo to znamená, nechajte to vypnuté."
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "Metabase predvolene vykonáva rýchlu hodinovú synchronizáciu a intenzívne denné skenovanie hodnôt polí. Ak máte rozsiahlu databázu, odporúčame vám zapnúť skenovanie a skontrolovať kedy a ako často sa uskutoční kontrola hodnôt polí."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgstr "VLink predvolene vykonáva rýchlu hodinovú synchronizáciu a intenzívne denné skenovanie hodnôt polí. Ak máte rozsiahlu databázu, odporúčame vám zapnúť skenovanie a skontrolovať kedy a ako často sa uskutoční kontrola hodnôt polí."
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
 msgid "Remove these suggestions"
@@ -20132,8 +20132,8 @@ msgstr "Výber času synchronizácie a skenovania"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: metabase/driver/common.clj:145
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
-msgstr "V predvolenom nastavení vykonáva Metabase ľahkú hodinovú synchronizáciu a intenzívne denné skenovanie hodnôt polí. Ak máte veľkú databázu, zapnite túto funkciu, aby ste mohli vykonávať zmeny."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgstr "V predvolenom nastavení vykonáva VLink ľahkú hodinovú synchronizáciu a intenzívne denné skenovanie hodnôt polí. Ak máte veľkú databázu, zapnite túto funkciu, aby ste mohli vykonávať zmeny."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186

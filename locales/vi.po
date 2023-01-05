@@ -2415,7 +2415,7 @@ msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "Đây là một cơ sở dữ liệu lớn, vậy nên hãy để tôi chọn khi nào thì Metabase đồng bộ và quét"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
 msgstr "Nếu bạn có cơ sở dữ liệu lớn, chúng tôi khuyên bạn nên bật tính năng này và xem xét thời điểm và tần suất quét giá trị trường xảy ra."
 
@@ -13536,8 +13536,8 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "Sử dụng tùy chọn này yêu cầu máy chủ được cung cấp là FQDN. Nếu kết nối với cụm Atlas, bạn có thể cần bật tùy chọn này. Nếu bạn không biết điều này có nghĩa là gì, hãy để điều này bị vô hiệu hóa."
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "Theo mặc định, Metabase thực hiện đồng bộ hóa hàng giờ và quét kỹ các giá trị trường hàng ngày. Nếu bạn có cơ sở dữ liệu lớn, chúng tôi khuyên bạn nên bật tính năng này và xem xét thời điểm và tần suất quét giá trị trường xảy ra."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgstr "Theo mặc định, VLink thực hiện đồng bộ hóa hàng giờ và quét kỹ các giá trị trường hàng ngày. Nếu bạn có cơ sở dữ liệu lớn, chúng tôi khuyên bạn nên bật tính năng này và xem xét thời điểm và tần suất quét giá trị trường xảy ra."
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
 msgid "Remove these suggestions"
@@ -20003,8 +20003,8 @@ msgstr "Chọn thời điểm đồng bộ hóa và quét diễn ra"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: metabase/driver/common.clj:145
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
-msgstr "Theo mặc định, Metabase thực hiện đồng bộ hóa nhẹ hàng giờ và quét chuyên sâu các giá trị trường hàng ngày. Nếu bạn có một cơ sở dữ liệu lớn, hãy bật tính năng này để thực hiện các thay đổi."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgstr "Theo mặc định, VLink thực hiện đồng bộ hóa nhẹ hàng giờ và quét chuyên sâu các giá trị trường hàng ngày. Nếu bạn có một cơ sở dữ liệu lớn, hãy bật tính năng này để thực hiện các thay đổi."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186

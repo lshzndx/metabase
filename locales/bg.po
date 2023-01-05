@@ -2424,9 +2424,9 @@ msgid "This is a large database, so let me choose when Metabase syncs and scans"
 msgstr "Това е голяма база данни, така че нека да избера кога Metabase се синхронизира и сканира"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "По подразбиране Metabase извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полетата.\n"
+msgstr "По подразбиране VLink извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полетата.\n"
 "Ако имате голяма база данни, препоръчваме да я включите и да прегледате кога и колко често се случват сканиранията на стойността на полето."
 
 #: frontend/src/metabase/entities/databases/forms.js:180
@@ -13563,8 +13563,8 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "Използването на тази опция изисква предоставеният хост да е FQDN. Ако се свързвате с клъстер Atlas, може да се наложи да активирате тази опция. Ако не знаете какво означава това, оставете това деактивирано."
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "По подразбиране Metabase извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полетата. Ако имате голяма база данни, препоръчваме да я включите и да прегледате кога и колко често се случват сканиранията на стойността на полето."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgstr "По подразбиране VLink извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полетата. Ако имате голяма база данни, препоръчваме да я включите и да прегледате кога и колко често се случват сканиранията на стойността на полето."
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
 msgid "Remove these suggestions"
@@ -20047,8 +20047,8 @@ msgstr "Изберете кога да се извършват синхрони�
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:150
 #: metabase/driver/common.clj:145
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
-msgstr "По подразбиране Metabase извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полета. Ако имате голяма база данни, включете това, за да направите промени."
+msgid "By default, VLink does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgstr "По подразбиране VLink извършва лека почасова синхронизация и интензивно ежедневно сканиране на стойностите на полета. Ако имате голяма база данни, включете това, за да направите промени."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:174
 #: metabase/driver/common.clj:186

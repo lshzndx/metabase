@@ -32,16 +32,16 @@ interface ErrorResponse {
 }
 
 function FeatureDescription({ schemaName }: { schemaName: string }) {
-  const docsLink = (
-    <ExternalLink
-      key="model-caching-link"
-      href={MetabaseSettings.docsUrl("users-guide/models")}
-    >{t`Learn more.`}</ExternalLink>
-  );
+  // const docsLink = (
+  //   <ExternalLink
+  //     key="model-caching-link"
+  //     href={MetabaseSettings.docsUrl("users-guide/models")}
+  //   >{t`Learn more.`}</ExternalLink>
+  // );
   return (
     <PopoverContent>
       <FeatureTitle>{t`Cache models`}</FeatureTitle>
-      <FeatureDescriptionText>{jt`We'll create tables with model data and refresh them on a schedule you define. To enable it, you need to grant this connection credential read and write permissions on the "${schemaName}" schema or grant create schema permissions. ${docsLink}`}</FeatureDescriptionText>
+      <FeatureDescriptionText>{jt`We'll create tables with model data and refresh them on a schedule you define. To enable it, you need to grant this connection credential read and write permissions on the "${schemaName}" schema or grant create schema permissions. `}</FeatureDescriptionText>
     </PopoverContent>
   );
 }
