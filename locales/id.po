@@ -1441,8 +1441,8 @@ msgid "LDAP"
 msgstr "LDAP"
 
 #: frontend/src/metabase/plugins/builtin/auth/ldap.js:19
-msgid "Allows users within your LDAP directory to log in to Metabase with their LDAP credentials, and allows automatic mapping of LDAP groups to Metabase groups."
-msgstr "Perbolehkan pengguna yang terdaftar dalam direktori LDAP Anda untuk masuk ke Metabase menggunakan kredensial LDAP mereka dan perbolehkan pemetaan otomatis grup LDAP dengan grup Metabase."
+msgid "Allows users within your LDAP directory to log in to VLink with their LDAP credentials, and allows automatic mapping of LDAP groups to VLink groups."
+msgstr "Perbolehkan pengguna yang terdaftar dalam direktori LDAP Anda untuk masuk ke VLink menggunakan kredensial LDAP mereka dan perbolehkan pemetaan otomatis grup LDAP dengan grup VLink."
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:20
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:61

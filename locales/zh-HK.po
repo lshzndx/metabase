@@ -1432,8 +1432,8 @@ msgid "LDAP"
 msgstr "LDAP"
 
 #: frontend/src/metabase/plugins/builtin/auth/ldap.js:19
-msgid "Allows users within your LDAP directory to log in to Metabase with their LDAP credentials, and allows automatic mapping of LDAP groups to Metabase groups."
-msgstr "允許LDAP目錄中的使用者使用他們的LDAP憑證登入到Metabase，並且允許自動同步LDAP組的資料到Metabase中來。"
+msgid "Allows users within your LDAP directory to log in to VLink with their LDAP credentials, and allows automatic mapping of LDAP groups to Metabase groups."
+msgstr "允許LDAP目錄中的使用者使用他們的LDAP憑證登入到VLink，並且允許自動同步LDAP組的資料到VLink中來。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:20
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:61
