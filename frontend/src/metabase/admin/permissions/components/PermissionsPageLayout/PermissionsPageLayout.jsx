@@ -24,7 +24,7 @@ import {
 import { PermissionsEditBar } from "./PermissionsEditBar";
 import { useLeaveConfirmation } from "../../hooks/use-leave-confirmation";
 import { clearSaveError } from "../../permissions";
-import { ToolbarButton } from "../ToolbarButton";
+// import { ToolbarButton } from "../ToolbarButton";
 
 const mapDispatchToProps = {
   navigateToTab: tab => push(`/admin/permissions/${tab}`),
@@ -111,13 +111,15 @@ function PermissionsPageLayout({
           <PermissionsTabs tab={tab} onChangeTab={navigateToTab} />
           <ToolbarButtonsContainer>
             {toolbarRightContent}
-            {helpContent && !shouldShowHelp && (
-              <ToolbarButton
-                text={t`Permission help`}
-                icon="info"
-                onClick={() => setShouldShowHelp(prev => !prev)}
-              />
-            )}
+            {helpContent &&
+              !shouldShowHelp &&
+              ""
+              // <ToolbarButton
+              //   text={t`Permission help`}
+              //   icon="info"
+              //   onClick={() => setShouldShowHelp(prev => !prev)}
+              // />
+            }
           </ToolbarButtonsContainer>
         </TabsContainer>
 

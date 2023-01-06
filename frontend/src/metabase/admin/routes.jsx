@@ -170,7 +170,7 @@ const getRoutes = (store, CanAccessSettings, IsAdmin) => (
         component={createAdminRouteGuard("troubleshooting")}
       >
         <Route title={t`Troubleshooting`} component={TroubleshootingApp}>
-          <IndexRedirect to="help" />
+          <IndexRedirect to="tasks" />
           <Route path="help" component={Help} />
           <Route path="tasks" component={TasksApp}>
             <ModalRoute path=":taskId" modal={TaskModal} />
