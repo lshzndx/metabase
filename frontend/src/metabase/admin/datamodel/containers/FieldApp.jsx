@@ -365,7 +365,7 @@ const FieldGeneralPane = ({
     <Section last>
       <SectionHeader
         title={t`Cached field values`}
-        description={t`Metabase can scan the values for this field to enable checkbox filters in dashboards and questions.`}
+        description={t`VLink can scan the values for this field to enable checkbox filters in dashboards and questions.`}
       />
       <UpdateCachedFieldValues
         rescanFieldValues={() => rescanFieldValues(field.id)}

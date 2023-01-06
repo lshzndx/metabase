@@ -729,7 +729,7 @@ msgid "Cached field values"
 msgstr "مقادیر فیلد ذخیره شده"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
 msgstr "متابیس می تواند مقادیر این فیلد را فعال کند تا فیلترهای چک باکس را در داشبورد و سوالات فعال کند."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15

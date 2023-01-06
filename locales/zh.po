@@ -713,8 +713,8 @@ msgid "Cached field values"
 msgstr "缓存字段值"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase 通过扫描该字段，以启用仪表板和问题中的多选框筛选。"
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink 通过扫描该字段，以启用仪表板和问题中的多选框筛选。"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

@@ -727,8 +727,8 @@ msgid "Cached field values"
 msgstr "Buforowane wartości pola"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase może skanować wartości tego pola, aby włączyć filtry pól wyboru w pulpitach i pytaniach."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink może skanować wartości tego pola, aby włączyć filtry pól wyboru w pulpitach i pytaniach."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

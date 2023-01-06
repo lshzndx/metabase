@@ -713,8 +713,8 @@ msgid "Cached field values"
 msgstr "快取欄位值"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase 通過掃描該欄位，以啟用資訊看板和問題的多選框篩選。"
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink 通過掃描該欄位，以啟用資訊看板和問題的多選框篩選。"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

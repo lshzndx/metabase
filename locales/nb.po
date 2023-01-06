@@ -717,8 +717,8 @@ msgid "Cached field values"
 msgstr "Mellomlagret felt verdier"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase kan skanne verdiene for dette feltet for å aktivere avhukingsfilter i infotavler og spørsmål."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink kan skanne verdiene for dette feltet for å aktivere avhukingsfilter i infotavler og spørsmål."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

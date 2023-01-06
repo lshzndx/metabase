@@ -715,8 +715,8 @@ msgid "Cached field values"
 msgstr "フィールド値をキャッシュする"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabaseはダッシュボードまたは質問のチェックボックスを有効化するため、このフィールドの値をスキャンします。"
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLinkはダッシュボードまたは質問のチェックボックスを有効化するため、このフィールドの値をスキャンします。"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

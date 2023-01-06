@@ -716,8 +716,8 @@ msgid "Cached field values"
 msgstr "Кеширани стойности"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Метабейс може да сканира стойностите на това поле за да направи възможни филтри тип поле за отметка в табла или въпроси."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink може да сканира стойностите на това поле за да направи възможни филтри тип поле за отметка в табла или въпроси."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

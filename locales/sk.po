@@ -723,8 +723,8 @@ msgid "Cached field values"
 msgstr "Hodnoty poľa vo vyrovnávacej pamäti"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase môže skontrolovať hodnoty tohto poľa a povoliť filtre checkboxov políčok na dashboardoch a otázkach."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink môže skontrolovať hodnoty tohto poľa a povoliť filtre checkboxov políčok na dashboardoch a otázkach."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"

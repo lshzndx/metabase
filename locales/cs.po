@@ -719,8 +719,8 @@ msgid "Cached field values"
 msgstr "Hodnoty v mezipaměti"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:368
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase může zjistit hodnoty v tomto políčku pro povolení zaškrtávacích filtrů v nástěnkách a dotazech."
+msgid "VLink can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "VLink může zjistit hodnoty v tomto políčku pro povolení zaškrtávacích filtrů v nástěnkách a dotazech."
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:15
 msgid "Re-scan this field"
