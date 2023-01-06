@@ -37,7 +37,7 @@ import LoadingAndErrorWrapper from "metabase/components/LoadingAndErrorWrapper";
 import {
   DatabaseEditContent,
   DatabaseEditForm,
-  DatabaseEditHelp,
+  // DatabaseEditHelp,
   DatabaseEditMain,
   DatabaseEditRoot,
 } from "./DatabaseEditApp.styled";
@@ -180,7 +180,7 @@ class DatabaseEditApp extends Component {
                               </div>
                             </Form>
                           </DatabaseEditForm>
-                          <div>{addingNewDatabase && <DatabaseEditHelp />}</div>
+                          {/* <div>{addingNewDatabase && <DatabaseEditHelp />}</div> */}
                         </DatabaseEditContent>
                       );
                     }}
