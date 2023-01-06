@@ -73,15 +73,15 @@ msgid "Scanning for Filter Values"
 msgstr "Analyse des valeurs de filtre"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase peut analyser les champs de cette base de données pour en proposer les valeurs dans les filtres des tableaux de bord et des questions. Cette analyse peut être un processus gourmand en ressources, surtout si vous avez une très grande base de données."
+msgstr "VLink peut analyser les champs de cette base de données pour en proposer les valeurs dans les filtres des tableaux de bord et des questions. Cette analyse peut être un processus gourmand en ressources, surtout si vous avez une très grande base de données."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Quand Metabase doit-il automatiquement analyser et mettre en cache les valeurs des champs ?"
+msgid "When should VLink automatically scan and cache field values?"
+msgstr "Quand VLink doit-il automatiquement analyser et mettre en cache les valeurs des champs ?"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"

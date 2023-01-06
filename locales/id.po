@@ -71,18 +71,18 @@ msgid "Scanning for Filter Values"
 msgstr "Memindai untuk Nilai Filter"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase dapat memindai nilai-nilai yang ada di masing-masing\n"
+msgstr "VLink dapat memindai nilai-nilai yang ada di masing-masing\n"
 "field dalam database ini untuk mengaktifkan filter kotak centang di dasbor dan pertanyaan. Ini\n"
 "dapat menjadi proses yang membutuhkan banyak sumber daya, terutama jika Anda memiliki jumlah yang sangat besar\n"
 "database."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Kapan Metabase secara otomatis memindai dan meng-cache nilai lapangan?"
+msgid "When should VLink automatically scan and cache field values?"
+msgstr "Kapan VLink secara otomatis memindai dan meng-cache nilai lapangan?"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"

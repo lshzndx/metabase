@@ -71,15 +71,15 @@ msgid "Scanning for Filter Values"
 msgstr "Hledání filtrovacích hodnot"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase může projít hodnoty každého políčka a povolit v dotazech a nástěnkách filtrování pomocí zaškrtávacích políček. Tento proces může znatelně zatížit databázi, především, pokud je velká."
+msgstr "VLink může projít hodnoty každého políčka a povolit v dotazech a nástěnkách filtrování pomocí zaškrtávacích políček. Tento proces může znatelně zatížit databázi, především, pokud je velká."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Kdy má Metabase skenovat a uložit hodnoty polí do mezipaměti?"
+msgid "When should VLink automatically scan and cache field values?"
+msgstr "Kdy má VLink skenovat a uložit hodnoty polí do mezipaměti?"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"

@@ -73,14 +73,14 @@ msgstr "フィルター値をスキャン中"
 
 #. リソース負荷の高い、という意味だとは思いますが、リソース集約的という表現は一般的な表現でしょうか？私は聞いたことがなかったもので。
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabaseはこのデータベースの各フィールドの値をスキャンして、ダッシュボードや質問でのチェックボックスフィルター機能を有効にすることができます。 データベースが非常に大きい場合は、リソースに多少負荷のかかる処理となります。"
+msgstr "VLinkはこのデータベースの各フィールドの値をスキャンして、ダッシュボードや質問でのチェックボックスフィルター機能を有効にすることができます。 データベースが非常に大きい場合は、リソースに多少負荷のかかる処理となります。"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
+msgid "When should VLink automatically scan and cache field values?"
 msgstr "フィールド値をキャッシュするための自動スキャンをいつ実行するようにしますか？"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26

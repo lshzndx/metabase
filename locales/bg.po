@@ -71,15 +71,15 @@ msgid "Scanning for Filter Values"
 msgstr "Сканира за стойности на филтъра"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase може да сканира стойностите във всяко поле от базата данни за да активира чекбокс филтри в дашборди и въпроси. Това може да отнеме значителни системни ресурси, особено при по-големи бази данни. "
+msgstr "VLink може да сканира стойностите във всяко поле от базата данни за да активира чекбокс филтри в дашборди и въпроси. Това може да отнеме значителни системни ресурси, особено при по-големи бази данни. "
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Кога желаете Metabase автоматично да сканира и кешира стойности от полетата в базата данни?"
+msgid "When should VLink automatically scan and cache field values?"
+msgstr "Кога желаете VLink автоматично да сканира и кешира стойности от полетата в базата данни?"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"
@@ -14106,8 +14106,8 @@ msgid "This is a lightweight process that checks for updates to this database’
 msgstr "Това е лек процес, който проверява за актуализации на схемата на тази база данни. В повечето случаи трябва да сте добре, като оставите този комплект да се синхронизира ежечасно."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:165
-msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
-msgstr "Metabase може да сканира стойностите, налични във всяко поле в тази база данни, за да активира филтрите за отметки в таблата и въпроси. Това може да бъде донякъде интензивен процес, особено ако имате много голяма база данни."
+msgid "VLink can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
+msgstr "VLink може да сканира стойностите, налични във всяко поле в тази база данни, за да активира филтрите за отметки в таблата и въпроси. Това може да бъде донякъде интензивен процес, особено ако имате много голяма база данни."
 
 #: frontend/src/metabase/components/NewItemMenu/NewItemMenu.tsx:92
 #: frontend/src/metabase/entities/questions/forms.js:21

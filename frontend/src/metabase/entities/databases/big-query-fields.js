@@ -162,9 +162,9 @@ export default function getFieldsForBigQuery(details) {
         "display-name": t`Scanning for Filter Values`,
         type: CacheFieldValuesScheduleWidget,
         description:
-          t`Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database.` +
+          t`VLink can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database.` +
           " " +
-          t`When should Metabase automatically scan and cache field values?`,
+          t`When should VLink automatically scan and cache field values?`,
         "visible-if": { "let-user-control-scheduling": true },
       },
       {

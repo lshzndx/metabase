@@ -71,15 +71,15 @@ msgid "Scanning for Filter Values"
 msgstr "根據篩選值進行掃描"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "VLink can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase 可以掃描資料庫中每個欄位的值，用來壤使用者啟用查詢或資訊看板中的篩選器。當您的資料庫較大時，這個功能同時會耗費更多的系統資源。"
+msgstr "VLink 可以掃描資料庫中每個欄位的值，用來壤使用者啟用查詢或資訊看板中的篩選器。當您的資料庫較大時，這個功能同時會耗費更多的系統資源。"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Metabase應該在什麼時候自動掃描快取的欄位值"
+msgid "When should VLink automatically scan and cache field values?"
+msgstr "VLink應該在什麼時候自動掃描快取的欄位值"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:26
 msgid "Regularly, on a schedule"

@@ -4182,7 +4182,7 @@ msgstr ""
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
 #: src/metabase/driver/common.clj
-msgid "When should Metabase automatically scan and cache field values?"
+msgid "When should VLink automatically scan and cache field values?"
 msgstr ""
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:173
