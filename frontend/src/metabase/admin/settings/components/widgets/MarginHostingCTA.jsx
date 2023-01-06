@@ -4,7 +4,7 @@ import { t } from "ttag";
 
 import Icon from "metabase/components/Icon";
 import Text from "metabase/components/type/Text";
-import HostingInfoLink from "metabase/admin/settings/components/widgets/HostingInfoLink";
+// import HostingInfoLink from "metabase/admin/settings/components/widgets/HostingInfoLink";
 
 const MarginHostingCTA = ({ tagline }) => (
   <div
@@ -17,7 +17,7 @@ const MarginHostingCTA = ({ tagline }) => (
       <Text className="text-brand text-bold">{t`Migrate to VLink Cloud.`}</Text>
     </div>
 
-    <HostingInfoLink text={t`Learn more`} />
+    {/* <HostingInfoLink text={t`Learn more`} /> */}
   </div>
 );
 
