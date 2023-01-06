@@ -16,7 +16,7 @@ import ReferenceHeader from "../components/ReferenceHeader";
 
 import { getMetrics, getError, getLoading } from "../selectors";
 
-import MetabaseSettings from "metabase/lib/settings";
+// import MetabaseSettings from "metabase/lib/settings";
 
 import * as metadataActions from "metabase/redux/metadata";
 
@@ -26,10 +26,11 @@ const emptyStateData = {
   message: t`Metrics will appear here once your admins have created some`,
   image: "app/assets/img/metrics-list",
   adminAction: t`Learn how to create metrics`,
-  adminLink: MetabaseSettings.docsUrl(
-    "administration-guide/07-segments-and-metrics",
-    "creating-a-metric",
-  ),
+  adminLink: "",
+  // adminLink: MetabaseSettings.docsUrl(
+  //   "administration-guide/07-segments-and-metrics",
+  //   "creating-a-metric",
+  // ),
 };
 
 const mapStateToProps = (state, props) => ({
