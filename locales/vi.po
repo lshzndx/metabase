@@ -632,8 +632,8 @@ msgid "{0} – Field Settings"
 msgstr "{0} - Cài đặt trường"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:280
-msgid "Where this field will appear throughout Metabase"
-msgstr "Trường này sẽ xuất hiện trên khắp Metabase"
+msgid "Where this field will appear throughout VLink"
+msgstr "Trường này sẽ xuất hiện trên khắp VLink"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:332
 msgid "Filtering on this field"

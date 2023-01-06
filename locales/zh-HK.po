@@ -631,7 +631,7 @@ msgid "{0} – Field Settings"
 msgstr "{0} - 欄位設定"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:280
-msgid "Where this field will appear throughout Metabase"
+msgid "Where this field will appear throughout VLink"
 msgstr "這些欄位將在哪裡顯示？"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:332

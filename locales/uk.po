@@ -640,7 +640,7 @@ msgid "{0} – Field Settings"
 msgstr "{0} - установки поля"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:280
-msgid "Where this field will appear throughout Metabase"
+msgid "Where this field will appear throughout VLink"
 msgstr "Де це поле буде відображено в системі"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:332

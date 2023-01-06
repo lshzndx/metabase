@@ -634,8 +634,8 @@ msgid "{0} – Field Settings"
 msgstr "{0} – Impostazioni dei campi"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:280
-msgid "Where this field will appear throughout Metabase"
-msgstr "Dove questo campo apparirà in tutto Metabase"
+msgid "Where this field will appear throughout VLink"
+msgstr "Dove questo campo apparirà in tutto VLink"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:332
 msgid "Filtering on this field"

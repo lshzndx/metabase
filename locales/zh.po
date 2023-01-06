@@ -631,8 +631,8 @@ msgid "{0} – Field Settings"
 msgstr "{0} - 字段设置"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:280
-msgid "Where this field will appear throughout Metabase"
-msgstr "该字段将在整个Metabase中出现的位置"
+msgid "Where this field will appear throughout VLink"
+msgstr "该字段将在整个VLink中出现的位置"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:332
 msgid "Filtering on this field"

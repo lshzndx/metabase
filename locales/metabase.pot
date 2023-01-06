@@ -11058,7 +11058,7 @@ msgid "No column description yet"
 msgstr ""
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:277
-msgid "Where this field will appear throughout Metabase"
+msgid "Where this field will appear throughout VLink"
 msgstr ""
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:288
