@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { t } from "ttag";
-import MetabaseSettings from "metabase/lib/settings";
+// import MetabaseSettings from "metabase/lib/settings";
 import { AdminNavItem } from "./AdminNavItem";
-import StoreLink from "../StoreLink";
+// import StoreLink from "../StoreLink";
 import LogoIcon from "metabase/components/LogoIcon";
 import Icon from "metabase/components/Icon";
 import {
@@ -52,7 +52,7 @@ export const AdminNavbar = ({
           ))}
         </AdminNavbarItems>
 
-        {!MetabaseSettings.isPaidPlan() && <StoreLink />}
+        {/* {!MetabaseSettings.isPaidPlan() && <StoreLink />} */}
         <AdminExitLink
           to="/"
           data-metabase-event="Navbar;Exit Admin"

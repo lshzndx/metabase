@@ -8,7 +8,7 @@ import ModalContent from "metabase/components/ModalContent";
 import {
   Content,
   Description,
-  ButtonLink,
+  // ButtonLink,
   CenteredRow,
 } from "./ModelEducationalModal.styled";
 
@@ -17,7 +17,7 @@ ModelEducationalModal.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-const EDUCATION_URL = "https://metabase.com/learn/getting-started/models";
+// const EDUCATION_URL = "https://metabase.com/learn/getting-started/models";
 
 export function ModelEducationalModal({ isOpen, onClose }) {
   return (
@@ -41,10 +41,10 @@ export function ModelEducationalModal({ isOpen, onClose }) {
             {t`Instead of having your end users wade through your complex raw data, you can create custom models that are easy to find, understand, and explore.`}
           </Description>
           <CenteredRow>
-            <ButtonLink
+            {/* <ButtonLink
               href={EDUCATION_URL}
               className="Button Button--primary"
-            >{t`Learn how`}</ButtonLink>
+            >{t`Learn how`}</ButtonLink> */}
           </CenteredRow>
         </Content>
       </ModalContent>
