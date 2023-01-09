@@ -23,7 +23,7 @@ import FormattingWidget from "./components/widgets/FormattingWidget";
 import { PremiumEmbeddingLinkWidget } from "./components/widgets/PremiumEmbeddingLinkWidget";
 import ModelCachingScheduleWidget from "./components/widgets/ModelCachingScheduleWidget";
 import SectionDivider from "./components/widgets/SectionDivider";
-import SettingsUpdatesForm from "./components/SettingsUpdatesForm/SettingsUpdatesForm";
+// import SettingsUpdatesForm from "./components/SettingsUpdatesForm/SettingsUpdatesForm";
 import SettingsEmailForm from "./components/SettingsEmailForm";
 import SettingsSetupList from "./components/SettingsSetupList";
 import SlackSettings from "./slack/containers/SlackSettings";
@@ -131,19 +131,19 @@ const SECTIONS = updateSectionsWithPlugins({
       },
     ],
   },
-  updates: {
-    name: t`Updates`,
-    order: 3,
-    component: SettingsUpdatesForm,
-    settings: [
-      {
-        key: "check-for-updates",
-        display_name: t`Check for updates`,
-        type: "boolean",
-      },
-    ],
-    adminOnly: true,
-  },
+  // updates: {
+  //   name: t`Updates`,
+  //   order: 3,
+  //   component: SettingsUpdatesForm,
+  //   settings: [
+  //     {
+  //       key: "check-for-updates",
+  //       display_name: t`Check for updates`,
+  //       type: "boolean",
+  //     },
+  //   ],
+  //   adminOnly: true,
+  // },
   email: {
     name: t`Email`,
     order: 4,
