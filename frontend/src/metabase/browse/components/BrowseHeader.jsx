@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { t } from "ttag";
+// import { t } from "ttag";
 
 import BrowserCrumbs from "metabase/components/BrowserCrumbs";
-import Icon from "metabase/components/Icon";
-import Link from "metabase/core/components/Link";
+// import Icon from "metabase/components/Icon";
+// import Link from "metabase/core/components/Link";
 
 import { ANALYTICS_CONTEXT } from "metabase/browse/constants";
 import { BrowseHeaderContent, BrowseHeaderRoot } from "./BrowseHeader.styled";
@@ -14,7 +14,7 @@ export default function BrowseHeader({ crumbs }) {
     <BrowseHeaderRoot>
       <BrowseHeaderContent>
         <BrowserCrumbs crumbs={crumbs} analyticsContext={ANALYTICS_CONTEXT} />
-        <div className="flex flex-align-right">
+        {/* <div className="flex flex-align-right">
           <Link
             className="flex flex-align-right"
             to="reference"
@@ -27,7 +27,7 @@ export default function BrowseHeader({ crumbs }) {
               </span>
             </div>
           </Link>
-        </div>
+        </div> */}
       </BrowseHeaderContent>
     </BrowseHeaderRoot>
   );
