@@ -21,6 +21,7 @@ export interface NewItemMenuProps {
   hasNativeWrite: boolean;
   hasDatabaseWithJsonEngine: boolean;
   hasDatabaseWithActionsEnabled: boolean;
+  isOpen: boolean;
   onCloseNavbar: () => void;
   onChangeLocation: (nextLocation: LocationDescriptor) => void;
 }
@@ -45,6 +46,7 @@ const NewItemMenu = ({
   hasNativeWrite,
   hasDatabaseWithJsonEngine,
   hasDatabaseWithActionsEnabled,
+  isOpen,
   onCloseNavbar,
 }: NewItemMenuProps) => {
   const dispatch = useDispatch();
@@ -158,6 +160,7 @@ const NewItemMenu = ({
       // TODO: Try to restore this transition once we upgrade to React 18 and can prioritize this update
       transitionDuration={0}
       minWidth={292}
+      open={isOpen}
     />
   );
 };

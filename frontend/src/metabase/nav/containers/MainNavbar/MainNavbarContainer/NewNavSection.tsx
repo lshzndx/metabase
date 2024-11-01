@@ -17,10 +17,12 @@ import { useState } from "react";
 
 export const NewNavSection = ({
   hasDataAccess,
+  isOpen,
 }: {
   nonEntityItem: SelectedItem;
   onItemSelect: () => void;
   hasDataAccess: boolean;
+  isOpen: boolean;
 }) => {
   const {
     hasModels,
@@ -48,6 +50,7 @@ export const NewNavSection = ({
             <SidebarHeading>{c("A verb, shown in the sidebar")
               .t`New`}</SidebarHeading>
           }
+          isOpen={isOpen}
           // collectionId={collectionId}
         />
       }

@@ -12,7 +12,7 @@ import { Popover } from "metabase/ui";
  */
 class EntityMenu extends Component {
   state = {
-    open: true,
+    open: false,
     freezeMenu: false,
     menuItemContent: null,
   };
@@ -25,6 +25,18 @@ class EntityMenu extends Component {
     super(props, context);
 
     this.rootRef = createRef();
+  }
+
+  componentDidMount() {
+    // 初始化状态为 props 中的 open 值
+    this.setState({ open: this.props.open });
+  }
+
+  componentDidUpdate(prevProps) {
+    // 当 props 的 open 变化时，更新内部状态
+    if (prevProps.open !== this.props.open) {
+      this.setState({ open: this.props.open });
+    }
   }
 
   toggleMenu = () => {

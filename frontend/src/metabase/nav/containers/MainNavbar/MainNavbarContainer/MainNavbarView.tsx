@@ -76,6 +76,7 @@ function MainNavbarView({
   hasOwnDatabase,
   selectedItems,
   hasDataAccess,
+  isOpen,
   reorderBookmarks,
   handleCreateNewCollection,
   handleCloseNavbar,
@@ -230,6 +231,7 @@ function MainNavbarView({
                 nonEntityItem={nonEntityItem}
                 onItemSelect={onItemSelect}
                 hasDataAccess={hasDataAccess}
+                isOpen={isOpen}
               />
               {/* {hasDataAccess && (
                 <>
