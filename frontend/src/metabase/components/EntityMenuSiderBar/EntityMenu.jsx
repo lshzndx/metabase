@@ -15,6 +15,7 @@ class EntityMenu extends Component {
     open: false,
     freezeMenu: false,
     menuItemContent: null,
+    isReady: false,
   };
 
   static defaultProps = {
@@ -30,6 +31,9 @@ class EntityMenu extends Component {
   componentDidMount() {
     // 初始化状态为 props 中的 open 值
     this.setState({ open: this.props.open });
+    requestAnimationFrame(() => {
+      this.setState({ isReady: true });
+    });
   }
 
   componentDidUpdate(prevProps) {
@@ -72,7 +76,7 @@ class EntityMenu extends Component {
       tooltipPlacement,
       transitionDuration = 150,
     } = this.props;
-    const { open, menuItemContent } = this.state;
+    const { open, menuItemContent, isReady } = this.state;
 
     return (
       <Popover
@@ -81,6 +85,10 @@ class EntityMenu extends Component {
         transitionProps={{ duration: transitionDuration }}
         // onChange={() => this.toggleMenu()}
         position="bottom-end"
+        withinPortal={false} // 禁用视口内的定位，让 Dropdown 固定在 bottom-end
+        trapFocus={false} // 禁用焦点捕捉，避免触发视口调整
+        closeOnEscape={false} // 禁用键盘触发的自动关闭
+        positionDependencies={[]} // 禁用位置依赖，防止受视口影响
       >
         <Popover.Target>
           <div>
@@ -101,6 +109,11 @@ class EntityMenu extends Component {
           </div>
         </Popover.Target>
         <Popover.Dropdown
+          sx={{
+            position: "absolute", // 直接固定位置
+            bottom: 0, // 确保在底部位置
+            right: 0, // 确保靠右
+          }}
           style={{ background: "none", border: "none", boxShadow: "none" }}
         >
           {menuItemContent || (
