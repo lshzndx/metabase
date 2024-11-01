@@ -39,6 +39,7 @@ import type { SelectedItem } from "../types";
 
 import BookmarkList from "./BookmarkList";
 import { BrowseNavSection } from "./BrowseNavSection";
+import { NewNavSection } from "./NewNavSection";
 
 interface CollectionTreeItem extends Collection {
   icon: IconName | IconProps;
@@ -217,6 +218,37 @@ function MainNavbarView({
               </ErrorBoundary>
             </TrashSidebarSection>
           )}
+
+          <SidebarSection>
+            <hr />
+          </SidebarSection>
+
+          {/* 新建 */}
+          <SidebarSection>
+            <ErrorBoundary>
+              <NewNavSection
+                nonEntityItem={nonEntityItem}
+                onItemSelect={onItemSelect}
+                hasDataAccess={hasDataAccess}
+              />
+              {/* {hasDataAccess && (
+                <>
+                  {!hasOwnDatabase && isAdmin && (
+                    <AddYourOwnDataLink
+                      icon="add"
+                      url={ADD_YOUR_OWN_DATA_URL}
+                      isSelected={nonEntityItem?.url?.startsWith(
+                        ADD_YOUR_OWN_DATA_URL,
+                      )}
+                      onClick={onItemSelect}
+                    >
+                      {t`Add your own data`}
+                    </AddYourOwnDataLink>
+                  )}
+                </>
+              )} */}
+            </ErrorBoundary>
+          </SidebarSection>
         </div>
         <WhatsNewNotification />
       </SidebarContentRoot>

@@ -31,6 +31,7 @@ import SnippetFormModal from "metabase/query_builder/components/template_tags/Sn
 import type { QueryModalType } from "metabase/query_builder/constants";
 import { getSetting } from "metabase/selectors/settings";
 import { Flex } from "metabase/ui";
+import visualizations from "metabase/visualizations";
 import * as Lib from "metabase-lib";
 import type Question from "metabase-lib/v1/Question";
 import type NativeQuery from "metabase-lib/v1/queries/NativeQuery";
@@ -385,14 +386,53 @@ export class NativeQueryEditor extends Component<
     const selectedText = this._editor?.getSelectedText();
 
     if (selectedText) {
-      const temporaryQuestion = query.setQueryText(selectedText).question();
+      this.execSelectedText(selectedText);
+    } else if (query.canRun()) {
+      // runQuestionQuery();
+    }
+  };
 
+  execSelectedText = (selectedText: string) => {
+    const { query, question, runQuestionQuery } = this.props;
+
+    if (selectedText.includes("柱状图")) {
+      if (question.display() !== "bar") {
+        let temporaryQuestion = query
+          .setQueryText(`SELECT * FROM Products WHERE price > 90;`)
+          .question();
+        temporaryQuestion = temporaryQuestion.setDisplay("bar").lockDisplay();
+        temporaryQuestion = temporaryQuestion.setSettings({
+          "graph.dimensions": ["TITLE"],
+          "graph.metrics": ["PRICE"],
+        });
+        const visualization = visualizations.get("bar");
+        if (visualization?.onDisplayUpdate) {
+          const updatedSettings = visualization.onDisplayUpdate(
+            temporaryQuestion.settings(),
+          );
+          temporaryQuestion = temporaryQuestion.setSettings(updatedSettings);
+        }
+
+        runQuestionQuery({
+          overrideWithQuestion: temporaryQuestion,
+          shouldUpdateUrl: false,
+        });
+      } else {
+        const temporaryQuestion = query
+          .setQueryText(`SELECT * FROM Products WHERE price > 90;`)
+          .question();
+        runQuestionQuery({
+          overrideWithQuestion: temporaryQuestion,
+          shouldUpdateUrl: false,
+        });
+      }
+    } else {
+      // 作为普通的sql
+      const temporaryQuestion = query.setQueryText(selectedText).question();
       runQuestionQuery({
         overrideWithQuestion: temporaryQuestion,
         shouldUpdateUrl: false,
       });
-    } else if (query.canRun()) {
-      runQuestionQuery();
     }
   };
 
