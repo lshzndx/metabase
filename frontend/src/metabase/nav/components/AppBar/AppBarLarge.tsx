@@ -73,7 +73,10 @@ const AppBarLarge = ({
       {(isSearchVisible || isNewButtonVisible || isProfileLinkVisible) && (
         <AppBarRightContainer>
           {isSearchVisible && (isEmbedded ? <SearchBar /> : <SearchButton />)}
-          {isNewButtonVisible && <NewItemButton collectionId={collectionId} />}
+
+          {/* 隐藏新右上角的新建按钮 */}
+          {/* {isNewButtonVisible && <NewItemButton collectionId={collectionId} />} */}
+
           {isProfileLinkVisible && (
             <AppBarProfileLinkContainer>
               <ProfileLink onLogout={onLogout} />
