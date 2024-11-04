@@ -198,6 +198,7 @@ function MainNavbarContainer({
         handleCreateNewCollection={onCreateNewCollection}
         handleCloseNavbar={closeNavbar}
         handleLogout={logout}
+        location={location}
       />
 
       {modal && <Modal onClose={closeModal}>{renderModalContent()}</Modal>}

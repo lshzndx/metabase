@@ -1,6 +1,7 @@
 /**
  * created by liushuai
  */
+import type { LocationDescriptor } from "history";
 import { c, t } from "ttag";
 
 import NewItemMenu from "metabase/containers/NewItemMenuSideBar";
@@ -18,11 +19,13 @@ import { useState } from "react";
 export const NewNavSection = ({
   hasDataAccess,
   isOpen,
+  location,
 }: {
   nonEntityItem: SelectedItem;
   onItemSelect: () => void;
   hasDataAccess: boolean;
   isOpen: boolean;
+  location?: LocationDescriptor;
 }) => {
   const {
     hasModels,
@@ -45,14 +48,8 @@ export const NewNavSection = ({
   return (
     <CollapseSection
       header={
-        <NewItemMenu
-          trigger={
-            <SidebarHeading>{c("A verb, shown in the sidebar")
-              .t`New`}</SidebarHeading>
-          }
-          isOpen={isOpen}
-          // collectionId={collectionId}
-        />
+        <SidebarHeading>{c("A verb, shown in the sidebar")
+          .t`New`}</SidebarHeading>
       }
       initialState={expandNew ? "expanded" : "collapsed"}
       iconPosition="right"
@@ -60,17 +57,15 @@ export const NewNavSection = ({
       headerClass={CS.mb1}
       onToggle={setExpandNew}
     >
-      {/* {hasDataAccess && (
-        <PaddedSidebarLink
-          icon="database"
-          url={BROWSE_DATA_URL}
-          isSelected={nonEntityItem?.url?.startsWith(BROWSE_DATA_URL)}
-          onClick={onItemSelect}
-          aria-label={t`Browse databases`}
-        >
-          {t`Databases`}
-        </PaddedSidebarLink>
-      )} */}
+      <NewItemMenu
+      // trigger={
+      //   <SidebarHeading>{c("A verb, shown in the sidebar")
+      //     .t`New`}</SidebarHeading>
+      // }
+      // isOpen={isOpen}
+      // collectionId={collectionId}
+      // location={location}
+      />
     </CollapseSection>
   );
 };

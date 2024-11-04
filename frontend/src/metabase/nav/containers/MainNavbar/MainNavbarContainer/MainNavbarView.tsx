@@ -1,3 +1,4 @@
+import type { LocationDescriptor } from "history";
 import type { MouseEvent } from "react";
 import { useCallback, useMemo } from "react";
 import { t } from "ttag";
@@ -54,6 +55,7 @@ type Props = {
   hasOwnDatabase: boolean;
   collections: CollectionTreeItem[];
   selectedItems: SelectedItem[];
+  location?: LocationDescriptor;
   handleCloseNavbar: () => void;
   handleLogout: () => void;
   handleCreateNewCollection: () => void;
@@ -232,23 +234,8 @@ function MainNavbarView({
                 onItemSelect={onItemSelect}
                 hasDataAccess={hasDataAccess}
                 isOpen={isOpen}
+                location={location}
               />
-              {/* {hasDataAccess && (
-                <>
-                  {!hasOwnDatabase && isAdmin && (
-                    <AddYourOwnDataLink
-                      icon="add"
-                      url={ADD_YOUR_OWN_DATA_URL}
-                      isSelected={nonEntityItem?.url?.startsWith(
-                        ADD_YOUR_OWN_DATA_URL,
-                      )}
-                      onClick={onItemSelect}
-                    >
-                      {t`Add your own data`}
-                    </AddYourOwnDataLink>
-                  )}
-                </>
-              )} */}
             </ErrorBoundary>
           </SidebarSection>
         </div>

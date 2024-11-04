@@ -5,7 +5,7 @@ import _ from "underscore";
 import NewItemMenu from "metabase/components/NewItemMenuSideBar";
 import Databases from "metabase/entities/databases";
 import Search from "metabase/entities/search";
-import { closeNavbar } from "metabase/redux/app";
+import { closeNavbar, openNavbar } from "metabase/redux/app";
 import {
   getHasDataAccess,
   getHasDatabaseWithActionsEnabled,
@@ -15,6 +15,7 @@ import {
 import type Database from "metabase-lib/v1/metadata/Database";
 import type { CollectionItem } from "metabase-types/api";
 import type { State } from "metabase-types/store";
+import { withRouter } from "react-router";
 
 interface MenuDatabaseProps {
   databases?: Database[];
@@ -34,6 +35,7 @@ const mapStateToProps = (
 
 const mapDispatchToProps = {
   onCloseNavbar: closeNavbar,
+  onOpenNavbar: openNavbar,
   onChangeLocation: push,
 };
 
@@ -50,4 +52,5 @@ export default _.compose(
     listName: "models",
   }),
   connect(mapStateToProps, mapDispatchToProps),
+  withRouter,
 )(NewItemMenu);

@@ -3,12 +3,14 @@ import type { ReactNode } from "react";
 import { useMemo } from "react";
 import { t } from "ttag";
 
+import EntityMenuItem from "metabase/components/EntityMenuItem";
 import EntityMenu from "metabase/components/EntityMenuSiderBar";
 import { useDispatch, useSelector } from "metabase/lib/redux";
 import * as Urls from "metabase/lib/urls";
 import { setOpenModal } from "metabase/redux/ui";
 import { getSetting } from "metabase/selectors/settings";
 import type { CollectionId } from "metabase-types/api";
+import { alpha } from "metabase/lib/colors";
 
 export interface NewItemMenuProps {
   className?: string;
@@ -22,7 +24,9 @@ export interface NewItemMenuProps {
   hasDatabaseWithJsonEngine: boolean;
   hasDatabaseWithActionsEnabled: boolean;
   isOpen: boolean;
+  location: LocationDescriptor;
   onCloseNavbar: () => void;
+  onOpenNavbar: () => void;
   onChangeLocation: (nextLocation: LocationDescriptor) => void;
 }
 
@@ -36,18 +40,15 @@ type NewMenuItem = {
 };
 
 const NewItemMenu = ({
-  className,
   collectionId,
-  trigger,
-  triggerIcon,
-  triggerTooltip,
   hasModels,
   hasDataAccess,
   hasNativeWrite,
   hasDatabaseWithJsonEngine,
   hasDatabaseWithActionsEnabled,
-  isOpen,
+  location,
   onCloseNavbar,
+  onOpenNavbar,
 }: NewItemMenuProps) => {
   const dispatch = useDispatch();
 
@@ -56,7 +57,7 @@ const NewItemMenu = ({
   );
 
   const menuItems = useMemo(() => {
-    const items: NewMenuItem[] = [];
+    const items: any[] = [];
 
     if (hasDataAccess) {
       items.push({
@@ -69,6 +70,8 @@ const NewItemMenu = ({
           cardType: "question",
         }),
         onClose: onCloseNavbar,
+        hoverBgColor: alpha("brand", 0.35),
+        isSelected: location?.pathname?.startsWith("/question/notebook"),
       });
     }
 
@@ -84,6 +87,8 @@ const NewItemMenu = ({
           databaseId: lastUsedDatabaseId || undefined,
         }),
         onClose: onCloseNavbar,
+        hoverBgColor: alpha("brand", 0.35),
+        isSelected: /^\/question(?!\/[a-zA-Z]+).*$/.test(location.pathname),
       });
     }
 
@@ -92,11 +97,13 @@ const NewItemMenu = ({
         title: t`Dashboard`,
         icon: "dashboard",
         action: () => dispatch(setOpenModal("dashboard")),
+        hoverBgColor: alpha("brand", 0.35),
       },
       {
         title: t`Collection`,
         icon: "folder",
         action: () => dispatch(setOpenModal("collection")),
+        hoverBgColor: alpha("brand", 0.35),
       },
     );
 
@@ -110,6 +117,8 @@ const NewItemMenu = ({
         icon: "model",
         link: `/model/new${collectionQuery}`,
         onClose: onCloseNavbar,
+        hoverBgColor: alpha("brand", 0.35),
+        isSelected: location.pathname.startsWith("/model"),
       });
     }
 
@@ -118,6 +127,7 @@ const NewItemMenu = ({
         title: t`Action`,
         icon: "bolt",
         action: () => dispatch(setOpenModal("action")),
+        hoverBgColor: alpha("brand", 0.35),
       });
     }
 
@@ -131,6 +141,8 @@ const NewItemMenu = ({
           collectionId,
         }),
         onClose: onCloseNavbar,
+        hoverBgColor: alpha("brand", 0.35),
+        isSelected: location.pathname.startsWith("/metric"),
       });
     }
 
@@ -145,23 +157,46 @@ const NewItemMenu = ({
     hasDatabaseWithJsonEngine,
     dispatch,
     lastUsedDatabaseId,
+    location,
   ]);
 
   return (
-    <EntityMenu
-      className={className}
-      items={menuItems}
-      trigger={trigger}
-      triggerIcon={triggerIcon}
-      tooltip={triggerTooltip}
-      // I've disabled this transition, since it results in the menu
-      // sometimes not appearing until content finishes loading on complex
-      // dashboards and questions #39303
-      // TODO: Try to restore this transition once we upgrade to React 18 and can prioritize this update
-      transitionDuration={0}
-      minWidth={292}
-      open={isOpen}
-    />
+    <ol>
+      {menuItems.map(item => {
+        if (!item) {
+          return null;
+        }
+
+        const key = item.key ?? item.title;
+
+        return (
+          <li key={key} data-testid={item.testId}>
+            <EntityMenuItem
+              icon={item.icon}
+              title={item.title}
+              externalLink={item.externalLink}
+              action={
+                item.action &&
+                (e => {
+                  item.action(e);
+                })
+              }
+              event={item.event}
+              link={item.link}
+              tooltip={item.tooltip}
+              disabled={item.disabled}
+              onClose={() => {
+                // item?.onClose?.();
+              }}
+              color={item.color}
+              hoverColor={item.hoverColor}
+              hoverBgColor={item.hoverBgColor}
+              isSelected={item.isSelected}
+            />
+          </li>
+        );
+      })}
+    </ol>
   );
 };
 
