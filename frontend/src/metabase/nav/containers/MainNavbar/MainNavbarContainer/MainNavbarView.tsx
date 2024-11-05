@@ -8,6 +8,7 @@ import ErrorBoundary from "metabase/ErrorBoundary";
 import { useUserSetting } from "metabase/common/hooks";
 import { useHasTokenFeature } from "metabase/common/hooks/use-has-token-feature";
 import { useIsAtHomepageDashboard } from "metabase/common/hooks/use-is-at-homepage-dashboard";
+import EntityMenuItem from "metabase/components/EntityMenuItem";
 import TippyPopoverWithTrigger from "metabase/components/PopoverWithTrigger/TippyPopoverWithTrigger";
 import { Tree } from "metabase/components/tree";
 import {
@@ -41,6 +42,7 @@ import type { SelectedItem } from "../types";
 import BookmarkList from "./BookmarkList";
 import { BrowseNavSection } from "./BrowseNavSection";
 import { NewNavSection } from "./NewNavSection";
+import { alpha } from "metabase/lib/colors";
 
 interface CollectionTreeItem extends Collection {
   icon: IconName | IconProps;
@@ -130,6 +132,22 @@ function MainNavbarView({
     () => _.partition(collections, c => c.type === "trash"),
     [collections],
   );
+
+  // todo: 国际化
+  const item: any = {
+    title: `Chat Query`,
+    icon: "sql",
+    link: Urls.newQuestion({
+      mode: "chat",
+      type: "native",
+      creationType: "native_question",
+      // collectionId,
+      cardType: "question",
+      // databaseId: lastUsedDatabaseId || undefined,
+    }),
+    hoverBgColor: alpha("brand", 0.35),
+    isSelected: location?.pathname?.startsWith("/question/chat"),
+  };
 
   return (
     <ErrorBoundary>
@@ -221,6 +239,37 @@ function MainNavbarView({
               </ErrorBoundary>
             </TrashSidebarSection>
           )}
+
+          {/* <SidebarSection>
+            <hr />
+          </SidebarSection> */}
+          {/* 对话查询 */}
+          <SidebarSection>
+            <ErrorBoundary>
+              <EntityMenuItem
+                icon={item.icon}
+                title={item.title}
+                externalLink={item.externalLink}
+                action={
+                  item.action &&
+                  (e => {
+                    item.action(e);
+                  })
+                }
+                event={item.event}
+                link={item.link}
+                tooltip={item.tooltip}
+                disabled={item.disabled}
+                onClose={() => {
+                  // item?.onClose?.();
+                }}
+                color={item.color}
+                hoverColor={item.hoverColor}
+                hoverBgColor={item.hoverBgColor}
+                isSelected={item.isSelected}
+              />
+            </ErrorBoundary>
+          </SidebarSection>
 
           <SidebarSection>
             <hr />

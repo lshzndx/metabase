@@ -163,6 +163,7 @@ export const getRoutes = store => {
           <Route path="/question">
             <IndexRoute component={QueryBuilder} />
             <Route path="notebook" component={QueryBuilder} />
+            <Route path="chat" component={QueryBuilder} />
             <Route path=":slug" component={QueryBuilder} />
             <Route path=":slug/notebook" component={QueryBuilder} />
             <Route path=":slug/metabot" component={QueryBuilder} />

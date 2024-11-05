@@ -90,7 +90,7 @@ export function serializedQuestion(card: Card, opts = {}) {
 }
 
 type NewQuestionUrlBuilderParams = QuestionCreatorOpts & {
-  mode?: "view" | "notebook" | "query";
+  mode?: "view" | "notebook" | "query" | "chat";
   creationType?: string;
   objectId?: number | string;
 };
