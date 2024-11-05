@@ -28,7 +28,7 @@ import {
 } from "metabase/selectors/user";
 
 import * as actions from "../actions";
-import View from "../components/view/View";
+import ViewChat from "../components/view/ViewChat";
 import { VISUALIZATION_SLOW_TIMEOUT } from "../constants";
 import {
   getAutocompleteResultsFn,
@@ -372,7 +372,7 @@ function QueryBuilder(props) {
 
   return (
     <>
-      <View
+      <ViewChat
         {...props}
         modal={uiControls.modal}
         recentlySaved={uiControls.recentlySaved}
@@ -387,11 +387,11 @@ function QueryBuilder(props) {
         isShowingToaster={isShowingToaster}
       />
 
-      <LeaveConfirmationModal
+      {/* <LeaveConfirmationModal
         isEnabled={shouldShowUnsavedChangesWarning && !isCallbackScheduled}
         isLocationAllowed={isLocationAllowed}
         route={route}
-      />
+      /> */}
     </>
   );
 }
