@@ -33,6 +33,7 @@ import NewModelOptions from "metabase/models/containers/NewModelOptions";
 import { getRoutes as getModelRoutes } from "metabase/models/routes";
 import { PLUGIN_COLLECTIONS, PLUGIN_LANDING_PAGE } from "metabase/plugins";
 import QueryBuilder from "metabase/query_builder/containers/QueryBuilder";
+import QueryBuilderChat from "metabase/query_builder/containers/QueryBuilderChat";
 import { loadCurrentUser } from "metabase/redux/user";
 import DatabaseDetailContainer from "metabase/reference/databases/DatabaseDetailContainer";
 import DatabaseListContainer from "metabase/reference/databases/DatabaseListContainer";
@@ -163,7 +164,7 @@ export const getRoutes = store => {
           <Route path="/question">
             <IndexRoute component={QueryBuilder} />
             <Route path="notebook" component={QueryBuilder} />
-            <Route path="chat" component={QueryBuilder} />
+            <Route path="chat" component={QueryBuilderChat} />
             <Route path=":slug" component={QueryBuilder} />
             <Route path=":slug/notebook" component={QueryBuilder} />
             <Route path=":slug/metabot" component={QueryBuilder} />
