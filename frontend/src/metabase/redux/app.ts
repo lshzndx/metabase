@@ -61,9 +61,10 @@ const errorPage = handleActions(
 const PATH_WITH_COLLAPSED_NAVBAR = /\/(model\b|question|dashboard|metabot).*/;
 
 export function isNavbarOpenForPathname(pathname: string, prevState: boolean) {
-  return (
-    !isSmallScreen() && !PATH_WITH_COLLAPSED_NAVBAR.test(pathname) && prevState
-  );
+  // return (
+  //   !isSmallScreen() && !PATH_WITH_COLLAPSED_NAVBAR.test(pathname) && prevState
+  // );
+  return !isSmallScreen() && prevState;
 }
 
 export const OPEN_NAVBAR = "metabase/app/OPEN_NAVBAR";

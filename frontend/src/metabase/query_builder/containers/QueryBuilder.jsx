@@ -277,7 +277,7 @@ function QueryBuilder(props) {
       (isAnySidebarOpen && !wasShowingAnySidebar) ||
       (isNativeEditorOpen && !wasNativeEditorOpen)
     ) {
-      closeNavbar();
+      // closeNavbar();
     }
   }, [
     isAnySidebarOpen,
