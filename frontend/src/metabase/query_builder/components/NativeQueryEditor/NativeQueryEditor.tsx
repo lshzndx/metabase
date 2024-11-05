@@ -388,7 +388,7 @@ export class NativeQueryEditor extends Component<
     if (selectedText) {
       this.execSelectedText(selectedText);
     } else if (query.canRun()) {
-      // runQuestionQuery();
+      runQuestionQuery();
     }
   };
 
