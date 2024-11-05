@@ -23,7 +23,7 @@ import { Transition } from "metabase/ui";
 import * as Lib from "metabase-lib";
 
 import DatasetEditor from "../DatasetEditor";
-import NativeQueryEditor from "../NativeQueryEditor";
+import NativeQueryEditorChat from "../NativeQueryEditorChat";
 import { QueryModals } from "../QueryModals";
 import QueryVisualization from "../QueryVisualization";
 import { SavedQuestionIntroModal } from "../SavedQuestionIntroModal";
@@ -295,7 +295,7 @@ class View extends Component {
 
     return (
       <NativeQueryEditorContainer>
-        <NativeQueryEditor
+        <NativeQueryEditorChat
           {...this.props}
           query={legacyQuery}
           viewHeight={height}
