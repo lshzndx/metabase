@@ -4,13 +4,12 @@ import { useMemo } from "react";
 import { t } from "ttag";
 
 import EntityMenuItem from "metabase/components/EntityMenuItem";
-import EntityMenu from "metabase/components/EntityMenuSiderBar";
+import { alpha } from "metabase/lib/colors";
 import { useDispatch, useSelector } from "metabase/lib/redux";
 import * as Urls from "metabase/lib/urls";
 import { setOpenModal } from "metabase/redux/ui";
 import { getSetting } from "metabase/selectors/settings";
 import type { CollectionId } from "metabase-types/api";
-import { alpha } from "metabase/lib/colors";
 
 export interface NewItemMenuProps {
   className?: string;

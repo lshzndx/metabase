@@ -57,15 +57,7 @@ export const NewNavSection = ({
       headerClass={CS.mb1}
       onToggle={setExpandNew}
     >
-      <NewItemMenu
-      // trigger={
-      //   <SidebarHeading>{c("A verb, shown in the sidebar")
-      //     .t`New`}</SidebarHeading>
-      // }
-      // isOpen={isOpen}
-      // collectionId={collectionId}
-      // location={location}
-      />
+      <NewItemMenu />
     </CollapseSection>
   );
 };
