@@ -304,6 +304,8 @@ class View extends Component {
           datasetQuery={card && card.dataset_query}
           setParameterValueToDefault={setParameterValueToDefault}
           onSetDatabaseId={onSetDatabaseId}
+          // hasEditingSidebar={false}
+          // resizable={false}
         />
       </NativeQueryEditorContainer>
     );
@@ -333,6 +335,16 @@ class View extends Component {
         isSidebarOpen={isSidebarOpen}
         data-testid="query-builder-main"
       >
+        <StyledDebouncedFrame enabled={!isLiveResizable}>
+          <QueryVisualization
+            {...this.props}
+            noHeader
+            className={CS.spread}
+            mode={queryMode}
+          />
+        </StyledDebouncedFrame>
+        <ViewFooter className={CS.flexNoShrink} />
+
         {isNative ? (
           this.renderNativeQueryEditor()
         ) : (
@@ -343,20 +355,11 @@ class View extends Component {
           />
         )}
 
-        <StyledDebouncedFrame enabled={!isLiveResizable}>
-          <QueryVisualization
-            {...this.props}
-            noHeader
-            className={CS.spread}
-            mode={queryMode}
-          />
-        </StyledDebouncedFrame>
         <TimeseriesChrome
           question={this.props.question}
           updateQuestion={this.props.updateQuestion}
           className={CS.flexNoShrink}
         />
-        <ViewFooter className={CS.flexNoShrink} />
       </QueryBuilderMain>
     );
   };
@@ -435,7 +438,7 @@ class View extends Component {
           className={QueryBuilderS.QueryBuilder}
           data-testid="query-builder-root"
         >
-          {isHeaderVisible && this.renderHeader()}
+          {/* {isHeaderVisible && this.renderHeader()} */}
 
           <QueryBuilderContentContainer>
             {!isNative && (
