@@ -146,7 +146,8 @@ export const DragHandleContainer = styled.div`
   height: 8px;
   position: absolute;
   bottom: -4px;
-  cursor: row-resize;
+  /* cursor: row-resize; */
+  opacity: 0;
 `;
 
 export const DragHandle = styled.div`
