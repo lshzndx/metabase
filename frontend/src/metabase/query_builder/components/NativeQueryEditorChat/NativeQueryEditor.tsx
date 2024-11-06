@@ -892,7 +892,7 @@ export class NativeQueryEditor extends Component<
           ref={this.resizeBox}
           isOpen={isNativeEditorOpen}
           // height={this.state.initialHeight}
-          height={80}
+          height={70}
           minConstraints={[Infinity, getEditorLineHeight(MIN_HEIGHT_LINES)]}
           axis="y"
           handle={dragHandle}

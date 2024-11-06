@@ -343,7 +343,7 @@ class View extends Component {
             mode={queryMode}
           />
         </StyledDebouncedFrame>
-        <ViewFooter className={CS.flexNoShrink} />
+        {/* <ViewFooter className={CS.flexNoShrink} /> */}
 
         {isNative ? (
           this.renderNativeQueryEditor()
