@@ -1,3 +1,6 @@
+/**
+ * created by liushuai
+ */
 /* eslint-disable react/prop-types */
 import { Component } from "react";
 import { connect } from "react-redux";
@@ -43,6 +46,7 @@ import {
   StyledDebouncedFrame,
   StyledSyncedParametersList,
 } from "./View.styled";
+import { QueryVisualizationRoot } from "./ViewChat.styled";
 import { ViewFooter } from "./ViewFooter";
 import ViewSidebar from "./ViewSidebar";
 import ChartSettingsSidebar from "./sidebars/ChartSettingsSidebar";
@@ -50,6 +54,7 @@ import ChartTypeSidebar from "./sidebars/ChartTypeSidebar";
 import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import { SummarizeSidebar } from "./sidebars/SummarizeSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";
+import { position } from "tether";
 
 const fadeIn = {
   in: { opacity: 1 },
@@ -336,12 +341,22 @@ class View extends Component {
         data-testid="query-builder-main"
       >
         <StyledDebouncedFrame enabled={!isLiveResizable}>
-          <QueryVisualization
-            {...this.props}
-            noHeader
-            className={CS.spread}
-            mode={queryMode}
-          />
+          <QueryVisualizationRoot>
+            <QueryVisualization
+              {...this.props}
+              noHeader
+              className={CS.spread}
+              mode={queryMode}
+            />
+          </QueryVisualizationRoot>
+          {/* <QueryVisualizationRoot>
+            <QueryVisualization
+              {...this.props}
+              noHeader
+              className={CS.spread}
+              mode={queryMode}
+            />
+          </QueryVisualizationRoot> */}
         </StyledDebouncedFrame>
         {/* <ViewFooter className={CS.flexNoShrink} /> */}
 

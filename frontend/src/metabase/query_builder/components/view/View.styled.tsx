@@ -77,6 +77,7 @@ export const NativeQueryEditorContainer = styled.div`
 export const StyledDebouncedFrame = styled(DebouncedFrame)`
   flex: 1 0 auto;
   flex-grow: 1;
+  overflow: auto !important;
 `;
 
 export const StyledSyncedParametersList = styled(SyncedParametersList)`
