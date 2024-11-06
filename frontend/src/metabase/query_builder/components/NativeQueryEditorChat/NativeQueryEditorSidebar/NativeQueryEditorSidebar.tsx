@@ -96,7 +96,7 @@ export const NativeQueryEditorSidebar = (
 
   return (
     <Container data-testid="native-query-editor-sidebar">
-      {canFormatQuery && (
+      {/* {canFormatQuery && (
         <Tooltip tooltip={t`Format query`}>
           <SidebarButton
             aria-label={t`Format query`}
@@ -129,7 +129,8 @@ export const NativeQueryEditorSidebar = (
       ) : null}
       {PreviewQueryButton.shouldRender({ question }) && (
         <PreviewQueryButton {...props} />
-      )}
+      )} */}
+
       {!!canRunQuery && (
         <RunButtonWithTooltipStyled
           disabled={!isRunnable}
