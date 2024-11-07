@@ -3,6 +3,7 @@
  */
 /* eslint-disable react/prop-types */
 import { Component } from "react";
+import ReactMarkdown from "react-markdown";
 import { connect } from "react-redux";
 import { t } from "ttag";
 import _ from "underscore";
@@ -341,14 +342,35 @@ class View extends Component {
         data-testid="query-builder-main"
       >
         <StyledDebouncedFrame enabled={!isLiveResizable}>
-          <QueryVisualizationRoot>
-            <QueryVisualization
-              {...this.props}
-              noHeader
-              className={CS.spread}
-              mode={queryMode}
-            />
-          </QueryVisualizationRoot>
+          <ReactMarkdown
+            components={{
+              // 自定义Markdown标签对应的React组件
+              h1: mdProps => {
+                return <h1 style={{ marginBottom: 0 }}>{mdProps.children}</h1>;
+              },
+              h2: mdProps => {
+                // console.log("mdProps", mdProps);
+                return (
+                  // <h1 style={{ color: "blue" }} {...props} />
+
+                  <QueryVisualizationRoot>
+                    <QueryVisualization
+                      {...this.props}
+                      noHeader
+                      className={CS.spread}
+                      mode={queryMode}
+                    />
+                  </QueryVisualizationRoot>
+                );
+              },
+              // 其他自定义组件
+            }}
+          >
+            {`# 这里是标题 \r\n\r\n这里是对柱状图的文本描述\r\n## ${JSON.stringify(
+              { title: "ceshi" },
+            )}`}
+          </ReactMarkdown>
+
           {/* <QueryVisualizationRoot>
             <QueryVisualization
               {...this.props}
