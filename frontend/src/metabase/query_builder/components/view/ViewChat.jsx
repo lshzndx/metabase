@@ -2,11 +2,17 @@
  * created by liushuai
  */
 /* eslint-disable react/prop-types */
+import { useMarkdownToJSX } from "markdown-to-jsx";
 import { Component } from "react";
 import ReactMarkdown from "react-markdown";
 import { connect } from "react-redux";
+import remarkDirective from "remark-directive";
+import remarkGfm from "remark-gfm";
+import { position } from "tether";
 import { t } from "ttag";
 import _ from "underscore";
+
+import { visit } from "unist-util-visit";
 
 import { deletePermanently } from "metabase/archive/actions";
 import { ArchivedEntityBanner } from "metabase/archive/components/ArchivedEntityBanner";
@@ -55,7 +61,7 @@ import ChartTypeSidebar from "./sidebars/ChartTypeSidebar";
 import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import { SummarizeSidebar } from "./sidebars/SummarizeSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";
-import { position } from "tether";
+import { testData } from "./testmd";
 
 const fadeIn = {
   in: { opacity: 1 },
@@ -317,6 +323,30 @@ class View extends Component {
     );
   };
 
+  captureH2Content = () => {
+    return () => tree => {
+      visit(tree, "heading", node => {
+        if (node.depth === 2) {
+          // 识别 h2 标签
+          const h2Text = this.getTextContent(node);
+
+          // 将捕获的 h2 内容添加到节点的自定义属性中
+          node.data = node.data || {};
+          node.data.hProperties = node.data.hProperties || {};
+          node.data.hProperties.originalContent = h2Text;
+        }
+      });
+    };
+  };
+
+  getTextContent = node => {
+    if (node.type === "text") return node.value; // 直接返回文本节点的值
+    if (node.children) {
+      return node.children.map(child => this.getTextContent(child)).join(""); // 递归提取子节点内容
+    }
+    return ""; // 非文本节点忽略
+  };
+
   renderMain = ({ leftSidebar, rightSidebar }) => {
     const {
       question,
@@ -343,32 +373,35 @@ class View extends Component {
       >
         <StyledDebouncedFrame enabled={!isLiveResizable}>
           <ReactMarkdown
+            remarkPlugins={[this.captureH2Content()]}
             components={{
               // 自定义Markdown标签对应的React组件
               h1: mdProps => {
                 return <h1 style={{ marginBottom: 0 }}>{mdProps.children}</h1>;
               },
-              h2: mdProps => {
-                // console.log("mdProps", mdProps);
+              h2: (node, ...mdProps) => {
+                console.log("node", JSON.parse(node.originalContent));
                 return (
-                  // <h1 style={{ color: "blue" }} {...props} />
+                  <div>{mdProps.children}</div>
 
-                  <QueryVisualizationRoot>
-                    <QueryVisualization
-                      {...this.props}
-                      noHeader
-                      className={CS.spread}
-                      mode={queryMode}
-                    />
-                  </QueryVisualizationRoot>
+                  // <QueryVisualizationRoot>
+                  //   <QueryVisualization
+                  //     {...this.props}
+                  //     noHeader
+                  //     className={CS.spread}
+                  //     mode={queryMode}
+                  //   />
+                  // </QueryVisualizationRoot>
                 );
               },
               // 其他自定义组件
             }}
           >
-            {`# 这里是标题 \r\n\r\n这里是对柱状图的文本描述\r\n## ${JSON.stringify(
+            {/* {`# 这里是标题 \r\n\r\n这里是对柱状图的文本描述\r\n## ${JSON.stringify(
               { title: "ceshi" },
-            )}`}
+            )}`} */}
+
+            {testData}
           </ReactMarkdown>
 
           {/* <QueryVisualizationRoot>
