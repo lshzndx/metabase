@@ -366,6 +366,8 @@ class View extends Component {
     const { isNative } = Lib.queryDisplayInfo(question.query());
     const isSidebarOpen = leftSidebar || rightSidebar;
 
+    const { rawSeries, ...restProps } = this.props;
+
     return (
       <QueryBuilderMain
         isSidebarOpen={isSidebarOpen}
@@ -380,18 +382,19 @@ class View extends Component {
                 return <h1 style={{ marginBottom: 0 }}>{mdProps.children}</h1>;
               },
               h2: (node, ...mdProps) => {
-                console.log("node", JSON.parse(node.originalContent));
+                // console.log("node", JSON.parse(node.originalContent));
+                const data = JSON.parse(node.originalContent);
                 return (
-                  <div>{mdProps.children}</div>
-
-                  // <QueryVisualizationRoot>
-                  //   <QueryVisualization
-                  //     {...this.props}
-                  //     noHeader
-                  //     className={CS.spread}
-                  //     mode={queryMode}
-                  //   />
-                  // </QueryVisualizationRoot>
+                  <QueryVisualizationRoot>
+                    <QueryVisualization
+                      // {...this.props}
+                      {...restProps}
+                      rawSeries={data}
+                      noHeader
+                      className={CS.spread}
+                      mode={queryMode}
+                    />
+                  </QueryVisualizationRoot>
                 );
               },
               // 其他自定义组件
