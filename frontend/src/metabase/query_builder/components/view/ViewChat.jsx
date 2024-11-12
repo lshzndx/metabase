@@ -3,7 +3,7 @@
  */
 /* eslint-disable react/prop-types */
 import { useMarkdownToJSX } from "markdown-to-jsx";
-import { Component } from "react";
+import { Component, createRef } from "react";
 import ReactMarkdown from "react-markdown";
 import { connect } from "react-redux";
 import remarkDirective from "remark-directive";
@@ -86,6 +86,8 @@ const fadeIn = {
 };
 
 class View extends Component {
+  queryBuilderMainRef = createRef();
+
   getLeftSidebar = () => {
     const {
       isShowingChartSettingsSidebar,
@@ -365,6 +367,14 @@ class View extends Component {
     return ""; // 非文本节点忽略
   };
 
+  scrollToBottom = () => {
+    console.log(111, this.queryBuilderMainRef.current);
+    if (this.queryBuilderMainRef.current) {
+      this.queryBuilderMainRef.current.scrollTop =
+        this.queryBuilderMainRef.current.scrollHeight;
+    }
+  };
+
   renderMain = ({ leftSidebar, rightSidebar }) => {
     const {
       question,
@@ -399,7 +409,10 @@ class View extends Component {
         data-testid="query-builder-main"
         style={{ background: `rgb(246, 247, 251)` }}
       >
-        <StyledDebouncedFrame enabled={!isLiveResizable}>
+        <StyledDebouncedFrame
+          ref={this.queryBuilderMainRef}
+          enabled={!isLiveResizable}
+        >
           {chatList.map(chat => {
             if (chat.type === "user") {
               return (
@@ -532,6 +545,13 @@ class View extends Component {
       </QueryBuilderMain>
     );
   };
+
+  componentDidUpdate(prevProps) {
+    // 监听 chatList 的变化
+    if (this.props.chatList !== prevProps.chatList) {
+      this.scrollToBottom();
+    }
+  }
 
   render() {
     const {
