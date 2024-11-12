@@ -368,7 +368,6 @@ class View extends Component {
   };
 
   scrollToBottom = () => {
-    console.log(111, this.queryBuilderMainRef.current);
     if (this.queryBuilderMainRef.current) {
       this.queryBuilderMainRef.current.scrollTop =
         this.queryBuilderMainRef.current.scrollHeight;

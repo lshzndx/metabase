@@ -107,7 +107,10 @@ class DebouncedFrameComponent extends Component {
         className={cx(className, CS.relative)}
         style={{
           overflow: "hidden",
-          transition: "opacity 0.25s",
+          // transition: "opacity 0.25s",
+          // modified by lsh
+          transition: "opacity 0.25s scroll-behavior 0.5s ease-out",
+          scrollBehavior: "smooth",
           ...style,
         }}
       >
