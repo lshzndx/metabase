@@ -75,8 +75,8 @@ import { testData } from "./testmd";
 
 // added by lsh
 const DEFAULT_CHAT_LIST = [
-  { type: "user", question: "查询商品表中各商品的价格，用柱状图展示", id: 1 },
-  { type: "gpt", markdown: testData, id: 2 },
+  // { type: "user", question: "查询商品表中各商品的价格，用柱状图展示", id: 1 },
+  // { type: "gpt", markdown: testData, id: 2 },
 ];
 
 const DEFAULT_UI_CONTROLS = {
