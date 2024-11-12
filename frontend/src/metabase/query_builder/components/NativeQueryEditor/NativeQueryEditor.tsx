@@ -386,6 +386,11 @@ export class NativeQueryEditor extends Component<
     const selectedText = this._editor?.getSelectedText();
 
     if (selectedText) {
+      // const temporaryQuestion = query.setQueryText(selectedText).question();
+      // runQuestionQuery({
+      //   overrideWithQuestion: temporaryQuestion,
+      //   shouldUpdateUrl: false,
+      // });
       this.execSelectedText(selectedText);
     } else if (query.canRun()) {
       runQuestionQuery();

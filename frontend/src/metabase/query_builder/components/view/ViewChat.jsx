@@ -30,13 +30,16 @@ import {
 import { SIDEBAR_SIZES } from "metabase/query_builder/constants";
 import { TimeseriesChrome } from "metabase/querying/filters/components/TimeseriesChrome";
 import { Transition } from "metabase/ui";
+import Visualization from "metabase/visualizations/components/Visualization";
 import * as Lib from "metabase-lib";
+import { HARD_ROW_LIMIT } from "metabase-lib/v1/queries/utils";
 
 import DatasetEditor from "../DatasetEditor";
 import NativeQueryEditorChat from "../NativeQueryEditorChat";
 import { QueryModals } from "../QueryModals";
 import QueryVisualization from "../QueryVisualization";
 import { SavedQuestionIntroModal } from "../SavedQuestionIntroModal";
+import VisualizationResult from "../VisualizationResult";
 import DataReference from "../dataref/DataReference";
 import { SnippetSidebar } from "../template_tags/SnippetSidebar";
 import { TagEditorSidebar } from "../template_tags/TagEditorSidebar";
@@ -62,6 +65,18 @@ import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import { SummarizeSidebar } from "./sidebars/SummarizeSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";
 import { testData } from "./testmd";
+import { uuid } from "metabase/lib/uuid";
+
+const ALLOWED_VISUALIZATION_PROPS = [
+  // Table
+  "isShowingDetailsOnlyColumns",
+  // Table Interactive
+  "hasMetadataPopovers",
+  "tableHeaderHeight",
+  "scrollToColumn",
+  "renderTableHeaderWrapper",
+  "mode",
+];
 
 const fadeIn = {
   in: { opacity: 1 },
@@ -366,7 +381,13 @@ class View extends Component {
     const { isNative } = Lib.queryDisplayInfo(question.query());
     const isSidebarOpen = leftSidebar || rightSidebar;
 
-    const { rawSeries, ...restProps } = this.props;
+    const {
+      rawSeries,
+      maxTableRows = HARD_ROW_LIMIT,
+      ...restProps
+    } = this.props;
+
+    const vizSpecificProps = _.pick(this.props, ...ALLOWED_VISUALIZATION_PROPS);
 
     return (
       <QueryBuilderMain
@@ -383,27 +404,62 @@ class View extends Component {
               },
               h2: (node, ...mdProps) => {
                 // console.log("node", JSON.parse(node.originalContent));
-                const data = JSON.parse(node.originalContent);
+                let data = [];
+                try {
+                  data = JSON.parse(node.originalContent);
+                } catch (error) {
+                  data = [];
+                }
                 return (
                   <QueryVisualizationRoot>
-                    <QueryVisualization
+                    {/* <QueryVisualization
                       // {...this.props}
                       {...restProps}
                       rawSeries={data}
                       noHeader
                       className={CS.spread}
                       mode={queryMode}
-                    />
+                    /> */}
+
+                    {data.length && (
+                      <Visualization
+                        className={this.props.className}
+                        rawSeries={data}
+                        // onChangeCardAndRun={
+                        //   hasDrills ? navigateToNewCardInsideQB : undefined
+                        // }
+                        isEditing={true}
+                        isObjectDetail={false}
+                        isQueryBuilder={true}
+                        queryBuilderMode={queryBuilderMode}
+                        showTitle={false}
+                        metadata={question.metadata()}
+                        timelineEvents={this.props.timelineEvents}
+                        selectedTimelineEventIds={
+                          this.props.selectedTimelineEventIds
+                        }
+                        handleVisualizationClick={
+                          this.props.handleVisualizationClick
+                        }
+                        onOpenTimelines={this.props.onOpenTimelines}
+                        onSelectTimelineEvents={this.props.selectTimelineEvents}
+                        onDeselectTimelineEvents={
+                          this.props.deselectTimelineEvents
+                        }
+                        onOpenChartSettings={this.props.onOpenChartSettings}
+                        onUpdateWarnings={this.props.onUpdateWarnings}
+                        onUpdateVisualizationSettings={
+                          this.props.onUpdateVisualizationSettings
+                        }
+                        {...vizSpecificProps}
+                      />
+                    )}
                   </QueryVisualizationRoot>
                 );
               },
               // 其他自定义组件
             }}
           >
-            {/* {`# 这里是标题 \r\n\r\n这里是对柱状图的文本描述\r\n## ${JSON.stringify(
-              { title: "ceshi" },
-            )}`} */}
-
             {testData}
           </ReactMarkdown>
 

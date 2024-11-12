@@ -194,6 +194,7 @@ function QueryBuilder(props) {
     isAnySidebarOpen,
     closeNavbar,
     initializeQB,
+    initializeQBChat,
     locationChanged,
     setUIControls,
     cancelQuery,
@@ -253,7 +254,8 @@ function QueryBuilder(props) {
   const handleSave = useSaveQuestion({ scheduleCallback });
 
   useMount(() => {
-    initializeQB(location, params);
+    // initializeQB(location, params);
+    initializeQBChat(location, params);
   });
 
   useEffect(() => {

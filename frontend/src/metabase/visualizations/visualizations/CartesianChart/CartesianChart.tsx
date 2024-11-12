@@ -82,6 +82,9 @@ function _CartesianChart(props: VisualizationProps) {
   const handleInit = useCallback((chart: EChartsType) => {
     chartRef.current = chart;
   }, []);
+  const handleDispose = useCallback(() => {
+    chartRef.current = undefined;
+  }, []);
 
   const { onSelectSeries, onOpenQuestion, eventHandlers } = useChartEvents(
     chartRef,
@@ -136,6 +139,7 @@ function _CartesianChart(props: VisualizationProps) {
           eventHandlers={eventHandlers}
           onResize={handleResize}
           onInit={handleInit}
+          onDispose={handleDispose}
         />
       </CartesianChartLegendLayout>
       {seriesColorsCss}

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import cx from "classnames";
 import { useState } from "react";
-import { useTimeout } from "react-use";
+import { useMount, useTimeout } from "react-use";
 import { t } from "ttag";
 
 import LoadingSpinner from "metabase/components/LoadingSpinner";

@@ -73,6 +73,8 @@ function ExplicitSize<T>({
 
       _refreshMode: RefreshMode;
 
+      _isMounted: boolean = false;
+
       _updateSize: () => void;
 
       constructor(props: T & InnerProps, context: unknown) {
@@ -90,6 +92,9 @@ function ExplicitSize<T>({
       }
 
       _getElement() {
+        if (!this._isMounted) {
+          return null;
+        }
         try {
           let element = ReactDOM.findDOMNode(this);
           if (selector && element instanceof Element) {
@@ -103,6 +108,7 @@ function ExplicitSize<T>({
       }
 
       componentDidMount() {
+        this._isMounted = true;
         this._initMediaQueryListener();
         this._initResizeObserver();
         // Set the size on the next tick. We had issues with wrapped components
@@ -117,6 +123,7 @@ function ExplicitSize<T>({
       }
 
       componentWillUnmount() {
+        this._isMounted = false;
         this._teardownResizeObserver();
         this._teardownQueryMediaListener();
         if (this.timeoutId !== null) {
