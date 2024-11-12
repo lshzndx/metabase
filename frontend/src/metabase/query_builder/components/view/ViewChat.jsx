@@ -11,18 +11,19 @@ import remarkGfm from "remark-gfm";
 import { position } from "tether";
 import { t } from "ttag";
 import _ from "underscore";
-
 import { visit } from "unist-util-visit";
 
 import { deletePermanently } from "metabase/archive/actions";
 import { ArchivedEntityBanner } from "metabase/archive/components/ArchivedEntityBanner";
 import ExplicitSize from "metabase/components/ExplicitSize";
 import LoadingAndErrorWrapper from "metabase/components/LoadingAndErrorWrapper";
+import LogoIcon from "metabase/components/LogoIcon";
 import Toaster from "metabase/components/Toaster";
 import CS from "metabase/css/core/index.css";
 import QueryBuilderS from "metabase/css/query_builder.module.css";
 import Bookmarks from "metabase/entities/bookmarks";
 import Questions from "metabase/entities/questions";
+import { uuid } from "metabase/lib/uuid";
 import {
   rememberLastUsedDatabase,
   setArchivedQuestion,
@@ -66,8 +67,6 @@ import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import { SummarizeSidebar } from "./sidebars/SummarizeSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";
 import { testData } from "./testmd";
-
-import { uuid } from "metabase/lib/uuid";
 
 const ALLOWED_VISUALIZATION_PROPS = [
   // Table
@@ -357,7 +356,9 @@ class View extends Component {
   };
 
   getTextContent = node => {
-    if (node.type === "text") return node.value; // 直接返回文本节点的值
+    if (node.type === "text") {
+      return node.value;
+    } // 直接返回文本节点的值
     if (node.children) {
       return node.children.map(child => this.getTextContent(child)).join(""); // 递归提取子节点内容
     }
@@ -411,29 +412,38 @@ class View extends Component {
             } else {
               // type = gpt
               return (
-                <div style={{ background: "white", padding: 16 }} key={chat.id}>
-                  <ReactMarkdown
-                    remarkPlugins={[this.captureH2Content()]}
-                    components={{
-                      // 自定义Markdown标签对应的React组件
-                      h1: mdProps => {
-                        return (
-                          <h1 style={{ marginBottom: 0 }}>
-                            {mdProps.children}
-                          </h1>
-                        );
-                      },
-                      h2: (node, ...mdProps) => {
-                        // console.log("node", JSON.parse(node.originalContent));
-                        let data = [];
-                        try {
-                          data = JSON.parse(node.originalContent);
-                        } catch (error) {
-                          data = [];
-                        }
-                        return (
-                          <QueryVisualizationRoot>
-                            {/* <QueryVisualization
+                <div style={{ display: "flex" }} key={chat.id}>
+                  <LogoIcon height={32} width={32} />
+                  <div
+                    style={{
+                      background: "white",
+                      padding: 16,
+                      flex: 1,
+                      marginLeft: 8,
+                    }}
+                  >
+                    <ReactMarkdown
+                      remarkPlugins={[this.captureH2Content()]}
+                      components={{
+                        // 自定义Markdown标签对应的React组件
+                        h1: mdProps => {
+                          return (
+                            <h1 style={{ marginBottom: 0 }}>
+                              {mdProps.children}
+                            </h1>
+                          );
+                        },
+                        h2: (node, ...mdProps) => {
+                          // console.log("node", JSON.parse(node.originalContent));
+                          let data = [];
+                          try {
+                            data = JSON.parse(node.originalContent);
+                          } catch (error) {
+                            data = [];
+                          }
+                          return (
+                            <QueryVisualizationRoot>
+                              {/* <QueryVisualization
                           // {...this.props}
                           {...restProps}
                           rawSeries={data}
@@ -442,51 +452,52 @@ class View extends Component {
                           mode={queryMode}
                         /> */}
 
-                            {data.length && (
-                              <Visualization
-                                className={this.props.className}
-                                rawSeries={data}
-                                // onChangeCardAndRun={
-                                //   hasDrills ? navigateToNewCardInsideQB : undefined
-                                // }
-                                isEditing={true}
-                                isObjectDetail={false}
-                                isQueryBuilder={true}
-                                queryBuilderMode={queryBuilderMode}
-                                showTitle={false}
-                                metadata={question.metadata()}
-                                timelineEvents={this.props.timelineEvents}
-                                selectedTimelineEventIds={
-                                  this.props.selectedTimelineEventIds
-                                }
-                                handleVisualizationClick={
-                                  this.props.handleVisualizationClick
-                                }
-                                onOpenTimelines={this.props.onOpenTimelines}
-                                onSelectTimelineEvents={
-                                  this.props.selectTimelineEvents
-                                }
-                                onDeselectTimelineEvents={
-                                  this.props.deselectTimelineEvents
-                                }
-                                onOpenChartSettings={
-                                  this.props.onOpenChartSettings
-                                }
-                                onUpdateWarnings={this.props.onUpdateWarnings}
-                                onUpdateVisualizationSettings={
-                                  this.props.onUpdateVisualizationSettings
-                                }
-                                {...vizSpecificProps}
-                              />
-                            )}
-                          </QueryVisualizationRoot>
-                        );
-                      },
-                      // 其他自定义组件
-                    }}
-                  >
-                    {chat.markdown}
-                  </ReactMarkdown>
+                              {data.length && (
+                                <Visualization
+                                  className={this.props.className}
+                                  rawSeries={data}
+                                  // onChangeCardAndRun={
+                                  //   hasDrills ? navigateToNewCardInsideQB : undefined
+                                  // }
+                                  isEditing={true}
+                                  isObjectDetail={false}
+                                  isQueryBuilder={true}
+                                  queryBuilderMode={queryBuilderMode}
+                                  showTitle={false}
+                                  metadata={question.metadata()}
+                                  timelineEvents={this.props.timelineEvents}
+                                  selectedTimelineEventIds={
+                                    this.props.selectedTimelineEventIds
+                                  }
+                                  handleVisualizationClick={
+                                    this.props.handleVisualizationClick
+                                  }
+                                  onOpenTimelines={this.props.onOpenTimelines}
+                                  onSelectTimelineEvents={
+                                    this.props.selectTimelineEvents
+                                  }
+                                  onDeselectTimelineEvents={
+                                    this.props.deselectTimelineEvents
+                                  }
+                                  onOpenChartSettings={
+                                    this.props.onOpenChartSettings
+                                  }
+                                  onUpdateWarnings={this.props.onUpdateWarnings}
+                                  onUpdateVisualizationSettings={
+                                    this.props.onUpdateVisualizationSettings
+                                  }
+                                  {...vizSpecificProps}
+                                />
+                              )}
+                            </QueryVisualizationRoot>
+                          );
+                        },
+                        // 其他自定义组件
+                      }}
+                    >
+                      {chat.markdown}
+                    </ReactMarkdown>
+                  </div>
                 </div>
               );
             }
