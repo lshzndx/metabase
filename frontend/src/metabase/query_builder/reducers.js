@@ -10,10 +10,12 @@ import TimelineEvents from "metabase/entities/timeline-events";
 import { copy } from "metabase/lib/utils";
 
 import {
+  ADD_CHAT,
   API_CREATE_QUESTION,
   API_UPDATE_QUESTION,
   CANCEL_DATASET_CHANGES,
   CANCEL_QUERY,
+  CLEAR_CHAT_LIST,
   CLEAR_OBJECT_DETAIL_FK_REFERENCES,
   CLEAR_QUERY_RESULT,
   CLOSE_QB,
@@ -28,6 +30,7 @@ import {
   QUERY_COMPLETED,
   QUERY_ERRORED,
   RELOAD_CARD,
+  REMOVE_CHAT,
   RESET_QB,
   RESET_ROW_ZOOM,
   RESET_UI_CONTROLS,
@@ -68,6 +71,13 @@ import {
   onOpenQuestionInfo,
   onOpenTimelines,
 } from "./actions";
+import { testData } from "./testmd";
+
+// added by lsh
+const DEFAULT_CHAT_LIST = [
+  { type: "user", question: "查询商品表中各商品的价格，用柱状图展示", id: 1 },
+  { type: "gpt", markdown: testData, id: 2 },
+];
 
 const DEFAULT_UI_CONTROLS = {
   dataReferenceStack: null,
@@ -89,6 +99,7 @@ const DEFAULT_UI_CONTROLS = {
   previousQueryBuilderMode: false,
   snippetCollectionId: null,
   datasetEditorTab: "query", // "query" / "metadata"
+  chatList: DEFAULT_CHAT_LIST, // added by lsh
 };
 
 const DEFAULT_LOADING_CONTROLS = {
@@ -146,6 +157,26 @@ function setUIControls(state, changes) {
 
 export const uiControls = handleActions(
   {
+    /*************created by lsh************** */
+    [ADD_CHAT]: {
+      next: (state, { payload }) => ({
+        ...state,
+        chatList: [...state.chatList, payload],
+      }),
+    },
+    [REMOVE_CHAT]: {
+      next: (state, { payload }) => ({
+        ...state,
+        chatList: state.chatList.filter(chat => chat.id !== payload),
+      }),
+    },
+    [CLEAR_CHAT_LIST]: {
+      next: (state, { payload }) => ({
+        ...state,
+        chatList: DEFAULT_CHAT_LIST,
+      }),
+    },
+    /*************created by lsh************** */
     [SET_UI_CONTROLS]: {
       next: (state, { payload }) => setUIControls(state, payload),
     },

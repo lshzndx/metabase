@@ -26,6 +26,7 @@ import { SQLBehaviour } from "metabase/lib/ace/sql_behaviour";
 import { isEventOverElement } from "metabase/lib/dom";
 import { getEngineNativeAceMode } from "metabase/lib/engine";
 import { checkNotNull } from "metabase/lib/types";
+import { uuid } from "metabase/lib/uuid";
 import { canGenerateQueriesForDatabase } from "metabase/metabot/utils";
 import SnippetFormModal from "metabase/query_builder/components/template_tags/SnippetFormModal";
 import type { QueryModalType } from "metabase/query_builder/constants";
@@ -48,6 +49,7 @@ import type {
 import type { Dispatch, State } from "metabase-types/store";
 
 import { ResponsiveParametersList } from "../ResponsiveParametersList";
+import { testData } from "../view/testmd";
 
 import DataSourceSelectors from "./DataSourceSelectors";
 import {
@@ -148,6 +150,7 @@ interface StateProps {
 
 interface DispatchProps {
   fetchQuestion: (cardId: CardId) => Promise<Card>;
+  addChat: (chat: any) => void;
 }
 
 interface ExplicitSizeProps {
@@ -380,13 +383,16 @@ export class NativeQueryEditor extends Component<
 
   runQuery = () => {
     this.props.cancelQuery?.();
-    const { query, runQuestionQuery } = this.props;
+    const { query, runQuestionQuery, addChat } = this.props;
 
     // if any text is selected, just run that
     const selectedText = this._editor?.getSelectedText();
 
     if (selectedText) {
-      this.execSelectedText(selectedText);
+      // this.execSelectedText(selectedText);
+      // test only
+      addChat({ type: "user", question: selectedText, id: uuid() });
+      addChat({ type: "gpt", markdown: testData, id: uuid() });
     } else if (query.canRun()) {
       runQuestionQuery();
     }

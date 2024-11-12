@@ -49,6 +49,10 @@ import {
   isSavedQuestionChanged,
 } from "./utils/question";
 
+/*************created by lsh************** */
+export const getChatList = state => state.qb.chatList;
+/*************created by lsh************** */
+
 export const getUiControls = state => state.qb.uiControls;
 export const getQueryStatus = state => state.qb.queryStatus;
 export const getLoadingControls = state => state.qb.loadingControls;

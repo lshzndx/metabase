@@ -34,6 +34,7 @@ import {
   getAutocompleteResultsFn,
   getCard,
   getCardAutocompleteResultsFn,
+  getChatList,
   getDataReferenceStack,
   getDatabaseFields,
   getDatabasesList,
@@ -127,6 +128,7 @@ const mapStateToProps = (state, props) => {
     result: getFirstQueryResult(state),
     results: getQueryResults(state),
     rawSeries: getRawSeries(state),
+    chatList: getChatList(state),
 
     uiControls: getUiControls(state),
     ...state.qb.uiControls,

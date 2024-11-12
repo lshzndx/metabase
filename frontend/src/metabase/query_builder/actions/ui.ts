@@ -15,6 +15,25 @@ export const setUIControls = createAction(SET_UI_CONTROLS);
 export const RESET_UI_CONTROLS = "metabase/qb/RESET_UI_CONTROLS";
 export const resetUIControls = createAction(RESET_UI_CONTROLS);
 
+/*************created by lsh************** */
+export const ADD_CHAT = "ADD_CHAT";
+export const REMOVE_CHAT = "REMOVE_CHAT";
+export const CLEAR_CHAT_LIST = "CLEAR_CHAT_LIST";
+export const addChatAct = createAction(ADD_CHAT);
+export const removeChatAct = createAction(REMOVE_CHAT);
+export const clearChatListAct = createAction(CLEAR_CHAT_LIST);
+
+export const addChat = (chat: any) => async (dispatch: Dispatch) => {
+  await dispatch(addChatAct(chat));
+};
+export const removeChat = (chat: any) => async (dispatch: Dispatch) => {
+  await dispatch(removeChatAct(chat));
+};
+export const clearChatList = (chat: any) => async (dispatch: Dispatch) => {
+  await dispatch(clearChatListAct(chat));
+};
+/*************created by lsh************** */
+
 export const setQueryBuilderMode =
   (
     queryBuilderMode: QueryBuilderMode,

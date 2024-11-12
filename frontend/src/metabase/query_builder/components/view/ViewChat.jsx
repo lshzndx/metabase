@@ -66,6 +66,7 @@ import { QuestionInfoSidebar } from "./sidebars/QuestionInfoSidebar";
 import { SummarizeSidebar } from "./sidebars/SummarizeSidebar";
 import TimelineSidebar from "./sidebars/TimelineSidebar";
 import { testData } from "./testmd";
+
 import { uuid } from "metabase/lib/uuid";
 
 const ALLOWED_VISUALIZATION_PROPS = [
@@ -384,6 +385,7 @@ class View extends Component {
 
     const {
       rawSeries,
+      chatList,
       maxTableRows = HARD_ROW_LIMIT,
       ...restProps
     } = this.props;
@@ -396,74 +398,94 @@ class View extends Component {
         data-testid="query-builder-main"
       >
         <StyledDebouncedFrame enabled={!isLiveResizable}>
-          <QuestionItem question="查询商品表中各商品的价格，用柱状图展示"></QuestionItem>
-          <ReactMarkdown
-            remarkPlugins={[this.captureH2Content()]}
-            components={{
-              // 自定义Markdown标签对应的React组件
-              h1: mdProps => {
-                return <h1 style={{ marginBottom: 0 }}>{mdProps.children}</h1>;
-              },
-              h2: (node, ...mdProps) => {
-                // console.log("node", JSON.parse(node.originalContent));
-                let data = [];
-                try {
-                  data = JSON.parse(node.originalContent);
-                } catch (error) {
-                  data = [];
-                }
-                return (
-                  <QueryVisualizationRoot>
-                    {/* <QueryVisualization
-                      // {...this.props}
-                      {...restProps}
-                      rawSeries={data}
-                      noHeader
-                      className={CS.spread}
-                      mode={queryMode}
-                    /> */}
+          {chatList.map(chat => {
+            if (chat.type === "user") {
+              return (
+                <QuestionItem
+                  key={chat.id}
+                  question={chat.question}
+                ></QuestionItem>
+              );
+            } else {
+              // type = gpt
+              return (
+                <ReactMarkdown
+                  key={chat.id}
+                  remarkPlugins={[this.captureH2Content()]}
+                  components={{
+                    // 自定义Markdown标签对应的React组件
+                    h1: mdProps => {
+                      return (
+                        <h1 style={{ marginBottom: 0 }}>{mdProps.children}</h1>
+                      );
+                    },
+                    h2: (node, ...mdProps) => {
+                      // console.log("node", JSON.parse(node.originalContent));
+                      let data = [];
+                      try {
+                        data = JSON.parse(node.originalContent);
+                      } catch (error) {
+                        data = [];
+                      }
+                      return (
+                        <QueryVisualizationRoot>
+                          {/* <QueryVisualization
+                          // {...this.props}
+                          {...restProps}
+                          rawSeries={data}
+                          noHeader
+                          className={CS.spread}
+                          mode={queryMode}
+                        /> */}
 
-                    {data.length && (
-                      <Visualization
-                        className={this.props.className}
-                        rawSeries={data}
-                        // onChangeCardAndRun={
-                        //   hasDrills ? navigateToNewCardInsideQB : undefined
-                        // }
-                        isEditing={true}
-                        isObjectDetail={false}
-                        isQueryBuilder={true}
-                        queryBuilderMode={queryBuilderMode}
-                        showTitle={false}
-                        metadata={question.metadata()}
-                        timelineEvents={this.props.timelineEvents}
-                        selectedTimelineEventIds={
-                          this.props.selectedTimelineEventIds
-                        }
-                        handleVisualizationClick={
-                          this.props.handleVisualizationClick
-                        }
-                        onOpenTimelines={this.props.onOpenTimelines}
-                        onSelectTimelineEvents={this.props.selectTimelineEvents}
-                        onDeselectTimelineEvents={
-                          this.props.deselectTimelineEvents
-                        }
-                        onOpenChartSettings={this.props.onOpenChartSettings}
-                        onUpdateWarnings={this.props.onUpdateWarnings}
-                        onUpdateVisualizationSettings={
-                          this.props.onUpdateVisualizationSettings
-                        }
-                        {...vizSpecificProps}
-                      />
-                    )}
-                  </QueryVisualizationRoot>
-                );
-              },
-              // 其他自定义组件
-            }}
-          >
-            {testData}
-          </ReactMarkdown>
+                          {data.length && (
+                            <Visualization
+                              className={this.props.className}
+                              rawSeries={data}
+                              // onChangeCardAndRun={
+                              //   hasDrills ? navigateToNewCardInsideQB : undefined
+                              // }
+                              isEditing={true}
+                              isObjectDetail={false}
+                              isQueryBuilder={true}
+                              queryBuilderMode={queryBuilderMode}
+                              showTitle={false}
+                              metadata={question.metadata()}
+                              timelineEvents={this.props.timelineEvents}
+                              selectedTimelineEventIds={
+                                this.props.selectedTimelineEventIds
+                              }
+                              handleVisualizationClick={
+                                this.props.handleVisualizationClick
+                              }
+                              onOpenTimelines={this.props.onOpenTimelines}
+                              onSelectTimelineEvents={
+                                this.props.selectTimelineEvents
+                              }
+                              onDeselectTimelineEvents={
+                                this.props.deselectTimelineEvents
+                              }
+                              onOpenChartSettings={
+                                this.props.onOpenChartSettings
+                              }
+                              onUpdateWarnings={this.props.onUpdateWarnings}
+                              onUpdateVisualizationSettings={
+                                this.props.onUpdateVisualizationSettings
+                              }
+                              {...vizSpecificProps}
+                            />
+                          )}
+                        </QueryVisualizationRoot>
+                      );
+                    },
+                    // 其他自定义组件
+                  }}
+                >
+                  {chat.markdown}
+                </ReactMarkdown>
+              );
+            }
+          })}
 
           {/* <QueryVisualizationRoot>
             <QueryVisualization
