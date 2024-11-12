@@ -45,6 +45,7 @@ import { SnippetSidebar } from "../template_tags/SnippetSidebar";
 import { TagEditorSidebar } from "../template_tags/TagEditorSidebar";
 
 import NewQuestionHeader from "./NewQuestionHeader";
+import { QuestionItem } from "./QuestionItem";
 import { NotebookContainer } from "./View/NotebookContainer";
 import {
   BorderedViewTitleHeader,
@@ -395,6 +396,7 @@ class View extends Component {
         data-testid="query-builder-main"
       >
         <StyledDebouncedFrame enabled={!isLiveResizable}>
+          <QuestionItem question="查询商品表中各商品的价格，用柱状图展示"></QuestionItem>
           <ReactMarkdown
             remarkPlugins={[this.captureH2Content()]}
             components={{
