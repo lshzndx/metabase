@@ -136,7 +136,8 @@ function MainNavbarView({
   // todo: 国际化
   const item: any = {
     title: `Chat Query`,
-    icon: "sql",
+    icon: "chat",
+    iconColor: "rgb(80, 158, 227)",
     link: Urls.newQuestion({
       mode: "chat",
       type: "native",
@@ -248,6 +249,7 @@ function MainNavbarView({
             <ErrorBoundary>
               <EntityMenuItem
                 icon={item.icon}
+                iconColor={item.iconColor}
                 title={item.title}
                 externalLink={item.externalLink}
                 action={

@@ -391,8 +391,14 @@ import zoom_in_component from "./zoom_in.svg?component";
 import zoom_in_source from "./zoom_in.svg?source";
 import zoom_out_component from "./zoom_out.svg?component";
 import zoom_out_source from "./zoom_out.svg?source";
+import chat_component from "./chat.svg?component";
+import chat_source from "./chat.svg?source";
 
 export const Icons = {
+  chat: {
+    component: chat_component,
+    source: chat_source,
+  },
   add: {
     component: add_component,
     source: add_source,
