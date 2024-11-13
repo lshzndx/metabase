@@ -75,7 +75,29 @@ import { testData } from "./testmd";
 
 // added by lsh
 const DEFAULT_CHAT_LIST = [
-  // { type: "user", question: "查询商品表中各商品的价格，用柱状图展示", id: 1 },
+  // {
+  //   type: "user",
+  //   question: "查询商品表中各商品的价格，用柱状图展示",
+  //   id: 1,
+  //   card: {
+  //     creationType: "native_question",
+  //     dataset_query: {
+  //       type: "native",
+  //       native: {
+  //         query: "SELECT * FROM Products WHERE price > 90;",
+  //         "template-tags": {},
+  //       },
+  //       database: 1,
+  //     },
+  //     display: "bar",
+  //     type: "question",
+  //     visualization_settings: {
+  //       "graph.dimensions": ["TITLE"],
+  //       "graph.metrics": ["PRICE"],
+  //     },
+  //     parameters: [],
+  //   },
+  // },
   // { type: "gpt", markdown: testData, id: 2 },
 ];
 
@@ -157,7 +179,7 @@ function setUIControls(state, changes) {
 
 export const uiControls = handleActions(
   {
-    /*************created by lsh************** */
+    /*************added by lsh************** */
     [ADD_CHAT]: {
       next: (state, { payload }) => ({
         ...state,
@@ -176,7 +198,7 @@ export const uiControls = handleActions(
         chatList: DEFAULT_CHAT_LIST,
       }),
     },
-    /*************created by lsh************** */
+    /*************added by lsh************** */
     [SET_UI_CONTROLS]: {
       next: (state, { payload }) => setUIControls(state, payload),
     },

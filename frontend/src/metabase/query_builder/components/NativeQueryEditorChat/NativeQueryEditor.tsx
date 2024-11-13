@@ -391,7 +391,29 @@ export class NativeQueryEditor extends Component<
     if (selectedText) {
       // this.execSelectedText(selectedText);
       // test only
-      addChat({ type: "user", question: selectedText, id: uuid() });
+      addChat({
+        type: "user",
+        question: selectedText,
+        id: uuid(),
+        card: {
+          creationType: "native_question",
+          dataset_query: {
+            type: "native",
+            native: {
+              query: "SELECT * FROM Products WHERE price > 90;",
+              "template-tags": {},
+            },
+            database: 1,
+          },
+          display: "bar",
+          type: "question",
+          visualization_settings: {
+            "graph.dimensions": ["TITLE"],
+            "graph.metrics": ["PRICE"],
+          },
+          parameters: [],
+        },
+      });
       addChat({ type: "gpt", markdown: testData, id: uuid() });
     } else if (query.canRun()) {
       runQuestionQuery();

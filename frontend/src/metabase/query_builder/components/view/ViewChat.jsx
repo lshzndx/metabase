@@ -412,7 +412,7 @@ class View extends Component {
           ref={this.queryBuilderMainRef}
           enabled={!isLiveResizable}
         >
-          {chatList.map(chat => {
+          {chatList.map((chat, index) => {
             if (chat.type === "user") {
               return (
                 <QuestionItem
@@ -447,11 +447,13 @@ class View extends Component {
                         },
                         h2: (node, ...mdProps) => {
                           // console.log("node", JSON.parse(node.originalContent));
-                          let data = [];
+                          let rawSeries = [];
                           try {
-                            data = JSON.parse(node.originalContent);
+                            const data = JSON.parse(node.originalContent);
+                            const question = chatList[index - 1];
+                            rawSeries = this.getRawSeries(question, data.data);
                           } catch (error) {
-                            data = [];
+                            rawSeries = [];
                           }
                           return (
                             <QueryVisualizationRoot>
@@ -464,10 +466,10 @@ class View extends Component {
                           mode={queryMode}
                         /> */}
 
-                              {data.length && (
+                              {
                                 <Visualization
                                   className={this.props.className}
-                                  rawSeries={data}
+                                  rawSeries={rawSeries}
                                   // onChangeCardAndRun={
                                   //   hasDrills ? navigateToNewCardInsideQB : undefined
                                   // }
@@ -500,7 +502,7 @@ class View extends Component {
                                   }
                                   {...vizSpecificProps}
                                 />
-                              )}
+                              }
                             </QueryVisualizationRoot>
                           );
                         },
@@ -543,6 +545,11 @@ class View extends Component {
         />
       </QueryBuilderMain>
     );
+  };
+
+  getRawSeries = (question, result) => {
+    const { card } = question; // 自定义，非框架中的Question类型
+    return [{ card, data: result }];
   };
 
   componentDidUpdate(prevProps) {
