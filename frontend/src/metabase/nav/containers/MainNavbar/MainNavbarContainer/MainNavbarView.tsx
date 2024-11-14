@@ -43,6 +43,12 @@ import BookmarkList from "./BookmarkList";
 import { BrowseNavSection } from "./BrowseNavSection";
 import { NewNavSection } from "./NewNavSection";
 import { alpha } from "metabase/lib/colors";
+import {
+  MenuItemContent,
+  MenuItemIcon,
+  MenuItemTitle,
+  MenuLink,
+} from "metabase/components/EntityMenuItem/EntityMenuItem.styled";
 
 interface CollectionTreeItem extends Collection {
   icon: IconName | IconProps;
@@ -246,31 +252,14 @@ function MainNavbarView({
           </SidebarSection> */}
           {/* 对话查询 */}
           <SidebarSection>
-            <ErrorBoundary>
-              <EntityMenuItem
-                icon={item.icon}
-                iconColor={item.iconColor}
-                title={item.title}
-                externalLink={item.externalLink}
-                action={
-                  item.action &&
-                  (e => {
-                    item.action(e);
-                  })
-                }
-                event={item.event}
-                link={item.link}
-                tooltip={item.tooltip}
-                disabled={item.disabled}
-                onClose={() => {
-                  // item?.onClose?.();
-                }}
-                color={item.color}
-                hoverColor={item.hoverColor}
-                hoverBgColor={item.hoverBgColor}
-                isSelected={item.isSelected}
-              />
-            </ErrorBoundary>
+            <PaddedSidebarLink
+              isSelected={item.isSelected}
+              icon="chat"
+              onClick={handleHomeClick}
+              url={item.link}
+            >
+              Chat query
+            </PaddedSidebarLink>
           </SidebarSection>
 
           <SidebarSection>
